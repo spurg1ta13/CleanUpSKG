@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Phone, Mail, MapPin, Clock, CheckCircle2 } from "lucide-react";
+import { Phone, Mail, Clock, CheckCircle2 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 
@@ -98,19 +98,24 @@ const ContactSection = () => {
           {/* Info + Map */}
           <div className="space-y-8">
             <div className="space-y-5">
-              {[
-                { icon: Phone, label: "+1 (234) 567-890" },
-                { icon: Mail, label: "info@cleanpro.com" },
-                { icon: MapPin, label: "123 Clean Street, Suite 100, New York, NY 10001" },
-                { icon: Clock, label: "Mon - Sat: 8:00 AM - 6:00 PM" },
-              ].map((item) => (
-                <div key={item.label} className="flex items-start gap-4">
-                  <div className="shrink-0 w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
-                    <item.icon className="h-5 w-5" />
-                  </div>
-                  <span className="text-foreground text-sm pt-2">{item.label}</span>
+              <a href="tel:+3069747760587" className="flex items-start gap-4 group">
+                <div className="shrink-0 w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+                  <Phone className="h-5 w-5" />
                 </div>
-              ))}
+                <span className="text-foreground text-sm pt-2 group-hover:text-primary transition-colors">+30 697 477 60587</span>
+              </a>
+              <a href="mailto:info@cleanupskg.com" className="flex items-start gap-4 group">
+                <div className="shrink-0 w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+                  <Mail className="h-5 w-5" />
+                </div>
+                <span className="text-foreground text-sm pt-2 group-hover:text-primary transition-colors">info@cleanupskg.com</span>
+              </a>
+              <div className="flex items-start gap-4">
+                <div className="shrink-0 w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+                  <Clock className="h-5 w-5" />
+                </div>
+                <span className="text-foreground text-sm pt-2">Mon - Sat: 8:00 AM - 6:00 PM</span>
+              </div>
             </div>
             <div className="bg-muted rounded-2xl aspect-video flex items-center justify-center">
               <span className="text-muted-foreground text-sm">Map Placeholder</span>

@@ -1,4 +1,7 @@
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
+import TikTokIcon from "@/components/icons/TikTokIcon";
+
+const TIKTOK_URL = "https://www.tiktok.com/@cleanup.skg?_r=1&_t=ZN-93sbKkZERwU";
 
 const Footer = () => (
   <footer className="bg-foreground text-background py-14">
@@ -37,8 +40,8 @@ const Footer = () => (
             <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors">
               <Instagram className="h-5 w-5" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors">
-              <Twitter className="h-5 w-5" />
+            <a href={TIKTOK_URL} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors">
+              <TikTokIcon className="h-5 w-5" />
             </a>
           </div>
         </div>
