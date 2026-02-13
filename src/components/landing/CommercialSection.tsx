@@ -1,5 +1,6 @@
 import { Building, UtensilsCrossed, CookingPot } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import commercialImg from "@/assets/commercial-cleaning.jpg";
 
 const subServices = [
   { icon: Building, title: "Office Cleaning", desc: "Daily or weekly office maintenance including desks, floors, restrooms, and common areas." },
@@ -12,8 +13,8 @@ const CommercialSection = () => (
     <div className="container mx-auto px-4">
       <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
         <div>
-          <div className="bg-muted rounded-2xl aspect-[4/3] flex items-center justify-center">
-            <img src="/placeholder.svg" alt="Commercial cleaning" className="w-40 h-40 opacity-30" />
+          <div className="rounded-2xl aspect-[4/3] overflow-hidden">
+            <img src={commercialImg} alt="Commercial cleaning professional mopping a modern office lobby" className="w-full h-full object-cover" />
           </div>
         </div>
         <div>

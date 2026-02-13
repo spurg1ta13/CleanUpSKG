@@ -1,11 +1,14 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import { Droplets, Wind, GlassWater } from "lucide-react";
+import steamImg from "@/assets/steam-cleaning.jpg";
+import pressureImg from "@/assets/pressure-washing.jpg";
+import windowImg from "@/assets/window-cleaning.jpg";
 
 const items = [
-  { icon: Droplets, title: "Steam Disinfection", desc: "High-temperature steam cleaning that eliminates 99.9% of bacteria and allergens without harsh chemicals. Ideal for kitchens, bathrooms, and healthcare facilities.", img: "/placeholder.svg" },
-  { icon: Wind, title: "Pressure Washing", desc: "Industrial-grade pressure washing for driveways, facades, patios, and parking areas. Restores surfaces to their original condition.", img: "/placeholder.svg" },
-  { icon: GlassWater, title: "Window Cleaning", desc: "Streak-free interior and exterior window cleaning for buildings of any height. Crystal-clear results guaranteed.", img: "/placeholder.svg" },
+  { icon: Droplets, title: "Steam Disinfection", desc: "High-temperature steam cleaning that eliminates 99.9% of bacteria and allergens without harsh chemicals. Ideal for kitchens, bathrooms, and healthcare facilities.", img: steamImg, alt: "Steam cleaning a kitchen surface" },
+  { icon: Wind, title: "Pressure Washing", desc: "Industrial-grade pressure washing for driveways, facades, patios, and parking areas. Restores surfaces to their original condition.", img: pressureImg, alt: "Pressure washing a driveway" },
+  { icon: GlassWater, title: "Window Cleaning", desc: "Streak-free interior and exterior window cleaning for buildings of any height. Crystal-clear results guaranteed.", img: windowImg, alt: "Professional window cleaner on a building" },
 ];
 
 const SpecializedSection = () => (
@@ -23,8 +26,8 @@ const SpecializedSection = () => (
                 <Card className="border-0 shadow-md overflow-hidden">
                   <CardContent className="p-0">
                     <div className="grid md:grid-cols-2">
-                      <div className="bg-muted flex items-center justify-center p-12">
-                        <img src={item.img} alt={item.title} className="w-32 h-32 opacity-40" />
+                      <div className="overflow-hidden">
+                        <img src={item.img} alt={item.alt} className="w-full h-full object-cover min-h-[250px]" />
                       </div>
                       <div className="p-8 flex flex-col justify-center">
                         <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-4">
