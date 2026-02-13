@@ -1,6 +1,9 @@
 import { useState } from "react";
-import { Menu, X, Facebook, Instagram, Twitter } from "lucide-react";
+import { Menu, X, Facebook, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import TikTokIcon from "@/components/icons/TikTokIcon";
+
+const TIKTOK_URL = "https://www.tiktok.com/@cleanup.skg?_r=1&_t=ZN-93sbKkZERwU";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -32,7 +35,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-3">
           <a href="https://facebook.com" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Facebook className="h-4 w-4" /></a>
           <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Instagram className="h-4 w-4" /></a>
-          <a href="https://twitter.com" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Twitter className="h-4 w-4" /></a>
+          <a href={TIKTOK_URL} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><TikTokIcon className="h-4 w-4" /></a>
         </div>
 
         {/* Mobile toggle */}
@@ -52,7 +55,7 @@ const Navbar = () => {
           <div className="flex gap-4 px-6 pt-3">
             <a href="https://facebook.com" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary"><Facebook className="h-5 w-5" /></a>
             <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary"><Instagram className="h-5 w-5" /></a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary"><Twitter className="h-5 w-5" /></a>
+            <a href={TIKTOK_URL} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary"><TikTokIcon className="h-5 w-5" /></a>
           </div>
         </div>
       )}

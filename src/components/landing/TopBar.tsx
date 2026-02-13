@@ -4,13 +4,13 @@ const TopBar = () => (
   <div className="bg-primary text-primary-foreground text-sm py-2">
     <div className="container mx-auto px-4 flex flex-wrap justify-between items-center gap-2">
       <div className="flex items-center gap-6">
-        <a href="tel:+1234567890" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity">
+        <a href="tel:+3069747760587" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity">
           <Phone className="h-3.5 w-3.5" />
-          <span>+1 (234) 567-890</span>
+          <span>+30 697 477 60587</span>
         </a>
-        <a href="mailto:info@cleanpro.com" className="hidden sm:flex items-center gap-1.5 hover:opacity-80 transition-opacity">
+        <a href="mailto:info@cleanupskg.com" className="hidden sm:flex items-center gap-1.5 hover:opacity-80 transition-opacity">
           <Mail className="h-3.5 w-3.5" />
-          <span>info@cleanpro.com</span>
+          <span>info@cleanupskg.com</span>
         </a>
       </div>
       <div className="flex items-center gap-1.5">
