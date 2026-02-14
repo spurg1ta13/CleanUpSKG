@@ -8,12 +8,12 @@ const coverageItems = [
 ];
 
 const pricingItems = [
-  { item: "Armchair", price: "$35" },
-  { item: "2-Seat Sofa", price: "$55" },
-  { item: "3-Seat Sofa", price: "$75" },
-  { item: "Mattress (Single)", price: "$40" },
-  { item: "Mattress (Double)", price: "$55" },
-  { item: "Car Interior", price: "$80" },
+  { item: "Armchair", price: "€35" },
+  { item: "2-Seat Sofa", price: "€55" },
+  { item: "3-Seat Sofa", price: "€75" },
+  { item: "Mattress (Single)", price: "€40" },
+  { item: "Mattress (Double)", price: "€55" },
+  { item: "Car Interior", price: "€80" },
 ];
 
 const BioCleaningSection = () => (

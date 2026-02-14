@@ -114,7 +114,7 @@ const ContactSection = () => {
                 <div className="shrink-0 w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
                   <Clock className="h-5 w-5" />
                 </div>
-                <span className="text-foreground text-sm pt-2">Mon - Sat: 8:00 AM - 6:00 PM</span>
+                <span className="text-foreground text-sm pt-2">Mon - Sat: 8:00 - 18:00</span>
               </div>
             </div>
             <div className="bg-muted rounded-2xl aspect-video flex items-center justify-center">
