@@ -5,21 +5,21 @@ import { Button } from "@/components/ui/button";
 const plans = [
   {
     title: "Residential",
-    price: "$2.50",
+    price: "€2.50",
     unit: "per sq meter",
     features: ["Regular or one-time cleaning", "Kitchen & bathrooms", "Floor mopping & vacuuming", "Dusting all surfaces", "Trash removal"],
     popular: false,
   },
   {
     title: "Commercial",
-    price: "$3.00",
+    price: "€3.00",
     unit: "per sq meter",
     features: ["Daily or weekly schedule", "Office desks & common areas", "Restroom sanitation", "Window & glass cleaning", "Floor maintenance"],
     popular: true,
   },
   {
     title: "Post-Construction",
-    price: "$4.50",
+    price: "€4.50",
     unit: "per sq meter",
     features: ["Full debris removal", "Paint & adhesive cleanup", "Deep floor scrubbing", "Window & fixture polish", "Final inspection included"],
     popular: false,

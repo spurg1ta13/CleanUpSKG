@@ -1,4 +1,4 @@
-import { Facebook, Instagram } from "lucide-react";
+import { Instagram } from "lucide-react";
 import TikTokIcon from "@/components/icons/TikTokIcon";
 
 const TIKTOK_URL = "https://www.tiktok.com/@cleanup.skg?_r=1&_t=ZN-93sbKkZERwU";
@@ -34,10 +34,7 @@ const Footer = () => (
         <div>
           <h4 className="font-semibold mb-4">Follow Us</h4>
           <div className="flex gap-3">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors">
-              <Facebook className="h-5 w-5" />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors">
+            <a href="https://www.instagram.com/cleanup.skg?igsh=MWw4d2U0ZDB4bXJvOQ==" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors">
               <Instagram className="h-5 w-5" />
             </a>
             <a href={TIKTOK_URL} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors">
