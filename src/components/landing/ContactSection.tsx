@@ -6,19 +6,21 @@ import { Label } from "@/components/ui/label";
 import { Phone, Mail, Clock, CheckCircle2 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const ContactSection = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const { t } = useLanguage();
 
   const validate = () => {
     const e: Record<string, string> = {};
-    if (!form.name.trim()) e.name = "Name is required";
-    if (!form.email.trim()) e.email = "Email is required";
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = "Invalid email address";
-    if (!form.message.trim()) e.message = "Message is required";
+    if (!form.name.trim()) e.name = t("contact", "nameRequired");
+    if (!form.email.trim()) e.email = t("contact", "emailRequired");
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = t("contact", "emailInvalid");
+    if (!form.message.trim()) e.message = t("contact", "messageRequired");
     setErrors(e);
     return Object.keys(e).length === 0;
   };
@@ -35,7 +37,7 @@ const ContactSection = () => {
     });
     setLoading(false);
     if (error) {
-      toast.error("Something went wrong. Please try again.");
+      toast.error(t("contact", "error"));
     } else {
       setSuccess(true);
       setForm({ name: "", email: "", phone: "", message: "" });
@@ -51,51 +53,50 @@ const ContactSection = () => {
     <section id="contact" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Get in Touch</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">Request a free quote or ask us anything.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{t("contact", "heading")}</h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">{t("contact", "subtitle")}</p>
         </div>
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div className="bg-background rounded-2xl shadow-md p-8">
             {success ? (
               <div className="flex flex-col items-center justify-center text-center py-12 space-y-4">
                 <CheckCircle2 className="h-16 w-16 text-primary" />
-                <h3 className="text-2xl font-bold text-foreground">Message Sent!</h3>
-                <p className="text-muted-foreground max-w-sm">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                <h3 className="text-2xl font-bold text-foreground">{t("contact", "successTitle")}</h3>
+                <p className="text-muted-foreground max-w-sm">{t("contact", "successDesc")}</p>
                 <Button variant="outline" className="rounded-full mt-4" onClick={() => setSuccess(false)}>
-                  Send Another Message
+                  {t("contact", "sendAnother")}
                 </Button>
               </div>
             ) : (
               <form className="space-y-5" onSubmit={handleSubmit}>
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Full Name *</Label>
-                    <Input id="name" placeholder="John Doe" value={form.name} onChange={(e) => update("name", e.target.value)} className={errors.name ? "border-destructive" : ""} />
+                    <Label htmlFor="name">{t("contact", "name")}</Label>
+                    <Input id="name" placeholder={t("contact", "namePlaceholder")} value={form.name} onChange={(e) => update("name", e.target.value)} className={errors.name ? "border-destructive" : ""} />
                     {errors.name && <p className="text-destructive text-xs">{errors.name}</p>}
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email *</Label>
+                    <Label htmlFor="email">{t("contact", "email")}</Label>
                     <Input id="email" type="email" placeholder="john@example.com" value={form.email} onChange={(e) => update("email", e.target.value)} className={errors.email ? "border-destructive" : ""} />
                     {errors.email && <p className="text-destructive text-xs">{errors.email}</p>}
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="phone">Phone</Label>
-                  <Input id="phone" type="tel" placeholder="+1 (234) 567-890" value={form.phone} onChange={(e) => update("phone", e.target.value)} />
+                  <Label htmlFor="phone">{t("contact", "phone")}</Label>
+                  <Input id="phone" type="tel" placeholder="+30 697 000 0000" value={form.phone} onChange={(e) => update("phone", e.target.value)} />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="message">Message *</Label>
-                  <Textarea id="message" placeholder="Tell us about your cleaning needs..." rows={5} value={form.message} onChange={(e) => update("message", e.target.value)} className={errors.message ? "border-destructive" : ""} />
+                  <Label htmlFor="message">{t("contact", "message")}</Label>
+                  <Textarea id="message" placeholder={t("contact", "messagePlaceholder")} rows={5} value={form.message} onChange={(e) => update("message", e.target.value)} className={errors.message ? "border-destructive" : ""} />
                   {errors.message && <p className="text-destructive text-xs">{errors.message}</p>}
                 </div>
                 <Button type="submit" className="w-full rounded-full" size="lg" disabled={loading}>
-                  {loading ? "Sending..." : "Send Message"}
+                  {loading ? t("contact", "sending") : t("contact", "send")}
                 </Button>
               </form>
             )}
           </div>
 
-          {/* Info + Map */}
           <div className="space-y-8">
             <div className="space-y-5">
               <a href="tel:+3069747760587" className="flex items-start gap-4 group">
@@ -114,11 +115,11 @@ const ContactSection = () => {
                 <div className="shrink-0 w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
                   <Clock className="h-5 w-5" />
                 </div>
-                <span className="text-foreground text-sm pt-2">Mon - Sat: 8:00 - 18:00</span>
+                <span className="text-foreground text-sm pt-2">{t("topbar", "hours")}</span>
               </div>
             </div>
             <div className="bg-muted rounded-2xl aspect-video flex items-center justify-center">
-              <span className="text-muted-foreground text-sm">Map Placeholder</span>
+              <span className="text-muted-foreground text-sm">{t("contact", "mapPlaceholder")}</span>
             </div>
           </div>
         </div>
