@@ -13,6 +13,7 @@ const ContactSection = () => {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [privacyChecked, setPrivacyChecked] = useState(false);
   const { t } = useLanguage();
 
   const validate = () => {
@@ -27,6 +28,7 @@ const ContactSection = () => {
       e.email = t("contact", "emailInvalid");
     }
     if (!form.message.trim()) e.message = t("contact", "messageRequired");
+    if (!privacyChecked) e.privacy = t("contact", "privacyRequired");
     setErrors(e);
     return Object.keys(e).length === 0;
   };
@@ -57,6 +59,7 @@ const ContactSection = () => {
 
       setSuccess(true);
       setForm({ name: "", email: "", phone: "", message: "" });
+      setPrivacyChecked(false);
     }
   };
 
@@ -107,6 +110,22 @@ const ContactSection = () => {
                   <Textarea id="message" placeholder={t("contact", "messagePlaceholder")} rows={5} value={form.message} onChange={(e) => update("message", e.target.value)} maxLength={2000} className={errors.message ? "border-destructive" : ""} />
                   {errors.message && <p className="text-destructive text-xs">{errors.message}</p>}
                 </div>
+                <div className="flex items-start gap-2">
+                  <input
+                    type="checkbox"
+                    id="privacy"
+                    checked={privacyChecked}
+                    onChange={(e) => {
+                      setPrivacyChecked(e.target.checked);
+                      if (errors.privacy) setErrors((prev) => ({ ...prev, privacy: "" }));
+                    }}
+                    className="mt-1 h-4 w-4 rounded border-border accent-primary"
+                  />
+                  <label htmlFor="privacy" className={`text-xs text-muted-foreground ${errors.privacy ? "text-destructive" : ""}`}>
+                    {t("contact", "privacyConsent")}
+                  </label>
+                </div>
+                {errors.privacy && <p className="text-destructive text-xs -mt-2">{errors.privacy}</p>}
                 <Button type="submit" className="w-full rounded-full" size="lg" disabled={loading}>
                   {loading ? t("contact", "sending") : t("contact", "send")}
                 </Button>

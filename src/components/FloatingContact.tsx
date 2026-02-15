@@ -34,6 +34,7 @@ const FloatingContact = () => {
   const [form, setForm] = useState({ name: "", phone: "", message: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [disabled, setDisabled] = useState(false);
+  const [privacyChecked, setPrivacyChecked] = useState(false);
 
   useEffect(() => {
     setDisabled(getSendTimestamps().length >= MAX_SENDS);
@@ -44,6 +45,7 @@ const FloatingContact = () => {
     if (!form.name.trim()) errs.name = t("floatingContact", "nameRequired");
     if (!form.phone.trim()) errs.phone = t("floatingContact", "phoneRequired");
     if (!form.message.trim()) errs.message = t("floatingContact", "messageRequired");
+    if (!privacyChecked) errs.privacy = t("floatingContact", "privacyRequired");
     setErrors(errs);
     return Object.keys(errs).length === 0;
   };
@@ -89,6 +91,7 @@ const FloatingContact = () => {
     setForm({ name: "", phone: "", message: "" });
     setErrors({});
     setOpen(false);
+    setPrivacyChecked(false);
     setDisabled(getSendTimestamps().length >= MAX_SENDS);
   };
 
@@ -166,6 +169,22 @@ const FloatingContact = () => {
               />
               {errors.message && <p className="text-destructive text-xs mt-1">{errors.message}</p>}
             </div>
+            <div className="flex items-start gap-2">
+              <input
+                type="checkbox"
+                id="floating-privacy"
+                checked={privacyChecked}
+                onChange={(e) => {
+                  setPrivacyChecked(e.target.checked);
+                  if (errors.privacy) setErrors((prev) => ({ ...prev, privacy: "" }));
+                }}
+                className="mt-0.5 h-4 w-4 rounded border-border accent-primary"
+              />
+              <label htmlFor="floating-privacy" className={`text-xs text-muted-foreground ${errors.privacy ? "text-destructive" : ""}`}>
+                {t("floatingContact", "privacyConsent")}
+              </label>
+            </div>
+            {errors.privacy && <p className="text-destructive text-xs -mt-1">{errors.privacy}</p>}
             <button
               type="submit"
               disabled={sending}
