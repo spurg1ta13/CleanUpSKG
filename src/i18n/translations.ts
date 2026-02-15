@@ -211,6 +211,12 @@ export const translations = {
     backToBlog: { el: "Πίσω στο Blog", en: "Back to Blog", ru: "Назад к Блогу" },
   },
 
+  // FAQ
+  faq: {
+    heading: { el: "Συχνές Ερωτήσεις", en: "Frequently Asked Questions", ru: "Часто Задаваемые Вопросы" },
+    subtitle: { el: "Βρείτε απαντήσεις στις πιο συχνές ερωτήσεις για τις υπηρεσίες μας.", en: "Find answers to the most common questions about our services.", ru: "Найдите ответы на самые частые вопросы о наших услугах." },
+  },
+
   // Cookies
   cookies: {
     message: {

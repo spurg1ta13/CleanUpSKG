@@ -8,6 +8,7 @@ import CommercialSection from "@/components/landing/CommercialSection";
 import PostConstructionSection from "@/components/landing/PostConstructionSection";
 import BioCleaningSection from "@/components/landing/BioCleaningSection";
 import PricingSection from "@/components/landing/PricingSection";
+import FAQSection from "@/components/landing/FAQSection";
 import ContactSection from "@/components/landing/ContactSection";
 import Footer from "@/components/landing/Footer";
 
@@ -24,6 +25,7 @@ const Index = () => (
       <PostConstructionSection />
       <BioCleaningSection />
       <PricingSection />
+      <FAQSection />
       <ContactSection />
     </main>
     <Footer />
