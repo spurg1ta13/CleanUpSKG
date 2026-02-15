@@ -10,7 +10,9 @@ const ScrollToHash = () => {
       setTimeout(() => {
         const el = document.querySelector(hash);
         if (el) {
-          el.scrollIntoView({ behavior: "smooth" });
+          const navbarHeight = 64; // h-16 = 4rem = 64px
+          const top = el.getBoundingClientRect().top + window.scrollY - navbarHeight;
+          window.scrollTo({ top, behavior: "smooth" });
         }
       }, 100);
     } else {
