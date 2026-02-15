@@ -26,18 +26,28 @@ const FloatingContact = () => {
     if (!validate()) return;
 
     setSending(true);
+
+    // Save to database
     const { error } = await supabase.from("contact_submissions").insert({
       name: form.name.trim(),
       email: "floating-form@noemail.com",
       phone: form.phone.trim(),
       message: form.message.trim(),
     });
+
     setSending(false);
 
     if (error) {
       toast({ title: t("floatingContact", "error"), variant: "destructive" });
       return;
     }
+
+    // Open WhatsApp with pre-filled message to admin
+    const whatsappNumber = "306974776058";
+    const whatsappText = encodeURIComponent(
+      `📋 New Contact Request\n\n👤 Name: ${form.name.trim()}\n📞 Phone: ${form.phone.trim()}\n💬 Message: ${form.message.trim()}`
+    );
+    window.open(`https://wa.me/${whatsappNumber}?text=${whatsappText}`, "_blank");
 
     toast({
       title: t("floatingContact", "successTitle"),
