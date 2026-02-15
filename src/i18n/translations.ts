@@ -32,11 +32,11 @@ export const translations = {
 
   // About
   about: {
-    heading: { el: "Ποιοι Είμαστε — Εταιρεία Καθαρισμού στη Θεσσαλονίκη", en: "Who We Are — Cleaning Company in Thessaloniki", ru: "О Нас — Клининговая Компания в Салониках" },
+    heading: { el: "Ποιοι Είμαστε — Ο Αξιόπιστος Συνεργάτης Καθαρισμού σας στη Θεσσαλονίκη", en: "Who We Are — Your Trusted Cleaning Partner in Thessaloniki", ru: "О Нас — Ваш Надёжный Партнёр по Уборке в Салониках" },
     description: {
-      el: "Η CleanUp SKG είναι μια αφοσιωμένη ομάδα επαγγελματιών καθαρισμού με έδρα την Καλαμαριά Θεσσαλονίκης. Εξυπηρετούμε σπίτια, γραφεία και εργοτάξια σε όλη τη Θεσσαλονίκη, Θέρμη, Πυλαία και Πανόραμα με εξατομικευμένες λύσεις καθαρισμού που ξεπερνούν τις προσδοκίες.",
-      en: "CleanUp SKG is a dedicated team of cleaning professionals based in Kalamaria, Thessaloniki. We serve homes, offices, and construction sites across Thessaloniki, Thermi, Pylaia, and Panorama with tailored cleaning solutions that exceed expectations.",
-      ru: "CleanUp SKG — это команда профессионалов клининга с офисом в Каламарье, Салоники. Мы обслуживаем дома, офисы и строительные объекты по всем Салоникам, Терми, Пилее и Панораме с индивидуальными решениями, превосходящими ожидания.",
+      el: "Η CleanUp SKG είναι μια επαγγελματική ομάδα καθαρισμού με έδρα την Καλαμαριά, αφοσιωμένη στη διατήρηση άψογων χώρων για επιχειρήσεις και κατοικίες. Παρέχουμε εξειδικευμένες λύσεις καθαρισμού για γραφεία, εμπορικούς χώρους, εργοτάξια και σπίτια σε Θεσσαλονίκη, Θέρμη, Πυλαία και Πανόραμα.\n\nΗ δέσμευσή μας είναι απλή: να προσφέρουμε εξατομικευμένες υπηρεσίες υψηλού επιπέδου που ξεπερνούν τις προσδοκίες και σας επιτρέπουν να εστιάσετε σε αυτό που μετράει περισσότερο.",
+      en: "CleanUp SKG is a professional cleaning team based in Kalamaria, dedicated to maintaining pristine environments for businesses and residences alike. We provide expert cleaning solutions for offices, commercial spaces, construction sites, and homes across Thessaloniki, Thermi, Pylaia, and Panorama.\n\nOur commitment is simple: delivering tailored, high-standard services that exceed expectations and let you focus on what matters most.",
+      ru: "CleanUp SKG — это профессиональная клининговая команда из Каламарьи, посвящённая поддержанию безупречной чистоты в коммерческих и жилых помещениях. Мы предоставляем экспертные решения по уборке офисов, коммерческих пространств, строительных объектов и домов по всем Салоникам, Терми, Пилее и Панораме.\n\nНаше обязательство просто: предоставлять индивидуальные услуги высокого стандарта, которые превосходят ожидания и позволяют вам сосредоточиться на самом важном.",
     },
     trusted: { el: "Αξιόπιστοι", en: "Trusted", ru: "Надёжность" },
     trustedDesc: { el: "Αδειοδοτημένες, ασφαλισμένες και ελεγμένες ομάδες καθαρισμού στις οποίες μπορείτε να εμπιστευτείτε τον χώρο σας.", en: "Licensed, insured, and background-checked cleaning teams you can trust with your space.", ru: "Лицензированные, застрахованные и проверенные клининговые бригады, которым вы можете доверить ваше пространство." },

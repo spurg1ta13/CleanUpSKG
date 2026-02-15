@@ -15,7 +15,9 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{t("about", "heading")}</h2>
-          <p className="text-muted-foreground text-lg leading-relaxed">{t("about", "description")}</p>
+          {t("about", "description").split("\n\n").map((para, i) => (
+            <p key={i} className="text-muted-foreground text-lg leading-relaxed mb-4 last:mb-0">{para}</p>
+          ))}
         </div>
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {features.map((f) => (
