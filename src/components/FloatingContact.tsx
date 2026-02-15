@@ -32,6 +32,7 @@ const FloatingContact = () => {
   const [open, setOpen] = useState(false);
   const [sending, setSending] = useState(false);
   const [form, setForm] = useState({ name: "", phone: "", message: "" });
+  const [honeypot, setHoneypot] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [disabled, setDisabled] = useState(false);
   const [privacyChecked, setPrivacyChecked] = useState(false);
@@ -54,6 +55,7 @@ const FloatingContact = () => {
     e.preventDefault();
     if (disabled) return;
     if (!validate()) return;
+    if (honeypot) return; // bot detected
 
     setSending(true);
 
@@ -133,6 +135,7 @@ const FloatingContact = () => {
           </div>
 
           <form onSubmit={handleSubmit} className="p-5 space-y-3">
+            <input type="text" name="website" value={honeypot} onChange={(e) => setHoneypot(e.target.value)} autoComplete="off" tabIndex={-1} aria-hidden="true" className="absolute opacity-0 h-0 w-0 pointer-events-none" />
             <div>
               <input
                 type="text"
