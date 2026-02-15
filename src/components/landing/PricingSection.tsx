@@ -30,7 +30,7 @@ const PricingSection = () => {
               <CardContent className="p-8 text-center">
                 <h3 className="text-xl font-bold text-foreground mb-2">{t("pricing", plan.titleKey)}</h3>
                 <div className="mb-1">
-                  <span className="text-sm font-semibold text-destructive">{t("pricing", "from")}</span>
+                  <span className="text-sm font-semibold text-foreground">{t("pricing", "from")}</span>
                   <br />
                   <span className="text-4xl font-extrabold text-primary">{plan.price}</span>
                 </div>
