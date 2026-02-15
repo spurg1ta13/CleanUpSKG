@@ -30,8 +30,8 @@ const SpecializedSection = () => {
                   <Card className="border-0 shadow-md overflow-hidden">
                     <CardContent className="p-0">
                       <div className="grid md:grid-cols-2">
-                        <div className="overflow-hidden">
-                          <img src={item.img} alt={item.alt} className="w-full h-full object-cover min-h-[250px]" />
+                        <div className="overflow-hidden h-[300px]">
+                          <img src={item.img} alt={item.alt} className="w-full h-full object-cover" />
                         </div>
                         <div className="p-8 flex flex-col justify-center">
                           <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-4">
