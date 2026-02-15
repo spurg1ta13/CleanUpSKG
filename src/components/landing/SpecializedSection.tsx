@@ -34,9 +34,6 @@ const SpecializedSection = () => {
                           <img src={item.img} alt={item.alt} className="w-full h-full object-cover" />
                         </div>
                         <div className="p-8 flex flex-col justify-center">
-                          <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-4">
-                            <item.icon className="h-6 w-6" />
-                          </div>
                           <h3 className="text-xl font-bold text-foreground mb-3">{t("specialized", item.titleKey)}</h3>
                           <p className="text-muted-foreground text-sm leading-relaxed">{t("specialized", item.descKey)}</p>
                         </div>
