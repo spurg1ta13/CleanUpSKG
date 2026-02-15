@@ -18,8 +18,14 @@ const ContactSection = () => {
   const validate = () => {
     const e: Record<string, string> = {};
     if (!form.name.trim()) e.name = t("contact", "nameRequired");
-    if (!form.email.trim()) e.email = t("contact", "emailRequired");
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = t("contact", "emailInvalid");
+    const hasEmail = form.email.trim().length > 0;
+    const hasPhone = form.phone.trim().length > 0;
+    if (!hasEmail && !hasPhone) {
+      e.email = t("contact", "emailOrPhoneRequired");
+      e.phone = t("contact", "emailOrPhoneRequired");
+    } else if (hasEmail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
+      e.email = t("contact", "emailInvalid");
+    }
     if (!form.message.trim()) e.message = t("contact", "messageRequired");
     setErrors(e);
     return Object.keys(e).length === 0;
@@ -93,7 +99,8 @@ const ContactSection = () => {
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="phone">{t("contact", "phone")}</Label>
-                  <Input id="phone" type="tel" placeholder="+30 697 000 0000" value={form.phone} onChange={(e) => update("phone", e.target.value)} />
+                  <Input id="phone" type="tel" placeholder="+30 697 000 0000" value={form.phone} onChange={(e) => update("phone", e.target.value)} className={errors.phone ? "border-destructive" : ""} />
+                  {errors.phone && <p className="text-destructive text-xs">{errors.phone}</p>}
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="message">{t("contact", "message")}</Label>
