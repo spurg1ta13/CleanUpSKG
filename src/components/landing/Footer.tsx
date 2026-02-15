@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
           <div>
             <Link to="/">
-              <img src={logo} alt="CleanUp Cleaning Services" className="h-12 w-auto mb-4" />
+              <img src={logo} alt="CleanUp Cleaning Services" className="h-12 w-auto mb-4 rounded-full bg-background p-1" />
             </Link>
             <p className="text-sm opacity-70 leading-relaxed">{t("footer", "description")}</p>
           </div>
