@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -9,6 +9,28 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { useLanguage } from "@/i18n/LanguageContext";
 
+const STORAGE_KEY = "contact_form_sends";
+const MAX_SENDS = 2;
+const WINDOW_MS = 24 * 60 * 60 * 1000;
+
+const getSendTimestamps = (): number[] => {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return [];
+    const timestamps: number[] = JSON.parse(raw);
+    const now = Date.now();
+    return timestamps.filter((ts) => now - ts < WINDOW_MS);
+  } catch {
+    return [];
+  }
+};
+
+const addSendTimestamp = () => {
+  const timestamps = getSendTimestamps();
+  timestamps.push(Date.now());
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(timestamps));
+};
+
 const ContactSection = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
   const [honeypot, setHoneypot] = useState("");
@@ -16,7 +38,12 @@ const ContactSection = () => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [privacyChecked, setPrivacyChecked] = useState(false);
+  const [rateLimited, setRateLimited] = useState(false);
   const { t } = useLanguage();
+
+  useEffect(() => {
+    setRateLimited(getSendTimestamps().length >= MAX_SENDS);
+  }, [success]);
 
   const validate = () => {
     const e: Record<string, string> = {};
@@ -60,9 +87,11 @@ const ContactSection = () => {
         },
       }).catch(console.error);
 
+      addSendTimestamp();
       setSuccess(true);
       setForm({ name: "", email: "", phone: "", message: "" });
       setPrivacyChecked(false);
+      setRateLimited(getSendTimestamps().length >= MAX_SENDS);
     }
   };
 
@@ -87,14 +116,16 @@ const ContactSection = () => {
         </div>
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div className="bg-background rounded-2xl shadow-md p-8">
-            {success ? (
+            {success || rateLimited ? (
               <div className="flex flex-col items-center justify-center text-center py-12 space-y-4">
                 <CheckCircle2 className="h-16 w-16 text-primary" />
                 <h3 className="text-2xl font-bold text-foreground">{t("contact", "successTitle")}</h3>
                 <p className="text-muted-foreground max-w-sm">{t("contact", "successDesc")}</p>
-                <Button variant="outline" className="rounded-full mt-4" onClick={() => setSuccess(false)}>
-                  {t("contact", "sendAnother")}
-                </Button>
+                {!rateLimited && (
+                  <Button variant="outline" className="rounded-full mt-4" onClick={() => setSuccess(false)}>
+                    {t("contact", "sendAnother")}
+                  </Button>
+                )}
               </div>
             ) : (
               <form className="space-y-5" onSubmit={handleSubmit}>
