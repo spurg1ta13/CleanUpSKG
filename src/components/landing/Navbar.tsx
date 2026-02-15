@@ -38,20 +38,20 @@ const Navbar = () => {
           <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Instagram className="h-4 w-4" /></a>
           <a href={TIKTOK_URL} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><TikTokIcon className="h-4 w-4" /></a>
           <button
-            onClick={() => setLang(lang === "el" ? "en" : "el")}
+            onClick={() => setLang(lang === "el" ? "en" : lang === "en" ? "ru" : "el")}
             className="ml-2 px-2.5 py-1 rounded-md text-xs font-bold border border-border bg-muted hover:bg-accent transition-colors"
           >
-            {lang === "el" ? "EN" : "GR"}
+            {lang === "el" ? "EN" : lang === "en" ? "RU" : "GR"}
           </button>
         </div>
 
         {/* Mobile toggle */}
         <div className="md:hidden flex items-center gap-2">
           <button
-            onClick={() => setLang(lang === "el" ? "en" : "el")}
+            onClick={() => setLang(lang === "el" ? "en" : lang === "en" ? "ru" : "el")}
             className="px-2.5 py-1 rounded-md text-xs font-bold border border-border bg-muted hover:bg-accent transition-colors"
           >
-            {lang === "el" ? "EN" : "GR"}
+            {lang === "el" ? "EN" : lang === "en" ? "RU" : "GR"}
           </button>
           <button className="p-2" onClick={() => setOpen(!open)} aria-label="Toggle menu">
             {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
