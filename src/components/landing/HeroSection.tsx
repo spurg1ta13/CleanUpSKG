@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <section id="home" className="relative overflow-hidden min-h-[70vh] flex items-center">
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Professional cleaning team at work" className="w-full h-full object-cover" />
+        <img src={heroImg} alt="Professional cleaning team providing residential and commercial cleaning services in Thessaloniki" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/40" />
       </div>
       <div className="container mx-auto px-4 relative z-10">
