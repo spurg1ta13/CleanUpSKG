@@ -15,6 +15,7 @@ const Footer = () => {
     { key: "about", href: "/#about" },
     { key: "services", href: "/#services" },
     { key: "pricing", href: "/#pricing" },
+    { key: "faq", href: "/#faq" },
     { key: "blog", href: "/blog" },
     { key: "contact", href: "/#contact" },
   ];

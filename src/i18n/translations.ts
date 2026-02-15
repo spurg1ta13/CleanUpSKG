@@ -7,6 +7,7 @@ export const translations = {
     about: { el: "Σχετικά", en: "About", ru: "О нас" },
     services: { el: "Υπηρεσίες", en: "Services", ru: "Услуги" },
     pricing: { el: "Τιμοκατάλογος", en: "Pricing", ru: "Цены" },
+    faq: { el: "FAQ", en: "FAQ", ru: "FAQ" },
     blog: { el: "Blog", en: "Blog", ru: "Блог" },
     contact: { el: "Επικοινωνία", en: "Contact", ru: "Контакты" },
   },
