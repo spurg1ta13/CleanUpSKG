@@ -1,8 +1,30 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { MessageCircle, X, Send } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+
+const STORAGE_KEY = "floating_contact_sends";
+const MAX_SENDS = 2;
+const WINDOW_MS = 24 * 60 * 60 * 1000; // 24 hours
+
+const getSendTimestamps = (): number[] => {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return [];
+    const timestamps: number[] = JSON.parse(raw);
+    const now = Date.now();
+    return timestamps.filter((ts) => now - ts < WINDOW_MS);
+  } catch {
+    return [];
+  }
+};
+
+const addSendTimestamp = () => {
+  const timestamps = getSendTimestamps();
+  timestamps.push(Date.now());
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(timestamps));
+};
 
 const FloatingContact = () => {
   const { t } = useLanguage();
@@ -11,6 +33,11 @@ const FloatingContact = () => {
   const [sending, setSending] = useState(false);
   const [form, setForm] = useState({ name: "", phone: "", message: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [disabled, setDisabled] = useState(false);
+
+  useEffect(() => {
+    setDisabled(getSendTimestamps().length >= MAX_SENDS);
+  }, [open]);
 
   const validate = () => {
     const errs: Record<string, string> = {};
@@ -23,11 +50,11 @@ const FloatingContact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (disabled) return;
     if (!validate()) return;
 
     setSending(true);
 
-    // Save to database
     const { error } = await supabase.from("contact_submissions").insert({
       name: form.name.trim(),
       email: "floating-form@noemail.com",
@@ -42,7 +69,8 @@ const FloatingContact = () => {
       return;
     }
 
-    // Open WhatsApp with pre-filled message to admin
+    addSendTimestamp();
+
     const whatsappNumber = "306974776058";
     const whatsappText = encodeURIComponent(
       `📋 New Contact Request\n\n👤 Name: ${form.name.trim()}\n📞 Phone: ${form.phone.trim()}\n💬 Message: ${form.message.trim()}`
@@ -56,6 +84,7 @@ const FloatingContact = () => {
     setForm({ name: "", phone: "", message: "" });
     setErrors({});
     setOpen(false);
+    setDisabled(getSendTimestamps().length >= MAX_SENDS);
   };
 
   return (
@@ -64,12 +93,19 @@ const FloatingContact = () => {
       <div className="fixed bottom-6 right-6 z-50 group">
         {!open && (
           <>
-            <div className="absolute bottom-full right-0 mb-2 px-3 py-1.5 bg-foreground text-background text-xs font-medium rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-              {t("floatingContact", "tooltip")}
-            </div>
+            {!disabled && (
+              <div className="absolute bottom-full right-0 mb-2 px-3 py-1.5 bg-foreground text-background text-xs font-medium rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                {t("floatingContact", "tooltip")}
+              </div>
+            )}
             <button
-              onClick={() => setOpen(true)}
-              className="w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-lg hover:shadow-xl hover:scale-105 transition-all flex items-center justify-center"
+              onClick={() => !disabled && setOpen(true)}
+              disabled={disabled}
+              className={`w-14 h-14 rounded-full shadow-lg flex items-center justify-center transition-all ${
+                disabled
+                  ? "bg-muted text-muted-foreground cursor-not-allowed opacity-50"
+                  : "bg-primary text-primary-foreground hover:shadow-xl hover:scale-105"
+              }`}
               aria-label={t("floatingContact", "tooltip")}
             >
               <MessageCircle className="h-6 w-6" />
@@ -79,7 +115,7 @@ const FloatingContact = () => {
       </div>
 
       {/* Form panel */}
-      {open && (
+      {open && !disabled && (
         <div className="fixed bottom-6 right-6 z-50 w-[340px] max-w-[calc(100vw-2rem)] bg-background border border-border rounded-2xl shadow-2xl overflow-hidden animate-in slide-in-from-bottom-4 fade-in duration-200">
           <div className="bg-primary text-primary-foreground px-5 py-4 flex items-center justify-between">
             <span className="font-semibold text-sm">{t("floatingContact", "tooltip")}</span>
@@ -96,6 +132,7 @@ const FloatingContact = () => {
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                 className="w-full px-3 py-2.5 text-sm border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30"
+                required
               />
               {errors.name && <p className="text-destructive text-xs mt-1">{errors.name}</p>}
             </div>
@@ -106,6 +143,7 @@ const FloatingContact = () => {
                 value={form.phone}
                 onChange={(e) => setForm({ ...form, phone: e.target.value })}
                 className="w-full px-3 py-2.5 text-sm border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30"
+                required
               />
               {errors.phone && <p className="text-destructive text-xs mt-1">{errors.phone}</p>}
             </div>
@@ -116,6 +154,7 @@ const FloatingContact = () => {
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 rows={3}
                 className="w-full px-3 py-2.5 text-sm border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 resize-none"
+                required
               />
               {errors.message && <p className="text-destructive text-xs mt-1">{errors.message}</p>}
             </div>
