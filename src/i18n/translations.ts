@@ -187,6 +187,25 @@ export const translations = {
     address: { el: "Αριστείδου 19-21, Καλαμαριά 551 33", en: "Aristidou 19-21, Kalamaria 551 33", ru: "Аристиду 19-21, Каламарья 551 33" },
   },
 
+  // Floating Contact
+  floatingContact: {
+    tooltip: { el: "Επικοινωνήστε μαζί μας", en: "Contact Us", ru: "Свяжитесь с нами" },
+    name: { el: "Ονοματεπώνυμο *", en: "Full Name *", ru: "Полное Имя *" },
+    namePlaceholder: { el: "Γιάννης Παπαδόπουλος", en: "John Doe", ru: "Иван Иванов" },
+    phone: { el: "Τηλέφωνο *", en: "Phone *", ru: "Телефон *" },
+    phonePlaceholder: { el: "+30 69x xxx xxxx", en: "+30 69x xxx xxxx", ru: "+30 69x xxx xxxx" },
+    message: { el: "Μήνυμα *", en: "Message *", ru: "Сообщение *" },
+    messagePlaceholder: { el: "Πείτε μας για τις ανάγκες σας...", en: "Tell us about your needs...", ru: "Расскажите о ваших потребностях..." },
+    send: { el: "Αποστολή", en: "Send", ru: "Отправить" },
+    sending: { el: "Αποστολή...", en: "Sending...", ru: "Отправка..." },
+    successTitle: { el: "Εστάλη!", en: "Sent!", ru: "Отправлено!" },
+    successDesc: { el: "Θα σας απαντήσουμε σύντομα.", en: "We'll get back to you soon.", ru: "Мы скоро свяжемся с вами." },
+    nameRequired: { el: "Το όνομα είναι υποχρεωτικό", en: "Name is required", ru: "Имя обязательно" },
+    phoneRequired: { el: "Το τηλέφωνο είναι υποχρεωτικό", en: "Phone is required", ru: "Телефон обязателен" },
+    messageRequired: { el: "Το μήνυμα είναι υποχρεωτικό", en: "Message is required", ru: "Сообщение обязательно" },
+    error: { el: "Κάτι πήγε στραβά.", en: "Something went wrong.", ru: "Что-то пошло не так." },
+  },
+
   // Footer
   footer: {
     description: {

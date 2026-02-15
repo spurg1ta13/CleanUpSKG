@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/i18n/LanguageContext";
 import ScrollToHash from "@/components/ScrollToHash";
+import FloatingContact from "@/components/FloatingContact";
 import Index from "./pages/Index";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
@@ -20,6 +21,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <CookieBanner />
+        <FloatingContact />
         <BrowserRouter>
           <ScrollToHash />
           <Routes>
