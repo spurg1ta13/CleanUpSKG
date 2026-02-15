@@ -39,6 +39,16 @@ const ContactSection = () => {
     if (error) {
       toast.error(t("contact", "error"));
     } else {
+      // Send email notification (fire-and-forget)
+      supabase.functions.invoke("send-contact-email", {
+        body: {
+          name: form.name.trim(),
+          email: form.email.trim(),
+          phone: form.phone.trim() || null,
+          message: form.message.trim(),
+        },
+      }).catch(console.error);
+
       setSuccess(true);
       setForm({ name: "", email: "", phone: "", message: "" });
     }

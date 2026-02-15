@@ -69,6 +69,11 @@ const FloatingContact = () => {
       return;
     }
 
+    // Send email notification (fire-and-forget)
+    supabase.functions.invoke("send-contact-email", {
+      body: { name: form.name.trim(), phone: form.phone.trim(), message: form.message.trim() },
+    }).catch(console.error);
+
     addSendTimestamp();
 
     const whatsappNumber = "306974776058";
