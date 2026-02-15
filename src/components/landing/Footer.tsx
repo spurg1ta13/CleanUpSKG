@@ -10,12 +10,12 @@ const Footer = () => {
   const { t } = useLanguage();
 
   const navLinks = [
-    { key: "home", href: "#home" },
-    { key: "about", href: "#about" },
-    { key: "services", href: "#services" },
-    { key: "pricing", href: "#pricing" },
-    { key: "blog", href: "/blog", isRoute: true },
-    { key: "contact", href: "#contact" },
+    { key: "home", href: "/#home" },
+    { key: "about", href: "/#about" },
+    { key: "services", href: "/#services" },
+    { key: "pricing", href: "/#pricing" },
+    { key: "blog", href: "/blog" },
+    { key: "contact", href: "/#contact" },
   ];
 
   const serviceLinks = [
@@ -37,11 +37,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm opacity-70">
               {navLinks.map((l) => (
                 <li key={l.key}>
-                  {(l as any).isRoute ? (
-                    <Link to={l.href} className="hover:opacity-100 transition-opacity">{t("nav", l.key)}</Link>
-                  ) : (
-                    <a href={l.href} className="hover:opacity-100 transition-opacity">{t("nav", l.key)}</a>
-                  )}
+                  <Link to={l.href} className="hover:opacity-100 transition-opacity">{t("nav", l.key)}</Link>
                 </li>
               ))}
             </ul>
