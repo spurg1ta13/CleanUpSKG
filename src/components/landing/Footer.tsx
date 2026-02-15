@@ -18,6 +18,7 @@ const Footer = () => {
     { key: "faq", href: "/#faq" },
     { key: "blog", href: "/blog" },
     { key: "contact", href: "/#contact" },
+    { key: "privacy", href: "/privacy-policy" },
   ];
 
   const serviceLinks = [
