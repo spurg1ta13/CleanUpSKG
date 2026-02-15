@@ -142,6 +142,7 @@ export const translations = {
     perSqMeter: { el: "ανά τ.μ.", en: "per sq meter", ru: "за кв. м" },
     mostPopular: { el: "Πιο Δημοφιλές", en: "Most Popular", ru: "Самое Популярное" },
     getQuote: { el: "Ζητήστε Προσφορά", en: "Get Quote", ru: "Запросить" },
+    from: { el: "από", en: "from", ru: "от" },
     residential: { el: "Οικιακός", en: "Residential", ru: "Жилой" },
     commercial: { el: "Εμπορικός", en: "Commercial", ru: "Коммерческий" },
     postConstruction: { el: "Μετακατασκευαστικός", en: "Post-Construction", ru: "Послестроительный" },
