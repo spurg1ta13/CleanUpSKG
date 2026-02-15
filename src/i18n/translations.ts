@@ -171,7 +171,7 @@ export const translations = {
     emailInvalid: { el: "Μη έγκυρη διεύθυνση email", en: "Invalid email address" },
     messageRequired: { el: "Το μήνυμα είναι υποχρεωτικό", en: "Message is required" },
     error: { el: "Κάτι πήγε στραβά. Παρακαλώ δοκιμάστε ξανά.", en: "Something went wrong. Please try again." },
-    mapPlaceholder: { el: "Χάρτης", en: "Map Placeholder" },
+    address: { el: "Αριστείδου 19-21, Καλαμαριά 551 33", en: "Aristidou 19-21, Kalamaria 551 33" },
   },
 
   // Footer
