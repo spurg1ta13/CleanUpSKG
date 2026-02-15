@@ -136,6 +136,7 @@ const FloatingContact = () => {
                 placeholder={t("floatingContact", "namePlaceholder")}
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
+                maxLength={100}
                 className="w-full px-3 py-2.5 text-sm border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30"
               
               />
@@ -147,6 +148,7 @@ const FloatingContact = () => {
                 placeholder={t("floatingContact", "phonePlaceholder")}
                 value={form.phone}
                 onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                maxLength={30}
                 className="w-full px-3 py-2.5 text-sm border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30"
               
               />
@@ -158,6 +160,7 @@ const FloatingContact = () => {
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 rows={3}
+                maxLength={2000}
                 className="w-full px-3 py-2.5 text-sm border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 resize-none"
                 
               />
