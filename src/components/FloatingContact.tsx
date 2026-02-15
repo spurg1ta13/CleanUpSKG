@@ -132,7 +132,7 @@ const FloatingContact = () => {
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                 className="w-full px-3 py-2.5 text-sm border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30"
-                required
+              
               />
               {errors.name && <p className="text-destructive text-xs mt-1">{errors.name}</p>}
             </div>
@@ -143,7 +143,7 @@ const FloatingContact = () => {
                 value={form.phone}
                 onChange={(e) => setForm({ ...form, phone: e.target.value })}
                 className="w-full px-3 py-2.5 text-sm border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30"
-                required
+              
               />
               {errors.phone && <p className="text-destructive text-xs mt-1">{errors.phone}</p>}
             </div>
@@ -154,7 +154,7 @@ const FloatingContact = () => {
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 rows={3}
                 className="w-full px-3 py-2.5 text-sm border border-border rounded-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 resize-none"
-                required
+                
               />
               {errors.message && <p className="text-destructive text-xs mt-1">{errors.message}</p>}
             </div>
