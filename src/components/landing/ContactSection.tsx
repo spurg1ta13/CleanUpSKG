@@ -10,6 +10,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 
 const ContactSection = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
+  const [honeypot, setHoneypot] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -36,6 +37,7 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
+    if (honeypot) return; // bot detected
     setLoading(true);
     const { error } = await supabase.from("contact_submissions").insert({
       name: form.name.trim(),
@@ -88,6 +90,7 @@ const ContactSection = () => {
               </div>
             ) : (
               <form className="space-y-5" onSubmit={handleSubmit}>
+                <input type="text" name="website" value={honeypot} onChange={(e) => setHoneypot(e.target.value)} autoComplete="off" tabIndex={-1} aria-hidden="true" className="absolute opacity-0 h-0 w-0 pointer-events-none" />
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name">{t("contact", "name")}</Label>
