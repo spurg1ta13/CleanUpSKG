@@ -7,6 +7,7 @@ export const translations = {
     about: { el: "Σχετικά", en: "About", ru: "О нас" },
     services: { el: "Υπηρεσίες", en: "Services", ru: "Услуги" },
     pricing: { el: "Τιμοκατάλογος", en: "Pricing", ru: "Цены" },
+    blog: { el: "Blog", en: "Blog", ru: "Блог" },
     contact: { el: "Επικοινωνία", en: "Contact", ru: "Контакты" },
   },
 
@@ -200,5 +201,13 @@ export const translations = {
     bioCleaning: { el: "Βιο-Καθαρισμός", en: "Bio-Cleaning", ru: "Био-Уборка" },
     specializedServices: { el: "Εξειδικευμένες Υπηρεσίες", en: "Specialized Services", ru: "Специализированные Услуги" },
     rights: { el: "Με επιφύλαξη παντός δικαιώματος.", en: "All rights reserved.", ru: "Все права защищены." },
+  },
+
+  // Blog
+  blog: {
+    heading: { el: "Άρθρα & Συμβουλές", en: "Articles & Tips", ru: "Статьи и Советы" },
+    subtitle: { el: "Χρήσιμες πληροφορίες για τον καθαρισμό και τη συντήρηση του χώρου σας.", en: "Useful information about cleaning and maintaining your space.", ru: "Полезная информация об уборке и уходе за вашим пространством." },
+    readMore: { el: "Διαβάστε Περισσότερα", en: "Read More", ru: "Читать Далее" },
+    backToBlog: { el: "Πίσω στο Blog", en: "Back to Blog", ru: "Назад к Блогу" },
   },
 } as const;

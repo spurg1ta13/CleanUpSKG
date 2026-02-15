@@ -1,4 +1,5 @@
 import { Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 import TikTokIcon from "@/components/icons/TikTokIcon";
 import { useLanguage } from "@/i18n/LanguageContext";
 
@@ -13,6 +14,7 @@ const Footer = () => {
     { key: "about", href: "#about" },
     { key: "services", href: "#services" },
     { key: "pricing", href: "#pricing" },
+    { key: "blog", href: "/blog", isRoute: true },
     { key: "contact", href: "#contact" },
   ];
 
@@ -34,7 +36,13 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">{t("footer", "quickLinks")}</h4>
             <ul className="space-y-2 text-sm opacity-70">
               {navLinks.map((l) => (
-                <li key={l.key}><a href={l.href} className="hover:opacity-100 transition-opacity">{t("nav", l.key)}</a></li>
+                <li key={l.key}>
+                  {(l as any).isRoute ? (
+                    <Link to={l.href} className="hover:opacity-100 transition-opacity">{t("nav", l.key)}</Link>
+                  ) : (
+                    <a href={l.href} className="hover:opacity-100 transition-opacity">{t("nav", l.key)}</a>
+                  )}
+                </li>
               ))}
             </ul>
           </div>

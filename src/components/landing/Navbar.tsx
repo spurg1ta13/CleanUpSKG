@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Menu, X, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 import TikTokIcon from "@/components/icons/TikTokIcon";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Lang } from "@/i18n/translations";
@@ -13,6 +14,7 @@ const navKeys = [
   { key: "about", href: "#about" },
   { key: "services", href: "#services" },
   { key: "pricing", href: "#pricing" },
+  { key: "blog", href: "/blog", isRoute: true },
   { key: "contact", href: "#contact" },
 ];
 
@@ -78,11 +80,17 @@ const Navbar = () => {
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
-          {navKeys.map((l) => (
-            <a key={l.href} href={l.href} className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
-              {t("nav", l.key)}
-            </a>
-          ))}
+          {navKeys.map((l) =>
+            (l as any).isRoute ? (
+              <Link key={l.href} to={l.href} className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
+                {t("nav", l.key)}
+              </Link>
+            ) : (
+              <a key={l.href} href={l.href} className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
+                {t("nav", l.key)}
+              </a>
+            )
+          )}
         </div>
 
         <div className="hidden md:flex items-center gap-3">
@@ -103,11 +111,17 @@ const Navbar = () => {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden border-t bg-background pb-4">
-          {navKeys.map((l) => (
-            <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="block px-6 py-3 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-muted transition-colors">
-              {t("nav", l.key)}
-            </a>
-          ))}
+          {navKeys.map((l) =>
+            (l as any).isRoute ? (
+              <Link key={l.href} to={l.href} onClick={() => setOpen(false)} className="block px-6 py-3 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-muted transition-colors">
+                {t("nav", l.key)}
+              </Link>
+            ) : (
+              <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="block px-6 py-3 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-muted transition-colors">
+                {t("nav", l.key)}
+              </a>
+            )
+          )}
           <div className="flex gap-4 px-6 pt-3">
             <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary"><Instagram className="h-5 w-5" /></a>
             <a href={TIKTOK_URL} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary"><TikTokIcon className="h-5 w-5" /></a>
