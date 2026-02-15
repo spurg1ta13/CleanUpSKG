@@ -114,7 +114,7 @@ const FAQSection = () => {
           </p>
         </div>
         <div className="max-w-3xl mx-auto">
-          <Accordion type="single" collapsible className="space-y-3">
+          <Accordion type="multiple" defaultValue={faqData.map((_, i) => `faq-${i}`)} className="space-y-3">
             {faqData.map((item, i) => (
               <AccordionItem
                 key={i}
