@@ -69,6 +69,13 @@ const ContactSection = () => {
   const update = (field: string, value: string) => {
     setForm((f) => ({ ...f, [field]: value }));
     if (errors[field]) setErrors((e) => ({ ...e, [field]: "" }));
+    // Clear cross-field "email or phone required" errors
+    if (field === "phone" && value.trim() && errors.email) {
+      setErrors((e) => ({ ...e, email: "" }));
+    }
+    if (field === "email" && value.trim() && errors.phone) {
+      setErrors((e) => ({ ...e, phone: "" }));
+    }
   };
 
   return (
