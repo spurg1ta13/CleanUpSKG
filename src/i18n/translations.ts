@@ -168,7 +168,7 @@ export const translations = {
   // Contact
   contact: {
     heading: { el: "Επικοινωνήστε μαζί μας — Δωρεάν Εκτίμηση Καθαρισμού", en: "Get in Touch — Free Cleaning Estimate", ru: "Свяжитесь с Нами — Бесплатная Оценка Уборки" },
-    subtitle: { el: "Ζητήστε δωρεάν εκτίμηση για καθαρισμό σπιτιού, γραφείου ή εργοταξίου στη Θεσσαλονίκη.", en: "Request a free estimate for home, office, or construction site cleaning in Thessaloniki.", ru: "Запросите бесплатную оценку уборки дома, офиса или строительного объекта в Салониках." },
+    subtitle: { el: "Ζητήστε δωρεάν εκτίμηση για καθαρισμό σπιτιού, γραφείου ή εργοταξίου.", en: "Request a free estimate for home, office, or construction site cleaning.", ru: "Запросите бесплатную оценку уборки дома, офиса или строительного объекта." },
     name: { el: "Ονοματεπώνυμο *", en: "Full Name *", ru: "Полное Имя *" },
     namePlaceholder: { el: "Γιάννης Παπαδόπουλος", en: "John Doe", ru: "Иван Иванов" },
     email: { el: "Email", en: "Email", ru: "Email" },
