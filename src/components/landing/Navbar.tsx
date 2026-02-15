@@ -3,7 +3,7 @@ import { Menu, X, Instagram } from "lucide-react";
 import TikTokIcon from "@/components/icons/TikTokIcon";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Lang } from "@/i18n/translations";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.png";
 
 const TIKTOK_URL = "https://www.tiktok.com/@cleanup.skg?_r=1&_t=ZN-93sbKkZERwU";
 const INSTAGRAM_URL = "https://www.instagram.com/cleanup.skg?igsh=MWw4d2U0ZDB4bXJvOQ==";
