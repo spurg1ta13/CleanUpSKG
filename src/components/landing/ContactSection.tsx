@@ -32,7 +32,8 @@ const addSendTimestamp = () => {
 };
 
 const ContactSection = () => {
-  const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "", message: "", sqm: "" });
+  const [propertyTypes, setPropertyTypes] = useState<string[]>([]);
   const [honeypot, setHoneypot] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(false);
@@ -67,11 +68,15 @@ const ContactSection = () => {
     if (!validate()) return;
     if (honeypot) return; // bot detected
     setLoading(true);
+    const propertyInfo = propertyTypes.length > 0 ? `\nProperty: ${propertyTypes.join(", ")}` : "";
+    const sqmInfo = form.sqm.trim() ? `\nSq. m.: ${form.sqm.trim()}` : "";
+    const fullMessage = form.message.trim() + propertyInfo + sqmInfo;
+
     const { error } = await supabase.from("contact_submissions").insert({
       name: form.name.trim(),
       email: form.email.trim(),
       phone: form.phone.trim() || null,
-      message: form.message.trim(),
+      message: fullMessage,
     });
     setLoading(false);
     if (error) {
@@ -83,13 +88,14 @@ const ContactSection = () => {
           name: form.name.trim(),
           email: form.email.trim(),
           phone: form.phone.trim() || null,
-          message: form.message.trim(),
+          message: fullMessage,
         },
       }).catch(console.error);
 
       addSendTimestamp();
       setSuccess(true);
-      setForm({ name: "", email: "", phone: "", message: "" });
+      setForm({ name: "", email: "", phone: "", message: "", sqm: "" });
+      setPropertyTypes([]);
       setPrivacyChecked(false);
       setRateLimited(getSendTimestamps().length >= MAX_SENDS);
     }
@@ -146,6 +152,30 @@ const ContactSection = () => {
                   <Label htmlFor="phone">{t("contact", "phone")}</Label>
                   <Input id="phone" type="tel" placeholder="+30 697 000 0000" value={form.phone} onChange={(e) => update("phone", e.target.value)} maxLength={30} className={errors.phone ? "border-destructive" : ""} />
                   {errors.phone && <p className="text-destructive text-xs">{errors.phone}</p>}
+                </div>
+                <div className="space-y-2">
+                  <Label>{t("contact", "propertyType")}</Label>
+                  <div className="grid grid-cols-2 gap-2">
+                    {(["house", "apartment", "commercial", "construction"] as const).map((type) => (
+                      <label key={type} className="flex items-center gap-2 cursor-pointer text-sm text-foreground">
+                        <input
+                          type="checkbox"
+                          checked={propertyTypes.includes(type)}
+                          onChange={(e) => {
+                            setPropertyTypes((prev) =>
+                              e.target.checked ? [...prev, type] : prev.filter((t) => t !== type)
+                            );
+                          }}
+                          className="h-4 w-4 rounded border-border accent-primary"
+                        />
+                        {t("contact", type)}
+                      </label>
+                    ))}
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="sqm">{t("contact", "sqm")}</Label>
+                  <Input id="sqm" type="text" placeholder={t("contact", "sqmPlaceholder")} value={form.sqm} onChange={(e) => update("sqm", e.target.value)} maxLength={10} />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="message">{t("contact", "message")}</Label>
