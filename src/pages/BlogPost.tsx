@@ -3,6 +3,7 @@ import { ArrowLeft, Calendar } from "lucide-react";
 import TopBar from "@/components/landing/TopBar";
 import Navbar from "@/components/landing/Navbar";
 import Footer from "@/components/landing/Footer";
+import SEOHead from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { blogArticles } from "@/data/blogArticles";
 
@@ -76,26 +77,48 @@ const BlogPost = () => {
     datePublished: article.date,
     author: { "@type": "Organization", name: "CleanUp Cleaning Services" },
     publisher: { "@type": "Organization", name: "CleanUp Cleaning Services" },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://cleanupskg.com/blog/${article.slug}`,
+    },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: lang === "el" ? "Αρχική" : lang === "ru" ? "Главная" : "Home", item: "https://cleanupskg.com/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://cleanupskg.com/blog" },
+      { "@type": "ListItem", position: 3, name: article.title[lang], item: `https://cleanupskg.com/blog/${article.slug}` },
+    ],
   };
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title={`${article.title[lang]} | CleanUp`}
+        description={article.excerpt[lang]}
+        path={`/blog/${article.slug}`}
+        type="article"
+        jsonLd={jsonLd}
+      />
       <TopBar />
       <Navbar />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
       <main className="flex-1">
         <article className="py-12 md:py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
-              <Link
-                to="/blog"
-                className="inline-flex items-center gap-1.5 text-primary font-medium text-sm mb-8 hover:underline"
-              >
-                <ArrowLeft className="h-4 w-4" /> {t("blog", "backToBlog")}
-              </Link>
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+              />
+              <nav aria-label="Breadcrumb" className="text-sm text-muted-foreground mb-6 flex items-center gap-1.5">
+                <Link to="/" className="hover:text-primary transition-colors">{lang === "el" ? "Αρχική" : lang === "ru" ? "Главная" : "Home"}</Link>
+                <span>/</span>
+                <Link to="/blog" className="hover:text-primary transition-colors">Blog</Link>
+                <span>/</span>
+                <span className="text-foreground font-medium truncate">{article.title[lang]}</span>
+              </nav>
 
               <div className="flex items-center gap-2 text-muted-foreground text-sm mb-4">
                 <Calendar className="h-4 w-4" />
