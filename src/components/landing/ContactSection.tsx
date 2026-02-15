@@ -88,23 +88,23 @@ const ContactSection = () => {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name">{t("contact", "name")}</Label>
-                    <Input id="name" placeholder={t("contact", "namePlaceholder")} value={form.name} onChange={(e) => update("name", e.target.value)} className={errors.name ? "border-destructive" : ""} />
+                    <Input id="name" placeholder={t("contact", "namePlaceholder")} value={form.name} onChange={(e) => update("name", e.target.value)} maxLength={100} className={errors.name ? "border-destructive" : ""} />
                     {errors.name && <p className="text-destructive text-xs">{errors.name}</p>}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">{t("contact", "email")}</Label>
-                    <Input id="email" type="email" placeholder="john@example.com" value={form.email} onChange={(e) => update("email", e.target.value)} className={errors.email ? "border-destructive" : ""} />
+                    <Input id="email" type="email" placeholder="john@example.com" value={form.email} onChange={(e) => update("email", e.target.value)} maxLength={255} className={errors.email ? "border-destructive" : ""} />
                     {errors.email && <p className="text-destructive text-xs">{errors.email}</p>}
                   </div>
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="phone">{t("contact", "phone")}</Label>
-                  <Input id="phone" type="tel" placeholder="+30 697 000 0000" value={form.phone} onChange={(e) => update("phone", e.target.value)} className={errors.phone ? "border-destructive" : ""} />
+                  <Input id="phone" type="tel" placeholder="+30 697 000 0000" value={form.phone} onChange={(e) => update("phone", e.target.value)} maxLength={30} className={errors.phone ? "border-destructive" : ""} />
                   {errors.phone && <p className="text-destructive text-xs">{errors.phone}</p>}
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="message">{t("contact", "message")}</Label>
-                  <Textarea id="message" placeholder={t("contact", "messagePlaceholder")} rows={5} value={form.message} onChange={(e) => update("message", e.target.value)} className={errors.message ? "border-destructive" : ""} />
+                  <Textarea id="message" placeholder={t("contact", "messagePlaceholder")} rows={5} value={form.message} onChange={(e) => update("message", e.target.value)} maxLength={2000} className={errors.message ? "border-destructive" : ""} />
                   {errors.message && <p className="text-destructive text-xs">{errors.message}</p>}
                 </div>
                 <Button type="submit" className="w-full rounded-full" size="lg" disabled={loading}>
