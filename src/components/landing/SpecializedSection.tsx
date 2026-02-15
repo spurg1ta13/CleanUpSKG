@@ -10,9 +10,9 @@ const SpecializedSection = () => {
   const { t } = useLanguage();
 
   const items = [
-    { icon: Droplets, titleKey: "steam", descKey: "steamDesc", img: steamImg, alt: "Steam cleaning a kitchen surface" },
-    { icon: Wind, titleKey: "pressure", descKey: "pressureDesc", img: pressureImg, alt: "Pressure washing a driveway" },
-    { icon: GlassWater, titleKey: "window", descKey: "windowDesc", img: windowImg, alt: "Professional window cleaner on a building" },
+    { icon: Droplets, titleKey: "steam", descKey: "steamDesc", img: steamImg, alt: "Professional steam disinfection and deep cleaning service eliminating bacteria" },
+    { icon: Wind, titleKey: "pressure", descKey: "pressureDesc", img: pressureImg, alt: "High-pressure washing service for driveways, patios and building exteriors" },
+    { icon: GlassWater, titleKey: "window", descKey: "windowDesc", img: windowImg, alt: "Professional window cleaning service for residential and commercial buildings" },
   ];
 
   return (

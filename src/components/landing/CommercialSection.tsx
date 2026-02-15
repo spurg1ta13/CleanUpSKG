@@ -18,7 +18,7 @@ const CommercialSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div>
             <div className="rounded-2xl h-[300px] overflow-hidden">
-              <img src={commercialImg} alt="Commercial cleaning professional mopping a modern office lobby" className="w-full h-full object-cover" />
+              <img src={commercialImg} alt="Professional commercial cleaning service for offices, restaurants and kitchens in Thessaloniki" className="w-full h-full object-cover" />
             </div>
           </div>
           <div>

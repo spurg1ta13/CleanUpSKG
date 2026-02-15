@@ -73,7 +73,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b">
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
         <a href="#home" className="flex items-center">
-          <img src={logo} alt="CleanUp Cleaning Services" className="h-12 w-auto" />
+          <img src={logo} alt="CleanUp Cleaning Services - Professional cleaning company in Thessaloniki" className="h-12 w-auto" />
         </a>
 
         {/* Desktop */}
