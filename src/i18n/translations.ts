@@ -20,43 +20,43 @@ export const translations = {
   // Hero
   hero: {
     title1: { el: "Επαγγελματικές", en: "Professional", ru: "Профессиональные" },
-    title2: { el: "Υπηρεσίες Καθαρισμού", en: "Cleaning Services", ru: "Клининговые Услуги" },
+    title2: { el: "Υπηρεσίες Καθαρισμού στη Θεσσαλονίκη", en: "Cleaning Services in Thessaloniki", ru: "Клининговые Услуги в Салониках" },
     subtitle: {
-      el: "Ολοκληρωμένες λύσεις καθαρισμού για σπίτια, επιχειρήσεις και μετά την κατασκευή. Παραδίδουμε άψογα αποτελέσματα με προσοχή σε κάθε λεπτομέρεια.",
-      en: "Comprehensive cleaning solutions for homes, businesses, and post-construction sites. We deliver spotless results with attention to every detail.",
-      ru: "Комплексные клининговые решения для домов, офисов и послестроительных объектов. Мы обеспечиваем безупречный результат с вниманием к каждой детали.",
+      el: "Ολοκληρωμένες λύσεις καθαρισμού για σπίτια, επιχειρήσεις και εργοτάξια στη Θεσσαλονίκη και Καλαμαριά. Οικιακός, εμπορικός και μετακατασκευαστικός καθαρισμός με εγγυημένα αποτελέσματα.",
+      en: "Comprehensive cleaning solutions for homes, businesses, and construction sites across Thessaloniki and Kalamaria. Residential, commercial, and post-construction cleaning with guaranteed results.",
+      ru: "Комплексные решения по уборке домов, офисов и строительных объектов в Салониках и Каламарье. Жилая, коммерческая и послестроительная уборка с гарантированным результатом.",
     },
-    cta: { el: "Δωρεάν Προσφορά", en: "Get a Free Quote", ru: "Бесплатная Оценка" },
+    cta: { el: "Δωρεάν Εκτίμηση", en: "Get a Free Estimate", ru: "Бесплатная Оценка" },
   },
 
   // About
   about: {
-    heading: { el: "Ποιοι Είμαστε", en: "Who We Are", ru: "О Нас" },
+    heading: { el: "Ποιοι Είμαστε — Εταιρεία Καθαρισμού στη Θεσσαλονίκη", en: "Who We Are — Cleaning Company in Thessaloniki", ru: "О Нас — Клининговая Компания в Салониках" },
     description: {
-      el: "Η CleanPro είναι μια αφοσιωμένη ομάδα επαγγελματιών καθαρισμού που δεσμεύεται να μεταμορφώνει χώρους. Με χρόνια εμπειρίας, παρέχουμε εξατομικευμένες λύσεις καθαρισμού που ξεπερνούν τις προσδοκίες — από μικρά διαμερίσματα έως μεγάλους εμπορικούς χώρους.",
-      en: "CleanPro is a dedicated team of cleaning professionals committed to transforming spaces. With years of experience, we deliver tailored cleaning solutions that exceed expectations — from cozy apartments to large commercial venues.",
-      ru: "CleanPro — это команда профессионалов клининга, которая преобразует пространства. Благодаря многолетнему опыту, мы предоставляем индивидуальные решения по уборке, превосходящие ожидания — от уютных квартир до крупных коммерческих объектов.",
+      el: "Η CleanUp SKG είναι μια αφοσιωμένη ομάδα επαγγελματιών καθαρισμού με έδρα την Καλαμαριά Θεσσαλονίκης. Εξυπηρετούμε σπίτια, γραφεία και εργοτάξια σε όλη τη Θεσσαλονίκη, Θέρμη, Πυλαία και Πανόραμα με εξατομικευμένες λύσεις καθαρισμού που ξεπερνούν τις προσδοκίες.",
+      en: "CleanUp SKG is a dedicated team of cleaning professionals based in Kalamaria, Thessaloniki. We serve homes, offices, and construction sites across Thessaloniki, Thermi, Pylaia, and Panorama with tailored cleaning solutions that exceed expectations.",
+      ru: "CleanUp SKG — это команда профессионалов клининга с офисом в Каламарье, Салоники. Мы обслуживаем дома, офисы и строительные объекты по всем Салоникам, Терми, Пилее и Панораме с индивидуальными решениями, превосходящими ожидания.",
     },
     trusted: { el: "Αξιόπιστοι", en: "Trusted", ru: "Надёжность" },
-    trustedDesc: { el: "Αδειοδοτημένες, ασφαλισμένες και ελεγμένες ομάδες στις οποίες μπορείτε να εμπιστευτείτε.", en: "Licensed, insured, and background-checked teams you can rely on.", ru: "Лицензированные, застрахованные и проверенные команды, которым вы можете доверять." },
+    trustedDesc: { el: "Αδειοδοτημένες, ασφαλισμένες και ελεγμένες ομάδες καθαρισμού στις οποίες μπορείτε να εμπιστευτείτε τον χώρο σας.", en: "Licensed, insured, and background-checked cleaning teams you can trust with your space.", ru: "Лицензированные, застрахованные и проверенные клининговые бригады, которым вы можете доверить ваше пространство." },
     quality: { el: "Ποιότητα", en: "Quality", ru: "Качество" },
-    qualityDesc: { el: "Χρησιμοποιούμε επαγγελματικά προϊόντα και δοκιμασμένες τεχνικές.", en: "We use professional-grade products and proven techniques.", ru: "Мы используем профессиональные средства и проверенные методы." },
+    qualityDesc: { el: "Χρησιμοποιούμε επαγγελματικά προϊόντα καθαρισμού και δοκιμασμένες τεχνικές για κάθε τύπο χώρου.", en: "We use professional-grade cleaning products and proven techniques for every type of space.", ru: "Мы используем профессиональные средства для уборки и проверенные методы для любого типа помещения." },
     care: { el: "Φροντίδα", en: "Care", ru: "Забота" },
-    careDesc: { el: "Κάθε χώρος αντιμετωπίζεται με προσοχή στη λεπτομέρεια και σεβασμό.", en: "Every space is treated with attention to detail and respect.", ru: "Каждое пространство обрабатывается с вниманием к деталям и уважением." },
+    careDesc: { el: "Κάθε σπίτι και γραφείο αντιμετωπίζεται με προσοχή στη λεπτομέρεια, σεβασμό και υπευθυνότητα.", en: "Every home and office is treated with attention to detail, respect, and accountability.", ru: "Каждый дом и офис обрабатывается с вниманием к деталям, уважением и ответственностью." },
   },
 
   // Services
   services: {
-    heading: { el: "Οι Υπηρεσίες μας", en: "Our Services", ru: "Наши Услуги" },
-    subtitle: { el: "Ολοκληρωμένες λύσεις καθαρισμού για κάθε ανάγκη.", en: "Comprehensive cleaning solutions tailored to every need.", ru: "Комплексные клининговые решения для любых потребностей." },
+    heading: { el: "Υπηρεσίες Καθαρισμού στη Θεσσαλονίκη", en: "Cleaning Services in Thessaloniki", ru: "Услуги Уборки в Салониках" },
+    subtitle: { el: "Ολοκληρωμένες λύσεις καθαρισμού για οικίες, επιχειρήσεις και εργοτάξια σε Θεσσαλονίκη και περίχωρα.", en: "Comprehensive cleaning solutions for homes, businesses, and construction sites in Thessaloniki and surrounding areas.", ru: "Комплексные решения по уборке для домов, офисов и строительных объектов в Салониках и окрестностях." },
     residential: { el: "Οικιακός Καθαρισμός", en: "Residential Cleaning", ru: "Уборка Жилых Помещений" },
-    residentialDesc: { el: "Τακτικός και βαθύς καθαρισμός για σπίτια και διαμερίσματα. Προσαρμοσμένος στο πρόγραμμά σας.", en: "Regular and deep cleaning for homes, apartments, and condos. Customized to your schedule.", ru: "Регулярная и генеральная уборка домов и квартир. Подстраиваемся под ваш график." },
-    postConstruction: { el: "Μετακατασκευαστικός", en: "Post-Construction", ru: "Послестроительная" },
-    postConstructionDesc: { el: "Πλήρης απομάκρυνση μπαζών και γυάλισμα μετά από ανακαινίσεις ή νέες κατασκευές.", en: "Thorough debris removal and polishing after renovations or new builds.", ru: "Полное удаление строительного мусора и полировка после ремонта или нового строительства." },
+    residentialDesc: { el: "Τακτικός και βαθύς καθαρισμός σπιτιού — διαμερίσματα, μονοκατοικίες και μεζονέτες στη Θεσσαλονίκη. Προσαρμοσμένος στο πρόγραμμά σας.", en: "Regular and deep home cleaning — apartments, houses, and maisonettes in Thessaloniki. Customized to your schedule.", ru: "Регулярная и генеральная уборка — квартиры, дома и мезонеты в Салониках. Подстраиваемся под ваш график." },
+    postConstruction: { el: "Μετακατασκευαστικός Καθαρισμός", en: "Post-Construction Cleaning", ru: "Послестроительная Уборка" },
+    postConstructionDesc: { el: "Πλήρης απομάκρυνση μπαζών, σκόνης κατασκευής και γυάλισμα μετά από ανακαινίσεις ή νέες οικοδομές.", en: "Thorough debris removal, construction dust cleanup, and polishing after renovations or new builds.", ru: "Полное удаление мусора, строительной пыли и полировка после ремонта или нового строительства." },
     commercial: { el: "Εμπορικός Καθαρισμός", en: "Commercial Cleaning", ru: "Коммерческая Уборка" },
-    commercialDesc: { el: "Γραφεία, εμπορικοί χώροι και εταιρικές εγκαταστάσεις πάντα καθαρά.", en: "Offices, retail spaces, and corporate facilities kept impeccably clean.", ru: "Офисы, торговые помещения и корпоративные объекты всегда в безупречной чистоте." },
-    specialized: { el: "Εξειδικευμένες Υπηρεσίες", en: "Specialized Services", ru: "Специализированные Услуги" },
-    specializedDesc: { el: "Απολύμανση με ατμό, πλύσιμο υπό πίεση, καθαρισμός παραθύρων και πολλά άλλα.", en: "Steam disinfection, pressure washing, window cleaning, and more.", ru: "Паровая дезинфекция, мойка под давлением, мытьё окон и многое другое." },
+    commercialDesc: { el: "Καθαρισμός γραφείων, καταστημάτων, εστιατορίων και εταιρικών χώρων στη Θεσσαλονίκη — πάντα πεντακάθαρα.", en: "Cleaning for offices, shops, restaurants, and corporate spaces in Thessaloniki — always impeccably clean.", ru: "Уборка офисов, магазинов, ресторанов и корпоративных помещений в Салониках — всегда безупречная чистота." },
+    specialized: { el: "Εξειδικευμένες Υπηρεσίες Καθαρισμού", en: "Specialized Cleaning Services", ru: "Специализированные Услуги Уборки" },
+    specializedDesc: { el: "Απολύμανση με ατμό, πλύσιμο υπό πίεση, καθαρισμός παραθύρων, βιο-καθαρισμός χαλιών και καναπέδων.", en: "Steam disinfection, pressure washing, window cleaning, bio-cleaning of carpets and upholstery.", ru: "Паровая дезинфекция, мойка под давлением, мытьё окон, био-уборка ковров и мягкой мебели." },
   },
 
   // Specialized
@@ -138,8 +138,8 @@ export const translations = {
 
   // Pricing
   pricing: {
-    heading: { el: "Διαφανής Τιμολόγηση", en: "Transparent Pricing", ru: "Прозрачные Цены" },
-    subtitle: { el: "Ξεκάθαρες, ανταγωνιστικές τιμές χωρίς κρυφές χρεώσεις.", en: "Clear, competitive rates with no hidden fees.", ru: "Понятные, конкурентные цены без скрытых сборов." },
+    heading: { el: "Τιμές Καθαρισμού — Διαφανής Τιμολόγηση", en: "Cleaning Prices — Transparent Pricing", ru: "Цены на Уборку — Прозрачное Ценообразование" },
+    subtitle: { el: "Ξεκάθαρες, ανταγωνιστικές τιμές καθαρισμού χωρίς κρυφές χρεώσεις στη Θεσσαλονίκη.", en: "Clear, competitive cleaning prices with no hidden fees in Thessaloniki.", ru: "Понятные, конкурентные цены на уборку без скрытых сборов в Салониках." },
     perSqMeter: { el: "ανά τ.μ.", en: "per sq meter", ru: "за кв. м" },
     mostPopular: { el: "Πιο Δημοφιλές", en: "Most Popular", ru: "Самое Популярное" },
     getQuote: { el: "Ζητήστε Προσφορά", en: "Get Quote", ru: "Запросить" },
@@ -166,8 +166,8 @@ export const translations = {
 
   // Contact
   contact: {
-    heading: { el: "Επικοινωνήστε μαζί μας", en: "Get in Touch", ru: "Свяжитесь с Нами" },
-    subtitle: { el: "Ζητήστε δωρεάν προσφορά ή ρωτήστε μας οτιδήποτε.", en: "Request a free quote or ask us anything.", ru: "Запросите бесплатную оценку или задайте любой вопрос." },
+    heading: { el: "Επικοινωνήστε μαζί μας — Δωρεάν Εκτίμηση Καθαρισμού", en: "Get in Touch — Free Cleaning Estimate", ru: "Свяжитесь с Нами — Бесплатная Оценка Уборки" },
+    subtitle: { el: "Ζητήστε δωρεάν εκτίμηση για καθαρισμό σπιτιού, γραφείου ή εργοταξίου στη Θεσσαλονίκη.", en: "Request a free estimate for home, office, or construction site cleaning in Thessaloniki.", ru: "Запросите бесплатную оценку уборки дома, офиса или строительного объекта в Салониках." },
     name: { el: "Ονοματεπώνυμο *", en: "Full Name *", ru: "Полное Имя *" },
     namePlaceholder: { el: "Γιάννης Παπαδόπουλος", en: "John Doe", ru: "Иван Иванов" },
     email: { el: "Email", en: "Email", ru: "Email" },
@@ -209,9 +209,9 @@ export const translations = {
   // Footer
   footer: {
     description: {
-      el: "Επαγγελματικές υπηρεσίες καθαρισμού για σπίτια, επιχειρήσεις και εργοτάξια. Ποιότητα που μπορείτε να εμπιστευτείτε.",
-      en: "Professional cleaning services for homes, businesses, and construction sites. Quality you can trust.",
-      ru: "Профессиональные клининговые услуги для домов, офисов и строительных объектов. Качество, которому можно доверять.",
+      el: "CleanUp SKG — Επαγγελματικές υπηρεσίες καθαρισμού σπιτιών, γραφείων και εργοταξίων στη Θεσσαλονίκη και Καλαμαριά. Ποιότητα και αξιοπιστία που εμπιστεύεστε.",
+      en: "CleanUp SKG — Professional cleaning services for homes, offices, and construction sites in Thessaloniki and Kalamaria. Quality and reliability you can trust.",
+      ru: "CleanUp SKG — Профессиональные клининговые услуги для домов, офисов и строительных объектов в Салониках и Каламарье. Качество и надёжность, которым доверяют.",
     },
     quickLinks: { el: "Γρήγοροι Σύνδεσμοι", en: "Quick Links", ru: "Быстрые Ссылки" },
     servicesTitle: { el: "Υπηρεσίες", en: "Services", ru: "Услуги" },
@@ -226,16 +226,16 @@ export const translations = {
 
   // Blog
   blog: {
-    heading: { el: "Άρθρα & Συμβουλές", en: "Articles & Tips", ru: "Статьи и Советы" },
-    subtitle: { el: "Χρήσιμες πληροφορίες για τον καθαρισμό και τη συντήρηση του χώρου σας.", en: "Useful information about cleaning and maintaining your space.", ru: "Полезная информация об уборке и уходе за вашим пространством." },
+    heading: { el: "Άρθρα & Συμβουλές Καθαρισμού", en: "Cleaning Articles & Tips", ru: "Статьи и Советы по Уборке" },
+    subtitle: { el: "Χρήσιμες πληροφορίες για τον καθαρισμό σπιτιού, γραφείου και τη συντήρηση του χώρου σας στη Θεσσαλονίκη.", en: "Useful tips about home and office cleaning, maintenance, and hygiene in Thessaloniki.", ru: "Полезная информация об уборке дома и офиса, уходе и гигиене в Салониках." },
     readMore: { el: "Διαβάστε Περισσότερα", en: "Read More", ru: "Читать Далее" },
     backToBlog: { el: "Πίσω στο Blog", en: "Back to Blog", ru: "Назад к Блогу" },
   },
 
   // FAQ
   faq: {
-    heading: { el: "Συχνές Ερωτήσεις", en: "Frequently Asked Questions", ru: "Часто Задаваемые Вопросы" },
-    subtitle: { el: "Βρείτε απαντήσεις στις πιο συχνές ερωτήσεις για τις υπηρεσίες μας.", en: "Find answers to the most common questions about our services.", ru: "Найдите ответы на самые частые вопросы о наших услугах." },
+    heading: { el: "Συχνές Ερωτήσεις για τον Καθαρισμό", en: "Frequently Asked Cleaning Questions", ru: "Часто Задаваемые Вопросы об Уборке" },
+    subtitle: { el: "Βρείτε απαντήσεις για τιμές, υπηρεσίες καθαρισμού και προγραμματισμό στη Θεσσαλονίκη.", en: "Find answers about pricing, cleaning services, and scheduling in Thessaloniki.", ru: "Найдите ответы о ценах, услугах уборки и расписании в Салониках." },
   },
 
   // Cookies

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const SITE_URL = "https://cleanupskg.com";
 
@@ -13,10 +14,12 @@ interface SEOHeadProps {
 
 const SEOHead = ({ title, description, path, type = "website", jsonLd }: SEOHeadProps) => {
   const location = useLocation();
+  const { lang } = useLanguage();
   const canonical = `${SITE_URL}${path ?? location.pathname}`;
 
   useEffect(() => {
     document.title = title;
+    document.documentElement.lang = lang;
 
     const setMeta = (attr: string, key: string, content: string) => {
       let el = document.querySelector(`meta[${attr}="${key}"]`) as HTMLMetaElement | null;

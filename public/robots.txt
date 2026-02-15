@@ -12,5 +12,10 @@ Allow: /
 
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Crawl-delay for polite bots
+Crawl-delay: 1
 
 Sitemap: https://cleanupskg.com/sitemap.xml

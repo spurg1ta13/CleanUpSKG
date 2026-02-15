@@ -9,14 +9,14 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { blogArticles } from "@/data/blogArticles";
 
 const seoTitles = {
-  el: "Blog - Άρθρα & Συμβουλές Καθαρισμού | CleanUp",
-  en: "Blog - Cleaning Articles & Tips | CleanUp",
-  ru: "Блог - Статьи и Советы по Уборке | CleanUp",
+  el: "Blog Καθαρισμού — Συμβουλές & Άρθρα | CleanUp SKG Θεσσαλονίκη",
+  en: "Cleaning Blog — Tips & Articles | CleanUp SKG Thessaloniki",
+  ru: "Блог Уборки — Советы и Статьи | CleanUp SKG Салоники",
 };
 const seoDescriptions = {
-  el: "Διαβάστε χρήσιμα άρθρα για τον καθαρισμό σπιτιού, γραφείου και μετακατασκευαστικό καθαρισμό.",
-  en: "Read useful articles about home, office, and post-construction cleaning tips and best practices.",
-  ru: "Читайте полезные статьи об уборке дома, офиса и послестроительной уборке.",
+  el: "Διαβάστε χρήσιμα άρθρα για βαθύ καθαρισμό σπιτιού, μετακατασκευαστικό καθαρισμό, βιο-καθαρισμό και συντήρηση χώρων στη Θεσσαλονίκη.",
+  en: "Read useful articles about deep home cleaning, post-construction cleaning, bio-cleaning, and space maintenance in Thessaloniki.",
+  ru: "Читайте полезные статьи о генеральной уборке дома, послестроительной уборке, био-уборке и уходе за помещениями в Салониках.",
 };
 
 const Blog = () => {
