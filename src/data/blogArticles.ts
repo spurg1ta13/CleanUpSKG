@@ -53,7 +53,7 @@ Experts recommend a thorough deep clean **every 3 to 6 months**, depending on ho
 
 ---
 
-**Ready for a deep clean?** [Contact us](//#contact) for a free quote and let our professional team transform your home.`,
+**Ready for a deep clean?** [Contact us](/#contact) for a free quote and let our professional team transform your home.`,
 
       el: `## Γιατί ο Βαθύς Καθαρισμός Είναι Σημαντικός για το Σπίτι σας
 
@@ -85,7 +85,7 @@ Experts recommend a thorough deep clean **every 3 to 6 months**, depending on ho
 
 ---
 
-**Έτοιμοι για βαθύ καθαρισμό;** [Επικοινωνήστε μαζί μας](//#contact) για δωρεάν προσφορά.`,
+**Έτοιμοι για βαθύ καθαρισμό;** [Επικοινωνήστε μαζί μας](/#contact) για δωρεάν προσφορά.`,
 
       ru: `## Почему Генеральная Уборка Важна для Вашего Дома
 
@@ -117,7 +117,7 @@ Experts recommend a thorough deep clean **every 3 to 6 months**, depending on ho
 
 ---
 
-**Готовы к генеральной уборке?** [Свяжитесь с нами](//#contact) для бесплатной оценки.`,
+**Готовы к генеральной уборке?** [Свяжитесь с нами](/#contact) для бесплатной оценки.`,
     },
   },
   {
@@ -180,7 +180,7 @@ The ideal time is **immediately after construction is complete** but before you 
 
 ---
 
-**Planning a renovation?** [Contact CleanUp](//#contact) to schedule your post-construction cleaning and enjoy your new space without the dust and debris.`,
+**Planning a renovation?** [Contact CleanUp](/#contact) to schedule your post-construction cleaning and enjoy your new space without the dust and debris.`,
 
       el: `## Καθαρισμός κατά τη Διάρκεια και Μετά την Κατασκευή: Τι Πρέπει να Γνωρίζετε
 
@@ -227,7 +227,7 @@ The ideal time is **immediately after construction is complete** but before you 
 
 ---
 
-**Σχεδιάζετε ανακαίνιση;** [Επικοινωνήστε με την CleanUp](//#contact) για να προγραμματίσετε τον μετακατασκευαστικό σας καθαρισμό.`,
+**Σχεδιάζετε ανακαίνιση;** [Επικοινωνήστε με την CleanUp](/#contact) για να προγραμματίσετε τον μετακατασκευαστικό σας καθαρισμό.`,
 
       ru: `## Уборка во Время и После Строительства: Что Нужно Знать
 
@@ -274,7 +274,7 @@ The ideal time is **immediately after construction is complete** but before you 
 
 ---
 
-**Планируете ремонт?** [Свяжитесь с CleanUp](//#contact) для записи на послестроительную уборку.`,
+**Планируете ремонт?** [Свяжитесь с CleanUp](/#contact) для записи на послестроительную уборку.`,
     },
   },
 ];
