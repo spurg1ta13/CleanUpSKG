@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 import { Lang, translations } from "./translations";
 
-type TranslationValue = string | string[] | { el: string; en: string } | { el: string[]; en: string[] };
+type TranslationValue = string | string[] | { el: string; en: string; ru?: string } | { el: string[]; en: string[]; ru?: string[] };
 
 interface LanguageContextType {
   lang: Lang;
