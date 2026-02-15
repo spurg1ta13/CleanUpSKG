@@ -184,7 +184,8 @@ const FloatingContact = () => {
                 className="mt-0.5 h-4 w-4 rounded border-border accent-primary"
               />
               <label htmlFor="floating-privacy" className={`text-xs text-muted-foreground ${errors.privacy ? "text-destructive" : ""}`}>
-                {t("floatingContact", "privacyConsent")}
+                {t("floatingContact", "privacyConsentPre")}{" "}
+                <a href="/privacy-policy" target="_blank" className="underline text-primary hover:text-primary/80">{t("floatingContact", "privacyLink")}</a>.
               </label>
             </div>
             {errors.privacy && <p className="text-destructive text-xs -mt-1">{errors.privacy}</p>}

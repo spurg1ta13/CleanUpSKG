@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -125,8 +126,9 @@ const ContactSection = () => {
                     className="mt-1 h-4 w-4 rounded border-border accent-primary"
                   />
                   <label htmlFor="privacy" className={`text-xs text-muted-foreground ${errors.privacy ? "text-destructive" : ""}`}>
-                    {t("contact", "privacyConsent")}
-                  </label>
+                    {t("contact", "privacyConsentPre")}{" "}
+                    <Link to="/privacy-policy" target="_blank" className="underline text-primary hover:text-primary/80">{t("contact", "privacyLink")}</Link>.
+                   </label>
                 </div>
                 {errors.privacy && <p className="text-destructive text-xs -mt-2">{errors.privacy}</p>}
                 <Button type="submit" className="w-full rounded-full" size="lg" disabled={loading}>

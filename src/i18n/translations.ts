@@ -10,6 +10,7 @@ export const translations = {
     faq: { el: "FAQ", en: "FAQ", ru: "FAQ" },
     blog: { el: "Blog", en: "Blog", ru: "Блог" },
     contact: { el: "Επικοινωνία", en: "Contact", ru: "Контакты" },
+    privacy: { el: "Πολιτική Απορρήτου", en: "Privacy Policy", ru: "Конфиденциальность" },
   },
 
   // TopBar
@@ -186,6 +187,8 @@ export const translations = {
     error: { el: "Κάτι πήγε στραβά. Παρακαλώ δοκιμάστε ξανά.", en: "Something went wrong. Please try again.", ru: "Что-то пошло не так. Попробуйте снова." },
     address: { el: "Αριστείδου 19-21, Καλαμαριά 551 33", en: "Aristidou 19-21, Kalamaria 551 33", ru: "Аристиду 19-21, Каламарья 551 33" },
     privacyConsent: { el: "Συμφωνώ με την επεξεργασία των προσωπικών μου δεδομένων σύμφωνα με την πολιτική απορρήτου.", en: "I agree to the processing of my personal data in accordance with the privacy policy.", ru: "Я согласен(а) на обработку моих персональных данных в соответствии с политикой конфиденциальности." },
+    privacyConsentPre: { el: "Συμφωνώ με την επεξεργασία των δεδομένων μου σύμφωνα με την", en: "I agree to the processing of my data in accordance with the", ru: "Я согласен(а) на обработку данных в соответствии с" },
+    privacyLink: { el: "πολιτική απορρήτου", en: "privacy policy", ru: "политикой конфиденциальности" },
     privacyRequired: { el: "Πρέπει να συμφωνήσετε με την πολιτική απορρήτου", en: "You must agree to the privacy policy", ru: "Вы должны согласиться с политикой конфиденциальности" },
   },
 
@@ -207,6 +210,8 @@ export const translations = {
     messageRequired: { el: "Το μήνυμα είναι υποχρεωτικό", en: "Message is required", ru: "Сообщение обязательно" },
     error: { el: "Κάτι πήγε στραβά.", en: "Something went wrong.", ru: "Что-то пошло не так." },
     privacyConsent: { el: "Συμφωνώ με την επεξεργασία των δεδομένων μου.", en: "I agree to the processing of my data.", ru: "Я согласен(а) на обработку данных." },
+    privacyConsentPre: { el: "Συμφωνώ με την", en: "I agree to the", ru: "Я согласен(а) с" },
+    privacyLink: { el: "πολιτική απορρήτου", en: "privacy policy", ru: "политикой конфиденциальности" },
     privacyRequired: { el: "Απαιτείται συγκατάθεση", en: "Consent required", ru: "Требуется согласие" },
   },
 
