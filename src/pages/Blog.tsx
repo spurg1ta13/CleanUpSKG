@@ -4,14 +4,27 @@ import { Card, CardContent } from "@/components/ui/card";
 import TopBar from "@/components/landing/TopBar";
 import Navbar from "@/components/landing/Navbar";
 import Footer from "@/components/landing/Footer";
+import SEOHead from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { blogArticles } from "@/data/blogArticles";
+
+const seoTitles = {
+  el: "Blog - Άρθρα & Συμβουλές Καθαρισμού | CleanUp",
+  en: "Blog - Cleaning Articles & Tips | CleanUp",
+  ru: "Блог - Статьи и Советы по Уборке | CleanUp",
+};
+const seoDescriptions = {
+  el: "Διαβάστε χρήσιμα άρθρα για τον καθαρισμό σπιτιού, γραφείου και μετακατασκευαστικό καθαρισμό.",
+  en: "Read useful articles about home, office, and post-construction cleaning tips and best practices.",
+  ru: "Читайте полезные статьи об уборке дома, офиса и послестроительной уборке.",
+};
 
 const Blog = () => {
   const { lang, t } = useLanguage();
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead title={seoTitles[lang]} description={seoDescriptions[lang]} path="/blog" />
       <TopBar />
       <Navbar />
       <main className="flex-1">
