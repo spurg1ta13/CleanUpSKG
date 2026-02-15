@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Phone, Mail, Clock, CheckCircle2 } from "lucide-react";
+import { Phone, Mail, Clock, CheckCircle2, MapPin } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -111,6 +111,12 @@ const ContactSection = () => {
                 </div>
                 <span className="text-foreground text-sm pt-2 group-hover:text-primary transition-colors">info@cleanupskg.com</span>
               </a>
+              <a href="https://maps.google.com/?q=Aristidou+19-21,+Kalamaria+551+33" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 group">
+                <div className="shrink-0 w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+                  <MapPin className="h-5 w-5" />
+                </div>
+                <span className="text-foreground text-sm pt-2 group-hover:text-primary transition-colors">{t("contact", "address")}</span>
+              </a>
               <div className="flex items-start gap-4">
                 <div className="shrink-0 w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
                   <Clock className="h-5 w-5" />
@@ -118,8 +124,17 @@ const ContactSection = () => {
                 <span className="text-foreground text-sm pt-2">{t("topbar", "hours")}</span>
               </div>
             </div>
-            <div className="bg-muted rounded-2xl aspect-video flex items-center justify-center">
-              <span className="text-muted-foreground text-sm">{t("contact", "mapPlaceholder")}</span>
+            <div className="rounded-2xl overflow-hidden aspect-video">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.5!2d22.95!3d40.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a838f41428e0ed%3A0x9bae715b8d574a9c!2sAristidou%2019-21%2C%20Kalamaria%20551%2033!5e0!3m2!1sen!2sgr!4v1700000000000"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="CleanUp SKG Location"
+              />
             </div>
           </div>
         </div>
