@@ -49,7 +49,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">{t("footer", "servicesTitle")}</h4>
             <ul className="space-y-2 text-sm opacity-70">
               {serviceLinks.map((s) => (
-                <li key={s}><a href="#services" className="hover:opacity-100 transition-opacity">{t("footer", s)}</a></li>
+                <li key={s}><Link to="/#services" className="hover:opacity-100 transition-opacity">{t("footer", s)}</Link></li>
               ))}
             </ul>
           </div>
