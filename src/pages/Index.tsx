@@ -71,15 +71,15 @@ const localBusinessJsonLd = {
 };
 
 const seoTitles = {
-  el: "CleanUp SKG | Επαγγελματικός Καθαρισμός Σπιτιού & Γραφείου Θεσσαλονίκη",
-  en: "CleanUp SKG | Professional Home & Office Cleaning Thessaloniki Greece",
-  ru: "CleanUp SKG | Профессиональная Уборка Домов и Офисов Салоники Греция",
+  el: "Επαγγελματικός Καθαρισμός Σπιτιού & Γραφείου Θεσσαλονίκη | CleanUp SKG",
+  en: "Commercial & Office Cleaning Thessaloniki | CleanUp SKG",
+  ru: "Коммерческая Уборка и Уборка Офисов Салоники | CleanUp SKG",
 };
 
 const seoDescriptions = {
-  el: "Επαγγελματικός καθαρισμός σπιτιών, γραφείων, μετακατασκευαστικός καθαρισμός & βιο-καθαρισμός στη Θεσσαλονίκη και Καλαμαριά. Ατμοκαθαρισμός, πλύσιμο υπό πίεση, απολύμανση. Δωρεάν εκτίμηση ☎ 697 477 6058.",
-  en: "Professional home, office & post-construction cleaning in Thessaloniki, Greece. Bio-cleaning, steam disinfection, pressure washing. Serving Kalamaria, Thermi & Pylaia. Free estimates ☎ 697 477 6058.",
-  ru: "Профессиональная уборка домов, офисов, послестроительная уборка и био-уборка в Салониках, Греция. Паровая дезинфекция, мойка под давлением. Каламарья, Терми, Пилея. Бесплатная оценка ☎ 697 477 6058.",
+  el: "Επαγγελματικές υπηρεσίες καθαρισμού σπιτιών & γραφείων στη Θεσσαλονίκη. Η CleanUp SKG προσφέρει αξιόπιστες, οικολογικές και εξατομικευμένες λύσεις για την επιχείρησή σας. Ζητήστε δωρεάν προσφορά!",
+  en: "Professional commercial & office cleaning services in Thessaloniki. CleanUp SKG offers reliable, eco-friendly, and tailored solutions for your business. Get a free quote!",
+  ru: "Профессиональные услуги коммерческой уборки и уборки офисов в Салониках. CleanUp SKG предлагает надёжные, экологичные и индивидуальные решения для вашего бизнеса. Получите бесплатную оценку!",
 };
 
 const Index = () => {
