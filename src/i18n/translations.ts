@@ -210,4 +210,15 @@ export const translations = {
     readMore: { el: "Διαβάστε Περισσότερα", en: "Read More", ru: "Читать Далее" },
     backToBlog: { el: "Πίσω στο Blog", en: "Back to Blog", ru: "Назад к Блогу" },
   },
+
+  // Cookies
+  cookies: {
+    message: {
+      el: "Αυτός ο ιστότοπος χρησιμοποιεί cookies για να βελτιώσει την εμπειρία σας. Συνεχίζοντας την περιήγηση, συμφωνείτε με τη χρήση cookies.",
+      en: "This website uses cookies to improve your experience. By continuing to browse, you agree to our use of cookies.",
+      ru: "Этот сайт использует файлы cookie для улучшения вашего опыта. Продолжая просмотр, вы соглашаетесь с использованием cookie.",
+    },
+    accept: { el: "Αποδοχή", en: "Accept", ru: "Принять" },
+    decline: { el: "Απόρριψη", en: "Decline", ru: "Отклонить" },
+  },
 } as const;
