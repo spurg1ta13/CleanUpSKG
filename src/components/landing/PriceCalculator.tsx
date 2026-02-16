@@ -71,34 +71,45 @@ const PriceCalculator = ({ open, onOpenChange }: { open: boolean; onOpenChange: 
 
   const summaryLines = useMemo<SummaryLine[]>(() => {
     const lines: SummaryLine[] = [];
-    if (category === "cleaning") {
-      const svc = cleaningServices.find((s) => s.key === selectedCleaning);
-      if (svc && sqm > 0) {
-        lines.push({
-          label: t("calc", svc.key),
-          qty: sqm,
-          unitLabel: t("calc", "sqm"),
-          unitPrice: svc.pricePerSqm,
-          subtotal: svc.pricePerSqm * sqm,
-        });
-      }
-    } else {
-      const items = category === "bio" ? bioItems : steamItems;
-      items.forEach((item) => {
-        const qty = itemQuantities[item.key] || 0;
-        if (qty > 0) {
-          lines.push({
-            label: t("calc", item.key),
-            qty,
-            unitLabel: item.unit === "sqm" ? t("calc", "sqm") : t("calc", "piece"),
-            unitPrice: item.price,
-            subtotal: item.price * qty,
-          });
-        }
+    // Cleaning
+    const svc = cleaningServices.find((s) => s.key === selectedCleaning);
+    if (svc && sqm > 0) {
+      lines.push({
+        label: t("calc", svc.key),
+        qty: sqm,
+        unitLabel: t("calc", "sqm"),
+        unitPrice: svc.pricePerSqm,
+        subtotal: svc.pricePerSqm * sqm,
       });
     }
+    // Bio items
+    bioItems.forEach((item) => {
+      const qty = itemQuantities[item.key] || 0;
+      if (qty > 0) {
+        lines.push({
+          label: t("calc", item.key),
+          qty,
+          unitLabel: item.unit === "sqm" ? t("calc", "sqm") : t("calc", "piece"),
+          unitPrice: item.price,
+          subtotal: item.price * qty,
+        });
+      }
+    });
+    // Steam items
+    steamItems.forEach((item) => {
+      const qty = itemQuantities[item.key] || 0;
+      if (qty > 0) {
+        lines.push({
+          label: t("calc", item.key),
+          qty,
+          unitLabel: item.unit === "sqm" ? t("calc", "sqm") : t("calc", "piece"),
+          unitPrice: item.price,
+          subtotal: item.price * qty,
+        });
+      }
+    });
     return lines;
-  }, [category, sqm, selectedCleaning, itemQuantities, t]);
+  }, [sqm, selectedCleaning, itemQuantities, t]);
 
   const total = useMemo(() => summaryLines.reduce((s, l) => s + l.subtotal, 0), [summaryLines]);
 
@@ -133,7 +144,7 @@ const PriceCalculator = ({ open, onOpenChange }: { open: boolean; onOpenChange: 
               {categories.map((c) => (
                 <button
                   key={c.key}
-                  onClick={() => { setCategory(c.key); resetAll(); }}
+                  onClick={() => setCategory(c.key)}
                   className={`flex-1 text-sm font-medium py-2 px-3 rounded-md transition-colors ${
                     category === c.key
                       ? "bg-primary text-primary-foreground shadow-sm"
