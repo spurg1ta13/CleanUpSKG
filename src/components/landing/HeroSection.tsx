@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calculator } from "lucide-react";
+import { Calculator } from "lucide-react";
 import heroImg from "@/assets/hero-cleaning.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
 import PriceCalculator from "./PriceCalculator";
@@ -27,14 +27,14 @@ const HeroSection = () => {
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="rounded-full px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-shadow">
                 <a href="#contact">
-                  {t("hero", "cta")} <ArrowRight className="ml-2 h-5 w-5" />
+                  {t("hero", "cta")} 
                 </a>
               </Button>
               <Button
                 size="lg"
                 className="rounded-full px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-shadow bg-primary/80 text-primary-foreground hover:bg-primary/70"
-                onClick={() => setCalcOpen(true)}
-              >
+                onClick={() => setCalcOpen(true)}>
+
                 <Calculator className="mr-2 h-5 w-5" />
                 {t("calc", "cta")}
               </Button>
@@ -43,8 +43,8 @@ const HeroSection = () => {
         </div>
       </section>
       <PriceCalculator open={calcOpen} onOpenChange={setCalcOpen} />
-    </>
-  );
+    </>);
+
 };
 
 export default HeroSection;
