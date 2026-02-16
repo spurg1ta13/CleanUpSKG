@@ -298,8 +298,22 @@ const PriceCalculator = ({ open, onOpenChange }: { open: boolean; onOpenChange: 
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 {t("calc", "back")}
               </Button>
-              <Button asChild className="flex-1 rounded-full" size="lg">
-                <a href="#contact">{t("calc", "contactUs")}</a>
+              <Button
+                className="flex-1 rounded-full"
+                size="lg"
+                onClick={() => {
+                  onOpenChange(false);
+                  setShowSummary(false);
+                  setTimeout(() => {
+                    const el = document.querySelector("#contact");
+                    if (el) {
+                      const top = el.getBoundingClientRect().top + window.scrollY - 64;
+                      window.scrollTo({ top, behavior: "smooth" });
+                    }
+                  }, 150);
+                }}
+              >
+                {t("calc", "contactUs")}
               </Button>
             </div>
           </div>
