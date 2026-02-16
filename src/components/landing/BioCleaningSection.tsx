@@ -1,5 +1,6 @@
 import { Sofa, BedDouble, Layers, Car } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
+import bioCleaningImg from "@/assets/bio-cleaning.jpg";
 
 const BioCleaningSection = () => {
   const { t } = useLanguage();
@@ -79,6 +80,9 @@ const BioCleaningSection = () => {
                   <span className="text-sm font-medium text-foreground">{t("bio", c.key)}</span>
                 </div>
               ))}
+            </div>
+            <div className="mt-6 rounded-xl overflow-hidden shadow-sm">
+              <img src={bioCleaningImg} alt="Professional bio-cleaning service for upholstery and sofas" className="w-full h-[300px] object-cover" />
             </div>
           </div>
           <div>
