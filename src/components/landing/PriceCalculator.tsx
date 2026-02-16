@@ -313,7 +313,7 @@ const PriceCalculator = ({ open, onOpenChange }: { open: boolean; onOpenChange: 
                   window.dispatchEvent(new CustomEvent("calc-summary", { detail: { message: summaryText, sqm: sqmValue } }));
 
                   onOpenChange(false);
-                  setShowSummary(false);
+                  resetAll();
                   setTimeout(() => {
                     const el = document.querySelector("#contact");
                     if (el) {
