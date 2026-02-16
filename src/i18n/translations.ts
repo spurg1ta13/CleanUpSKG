@@ -86,11 +86,11 @@ export const translations = {
 
   // Commercial
   commercial: {
-    heading: { el: "Εμπορικός Καθαρισμός", en: "Commercial Cleaning", ru: "Коммерческая Уборка" },
+    heading: { el: "Επαγγελματικός Καθαρισμός", en: "Professional Cleaning", ru: "Профессиональная Уборка" },
     description: {
-      el: "Κρατάμε τις επιχειρήσεις πεντακάθαρες ώστε να μπορείτε να εστιάσετε σε αυτό που μετράει. Από την καθημερινή συντήρηση γραφείων μέχρι τον βαθύ καθαρισμό κουζινών, οι εμπορικές μας υπηρεσίες καλύπτουν κάθε πτυχή του χώρου εργασίας σας.",
-      en: "We keep businesses spotless so you can focus on what matters. From daily office maintenance to deep kitchen degreasing, our commercial services cover every aspect of your workspace.",
-      ru: "Мы поддерживаем безупречную чистоту в бизнесе, чтобы вы могли сосредоточиться на главном. От ежедневного обслуживания офисов до глубокой очистки кухонь — наши коммерческие услуги охватывают все аспекты вашего рабочего пространства.",
+      el: "Εμείς φροντίζουμε την καθαριότητα, εσείς την επιτυχία της επιχείρησης σας. Από την καθημερινή συντήρηση γραφείων μέχρι τον βαθύ καθαρισμό κουζινών, οι επαγγελματικές μας υπηρεσίες καλύπτουν κάθε πτυχή του χώρου εργασίας σας.",
+      en: "We take care of the cleanliness, you take care of your business success. From daily office maintenance to deep kitchen degreasing, our professional services cover every aspect of your workspace.",
+      ru: "Мы заботимся о чистоте, а вы — об успехе вашего бизнеса. От ежедневного обслуживания офисов до глубокой очистки кухонь — наши профессиональные услуги охватывают все аспекты вашего рабочего пространства.",
     },
     office: { el: "Καθαρισμός Γραφείων", en: "Office Cleaning", ru: "Уборка Офисов" },
     officeDesc: { el: "Καθημερινή ή εβδομαδιαία συντήρηση γραφείων, δάπεδα, τουαλέτες και κοινόχρηστους χώρους.", en: "Daily or weekly office maintenance including desks, floors, restrooms, and common areas.", ru: "Ежедневное или еженедельное обслуживание офисов: столы, полы, санузлы и общие зоны." },
@@ -247,7 +247,7 @@ export const translations = {
     servicesTitle: { el: "Υπηρεσίες", en: "Services", ru: "Услуги" },
     followUs: { el: "Ακολουθήστε μας", en: "Follow Us", ru: "Подписывайтесь" },
     residentialCleaning: { el: "Οικιακός Καθαρισμός", en: "Residential Cleaning", ru: "Уборка Жилых Помещений" },
-    commercialCleaning: { el: "Εμπορικός Καθαρισμός", en: "Commercial Cleaning", ru: "Коммерческая Уборка" },
+    commercialCleaning: { el: "Επαγγελματικός Καθαρισμός", en: "Professional Cleaning", ru: "Профессиональная Уборка" },
     postConstructionLabel: { el: "Μετακατασκευαστικός", en: "Post-Construction", ru: "Послестроительная" },
     bioCleaning: { el: "Βιο-Καθαρισμός", en: "Bio-Cleaning", ru: "Био-Уборка" },
     specializedServices: { el: "Εξειδικευμένες Υπηρεσίες", en: "Specialized Services", ru: "Специализированные Услуги" },
