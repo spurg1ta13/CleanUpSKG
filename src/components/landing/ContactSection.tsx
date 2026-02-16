@@ -46,6 +46,18 @@ const ContactSection = () => {
     setRateLimited(getSendTimestamps().length >= MAX_SENDS);
   }, [success]);
 
+  useEffect(() => {
+    const handler = (e: Event) => {
+      const detail = (e as CustomEvent<string>).detail;
+      if (detail) {
+        setForm((f) => ({ ...f, message: detail }));
+        setSuccess(false);
+      }
+    };
+    window.addEventListener("calc-summary", handler);
+    return () => window.removeEventListener("calc-summary", handler);
+  }, []);
+
   const validate = () => {
     const e: Record<string, string> = {};
     if (!form.name.trim()) e.name = t("contact", "nameRequired");
