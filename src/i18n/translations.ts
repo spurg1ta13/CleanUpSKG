@@ -23,9 +23,9 @@ export const translations = {
     title1: { el: "Επαγγελματικές", en: "Professional", ru: "Профессиональные" },
     title2: { el: "Υπηρεσίες Καθαρισμού στη Θεσσαλονίκη", en: "Cleaning Services in Thessaloniki", ru: "Клининговые Услуги в Салониках" },
     subtitle: {
-      el: "Ολοκληρωμένες λύσεις καθαρισμού για σπίτια, επιχειρήσεις και εργοτάξια στον νόμο Θεσσαλονίκης. Οικιακός, εμπορικός και μετακατασκευαστικός καθαρισμός με εγγυημένα αποτελέσματα.",
-      en: "Comprehensive cleaning solutions for homes, businesses, and construction sites in the Thessaloniki region. Residential, commercial, and post-construction cleaning with guaranteed results.",
-      ru: "Комплексные решения по уборке домов, офисов и строительных объектов в номе Салоники. Жилая, коммерческая и послестроительная уборка с гарантированным результатом.",
+      el: "Ολοκληρωμένες λύσεις καθαρισμού για σπίτια, επιχειρήσεις και εργοτάξια στον νόμο Θεσσαλονίκης. Οικιακός, επαγγελματικός και καθαρισμός μετά από ανακαίνιση με εγγυημένα αποτελέσματα.",
+      en: "Comprehensive cleaning solutions for homes, businesses, and construction sites in the Thessaloniki region. Residential, professional, and post-renovation cleaning with guaranteed results.",
+      ru: "Комплексные решения по уборке домов, офисов и строительных объектов в номе Салоники. Бытовая, профессиональная и уборка после ремонта с гарантированным результатом.",
     },
     cta: { el: "Δωρεάν Εκτίμηση", en: "Get a Free Estimate", ru: "Бесплатная Оценка" },
   },
