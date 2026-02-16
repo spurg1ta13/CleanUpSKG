@@ -102,8 +102,8 @@ export const translations = {
 
   // Post-Construction
   postConst: {
-    heading: { el: "Καθαρισμός μετά από τεχνικές εργασίες", en: "Cleaning After Technical Works", ru: "Уборка после технических работ" },
-    subtitle: { el: "Μια συστηματική διαδικασία 3 βημάτων για τη μετατροπή κάθε εργοταξίου σε έτοιμο χώρο.", en: "A systematic 3-step process to transform any construction site into a move-in-ready space.", ru: "Систематический 3-этапный процесс превращения строительной площадки в готовое к заселению пространство." },
+    heading: { el: "Καθαρισμός μετά από τεχνικές εργασίες.", en: "Cleaning After Technical Works.", ru: "Уборка после технических работ." },
+    subtitle: { el: "Μεθοδική προσέγγιση 3 σταδίων για άμεση παράδοση καθαρού και ασφαλούς χώρου.", en: "A methodical 3-stage approach for immediate delivery of a clean and safe space.", ru: "Методичный подход из 3 этапов для немедленной сдачи чистого и безопасного пространства." },
     step: { el: "Βήμα", en: "Step", ru: "Этап" },
     inspection: { el: "Επιθεώρηση Χώρου", en: "Site Inspection", ru: "Осмотр Объекта" },
     inspectionDesc: { el: "Διεξοδική αξιολόγηση του χώρου για τον σχεδιασμό της διαδικασίας καθαρισμού.", en: "Thorough assessment of the site to plan the cleaning process and identify special requirements.", ru: "Тщательная оценка объекта для планирования процесса уборки и определения особых требований." },
