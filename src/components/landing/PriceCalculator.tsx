@@ -306,7 +306,7 @@ const PriceCalculator = ({ open, onOpenChange }: { open: boolean; onOpenChange: 
                   const lines = summaryLines.map(
                     (l) => `• ${l.label}: ${l.qty} ${l.unitLabel} × €${l.unitPrice.toFixed(2)} = €${l.subtotal.toFixed(2)}`
                   );
-                  const summaryText = lines.join("\n") + `\n\n${t("calc", "estimatedTotal")}: €${total.toFixed(2)} ${t("calc", "vatNote")}`;
+                  const summaryText = lines.join("\n") + `\n\n${t("calc", "estimatedTotal")}: €${total.toFixed(2)} + VAT`;
                   // Find sqm value from cleaning line
                   const cleaningLine = summaryLines.find((l) => l.unitLabel === t("calc", "sqm") && cleaningServices.some((s) => t("calc", s.key) === l.label));
                   const sqmValue = cleaningLine ? String(cleaningLine.qty) : "";
