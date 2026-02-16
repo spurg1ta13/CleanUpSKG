@@ -160,8 +160,8 @@ export const translations = {
     getQuote: { el: "Ζητήστε Προσφορά", en: "Get Quote", ru: "Запросить" },
     from: { el: "από", en: "from", ru: "от" },
     residential: { el: "Ελαφρύς Καθαρισμός", en: "Light Cleaning", ru: "Лёгкая Уборка" },
-    commercial: { el: "Γενικός Βαθύς Καθαρισμός", en: "General Deep Cleaning", ru: "Генеральная Уборка" },
-    postConstruction: { el: "Μετά από Ανακαίνιση", en: "Post-Renovation", ru: "После Ремонта" },
+    commercial: { el: "Επαγγελματικός Καθαρισμός", en: "Professional Cleaning", ru: "Профессиональная Уборка" },
+    postConstruction: { el: "Καθαρισμός μετά από τεχνικές εργασίες", en: "Cleaning After Technical Works", ru: "Уборка после технических работ" },
     residentialFeatures: {
       el: ["Τακτικός ή εφάπαξ καθαρισμός", "Κουζίνα & μπάνια", "Σφουγγάρισμα & σκούπισμα", "Ξεσκόνισμα όλων των επιφανειών", "Απομάκρυνση σκουπιδιών"],
       en: ["Regular or one-time cleaning", "Kitchen & bathrooms", "Floor mopping & vacuuming", "Dusting all surfaces", "Trash removal"],
