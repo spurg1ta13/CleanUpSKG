@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Phone, Mail, Clock, CheckCircle2, MapPin } from "lucide-react";
+import { Phone, Mail, Clock, MapPin } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -37,21 +37,21 @@ const ContactSection = () => {
   const [honeypot, setHoneypot] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
   const [privacyChecked, setPrivacyChecked] = useState(false);
   const [rateLimited, setRateLimited] = useState(false);
   const { t } = useLanguage();
 
   useEffect(() => {
     setRateLimited(getSendTimestamps().length >= MAX_SENDS);
-  }, [success]);
+  }, [submitted]);
 
   useEffect(() => {
     const handler = (e: Event) => {
       const { message, sqm: sqmVal } = (e as CustomEvent<{ message: string; sqm: string }>).detail;
       if (message) {
         setForm((f) => ({ ...f, message, sqm: sqmVal || f.sqm }));
-        setSuccess(false);
+        setSubmitted(false);
       }
     };
     window.addEventListener("calc-summary", handler);
@@ -105,7 +105,7 @@ const ContactSection = () => {
       }).catch(console.error);
 
       addSendTimestamp();
-      setSuccess(true);
+      toast.success(t("contact", "successTitle"), { description: t("contact", "successDesc") });
       setForm({ name: "", email: "", phone: "", message: "", sqm: "" });
       setPropertyTypes([]);
       setPrivacyChecked(false);
@@ -134,18 +134,6 @@ const ContactSection = () => {
         </div>
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div className="bg-background rounded-2xl shadow-md p-8">
-            {success || rateLimited ? (
-              <div className="flex flex-col items-center justify-center text-center py-12 space-y-4">
-                <CheckCircle2 className="h-16 w-16 text-primary" />
-                <h3 className="text-2xl font-bold text-foreground">{t("contact", "successTitle")}</h3>
-                <p className="text-muted-foreground max-w-sm">{t("contact", "successDesc")}</p>
-                {!rateLimited && (
-                  <Button variant="outline" className="rounded-full mt-4" onClick={() => setSuccess(false)}>
-                    {t("contact", "sendAnother")}
-                  </Button>
-                )}
-              </div>
-            ) : (
               <form className="space-y-5" onSubmit={handleSubmit}>
                 <input type="text" name="website" value={honeypot} onChange={(e) => setHoneypot(e.target.value)} autoComplete="off" tabIndex={-1} aria-hidden="true" className="absolute opacity-0 h-0 w-0 pointer-events-none" />
                 <div className="grid sm:grid-cols-2 gap-4">
@@ -211,11 +199,10 @@ const ContactSection = () => {
                    </label>
                 </div>
                 {errors.privacy && <p className="text-destructive text-xs -mt-2">{errors.privacy}</p>}
-                <Button type="submit" className="w-full rounded-full" size="lg" disabled={loading}>
+                <Button type="submit" className="w-full rounded-full" size="lg" disabled={loading || rateLimited}>
                   {loading ? t("contact", "sending") : t("contact", "send")}
                 </Button>
               </form>
-            )}
           </div>
 
           <div className="space-y-8">
