@@ -302,6 +302,13 @@ const PriceCalculator = ({ open, onOpenChange }: { open: boolean; onOpenChange: 
                 className="flex-1 rounded-full"
                 size="lg"
                 onClick={() => {
+                  // Build summary text for contact form
+                  const lines = summaryLines.map(
+                    (l) => `• ${l.label}: ${l.qty} ${l.unitLabel} × €${l.unitPrice.toFixed(2)} = €${l.subtotal.toFixed(2)}`
+                  );
+                  const summaryText = lines.join("\n") + `\n\n${t("calc", "estimatedTotal")}: €${total.toFixed(2)} ${t("calc", "vatNote")}`;
+                  window.dispatchEvent(new CustomEvent("calc-summary", { detail: summaryText }));
+
                   onOpenChange(false);
                   setShowSummary(false);
                   setTimeout(() => {
