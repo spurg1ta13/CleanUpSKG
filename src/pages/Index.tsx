@@ -99,10 +99,10 @@ const Index = () => {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
+      <PricingSection />
       <SpecializedSection />
       <CommercialSection />
       <PostConstructionSection />
-      <PricingSection />
       <BioCleaningSection />
       <FAQSection />
       <ContactSection />
