@@ -22,7 +22,11 @@ const Footer = () => {
   ];
 
   const serviceLinks = [
-    "residentialCleaning", "commercialCleaning", "postConstructionLabel", "bioCleaning", "specializedServices",
+    { key: "residentialCleaning", href: "/#services" },
+    { key: "commercialCleaning", href: "/#commercial" },
+    { key: "postConstructionLabel", href: "/#post-construction" },
+    { key: "bioCleaning", href: "/#bio-cleaning" },
+    { key: "specializedServices", href: "/#specialized" },
   ];
 
   return (
@@ -49,7 +53,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">{t("footer", "servicesTitle")}</h4>
             <ul className="space-y-2 text-sm opacity-70">
               {serviceLinks.map((s) => (
-                <li key={s}><Link to="/#services" className="hover:opacity-100 transition-opacity">{t("footer", s)}</Link></li>
+                <li key={s.key}><Link to={s.href} className="hover:opacity-100 transition-opacity">{t("footer", s.key)}</Link></li>
               ))}
             </ul>
           </div>
