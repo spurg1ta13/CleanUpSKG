@@ -268,6 +268,37 @@ export const translations = {
     subtitle: { el: "Βρείτε απαντήσεις για τιμές, υπηρεσίες καθαρισμού και προγραμματισμό.", en: "Find answers about pricing, cleaning services, and scheduling.", ru: "Найдите ответы о ценах, услугах уборки и расписании." },
   },
 
+  // Calculator
+  calc: {
+    title: { el: "Υπολογιστής Τιμής", en: "Price Calculator", ru: "Калькулятор Цен" },
+    subtitle: { el: "Υπολογίστε την κατά προσέγγιση τιμή για τις υπηρεσίες μας.", en: "Calculate the approximate price for our services.", ru: "Рассчитайте примерную стоимость наших услуг." },
+    cta: { el: "Υπολογιστής Τιμής", en: "Price Calculator", ru: "Калькулятор Цен" },
+    tabCleaning: { el: "Καθαρισμός", en: "Cleaning", ru: "Уборка" },
+    tabBio: { el: "Βιο-Καθαρισμός", en: "Bio-Cleaning", ru: "Био-Уборка" },
+    tabSteam: { el: "Ατμοκαθαρισμός", en: "Steam Cleaning", ru: "Паровая Очистка" },
+    serviceType: { el: "Τύπος Υπηρεσίας", en: "Service Type", ru: "Тип Услуги" },
+    residential: { el: "Ελαφρύς Καθαρισμός", en: "Light Cleaning", ru: "Лёгкая Уборка" },
+    commercial: { el: "Γενικός Βαθύς Καθαρισμός", en: "General Deep Cleaning", ru: "Генеральная Уборка" },
+    postConstruction: { el: "Μετά από Ανακαίνιση", en: "Post-Renovation", ru: "После Ремонта" },
+    area: { el: "Εμβαδόν (τ.μ.)", en: "Area (sq.m)", ru: "Площадь (кв.м)" },
+    sqm: { el: "τ.μ.", en: "sq.m", ru: "кв.м" },
+    piece: { el: "τεμ.", en: "pc", ru: "шт" },
+    seat: { el: "Θέση (Καναπέ)", en: "Seat (Sofa)", ru: "Место (Диван)" },
+    carpet: { el: "Μοκέτα / Χαλί", en: "Carpet / Rug", ru: "Ковролин / Ковёр" },
+    childMattress: { el: "Παιδικό Στρώμα", en: "Child Mattress", ru: "Детский Матрас" },
+    mattressSingle: { el: "Μόνο Στρώμα", en: "Single Mattress", ru: "Односпальный Матрас" },
+    mattressDouble: { el: "Διπλό Στρώμα", en: "Double Mattress", ru: "Двуспальный Матрас" },
+    mattressKing: { el: "Υπερδιπλό Στρώμα", en: "King Mattress", ru: "Королевский Матрас" },
+    shutter: { el: "Πατζούρι", en: "Shutter", ru: "Ставни" },
+    radiator: { el: "Καλοριφέρ", en: "Radiator", ru: "Радиатор" },
+    windowFrame: { el: "Κούφωμα Τζαμιού", en: "Window Frame", ru: "Оконная Рама" },
+    wc: { el: "WC", en: "WC", ru: "Туалет" },
+    grout: { el: "Αρμοί", en: "Grout", ru: "Затирка" },
+    estimatedTotal: { el: "Εκτιμώμενο Σύνολο", en: "Estimated Total", ru: "Ориентировочная Сумма" },
+    vatNote: { el: "+ ΦΠΑ • Η τελική τιμή μπορεί να διαφέρει", en: "+ VAT • Final price may vary", ru: "+ НДС • Итоговая цена может отличаться" },
+    getQuote: { el: "Ζητήστε Ακριβή Προσφορά", en: "Get an Exact Quote", ru: "Запросить Точную Цену" },
+  },
+
   // Cookies
   cookies: {
     message: {
