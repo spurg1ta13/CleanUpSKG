@@ -31,7 +31,7 @@ const SpecializedSection = () => {
                     <CardContent className="p-0">
                       <div className="grid md:grid-cols-2">
                         <div className="overflow-hidden h-[300px]">
-                          <img src={item.img} alt={item.alt} className="w-full h-full object-cover" />
+                          <img src={item.img} alt={item.alt} className="w-full h-full object-cover" loading="lazy" decoding="async" width={600} height={300} />
                         </div>
                         <div className="p-8 flex flex-col justify-center">
                           <h3 className="text-xl font-bold text-foreground mb-3">{t("specialized", item.titleKey)}</h3>
