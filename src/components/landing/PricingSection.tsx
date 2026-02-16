@@ -7,9 +7,9 @@ const PricingSection = () => {
   const { t, tArray } = useLanguage();
 
   const plans = [
-    { titleKey: "residential", price: "€2.50", featuresKey: "residentialFeatures", popular: false },
-    { titleKey: "commercial", price: "€3.00", featuresKey: "commercialFeatures", popular: true },
-    { titleKey: "postConstruction", price: "€4.50", featuresKey: "postConstructionFeatures", popular: false },
+    { titleKey: "residential", price: "€0,50", featuresKey: "residentialFeatures", popular: false },
+    { titleKey: "commercial", price: "€3,50", featuresKey: "commercialFeatures", popular: true },
+    { titleKey: "postConstruction", price: "€4,50", featuresKey: "postConstructionFeatures", popular: false },
   ];
 
   return (
