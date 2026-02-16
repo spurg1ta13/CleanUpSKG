@@ -11,14 +11,58 @@ const BioCleaningSection = () => {
     { icon: Car, key: "vehicle" },
   ];
 
-  const pricingItems = [
-    { key: "armchair", price: "€35" },
-    { key: "sofa2", price: "€55" },
-    { key: "sofa3", price: "€75" },
-    { key: "mattressSingle", price: "€40" },
+  const bioPricingItems = [
+    { key: "seat", price: "€15" },
+    { key: "carpet", price: "€5 / τ.μ.", priceEn: "€5 / sq.m", priceRu: "€5 / кв.м" },
+    { key: "childMattress", price: "€25" },
+    { key: "mattressSingle", price: "€45" },
     { key: "mattressDouble", price: "€55" },
-    { key: "carInterior", price: "€80" },
+    { key: "mattressKing", price: "€60" },
+    { key: "bed", price: "€5", from: true },
   ];
+
+  const steamPricingItems = [
+    { key: "shutter", price: "€5", from: true },
+    { key: "radiator", price: "€5", from: true },
+    { key: "windowFrame", price: "€5", from: true },
+    { key: "wc", price: "€3 / τ.μ.", priceEn: "€3 / sq.m", priceRu: "€3 / кв.м" },
+    { key: "grout", price: "€3 / τ.μ.", priceEn: "€3 / sq.m", priceRu: "€3 / кв.м" },
+    { key: "windows", price: "€5", from: true },
+  ];
+
+  const { lang } = useLanguage();
+
+  const getPrice = (item: { price: string; priceEn?: string; priceRu?: string; from?: boolean }) => {
+    const fromLabel = item.from ? (lang === "el" ? "από " : lang === "ru" ? "от " : "from ") : "";
+    let price = item.price;
+    if (lang === "en" && item.priceEn) price = item.priceEn;
+    if (lang === "ru" && item.priceRu) price = item.priceRu;
+    return fromLabel + price;
+  };
+
+  const PricingTable = ({ items, section, heading }: { items: typeof bioPricingItems; section: string; heading: string }) => (
+    <div className="mb-8 last:mb-0">
+      <h3 className="font-semibold text-foreground mb-4">{heading}</h3>
+      <div className="bg-background rounded-xl shadow-sm overflow-hidden">
+        <table className="w-full">
+          <thead>
+            <tr className="bg-primary text-primary-foreground">
+              <th className="text-left py-3 px-5 text-sm font-semibold">{t(section, "item")}</th>
+              <th className="text-right py-3 px-5 text-sm font-semibold">{t(section, "startingFrom")}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {items.map((p, i) => (
+              <tr key={p.key} className={i % 2 === 1 ? "bg-muted/30" : ""}>
+                <td className="py-3 px-5 text-sm text-foreground">{t(section, p.key)}</td>
+                <td className="py-3 px-5 text-sm text-right font-semibold text-primary">{getPrice(p)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
 
   return (
     <section className="py-20 bg-muted/50">
@@ -38,25 +82,8 @@ const BioCleaningSection = () => {
             </div>
           </div>
           <div>
-            <h3 className="font-semibold text-foreground mb-4">{t("bio", "pricingTitle")}</h3>
-            <div className="bg-background rounded-xl shadow-sm overflow-hidden">
-              <table className="w-full">
-                <thead>
-                  <tr className="bg-primary text-primary-foreground">
-                    <th className="text-left py-3 px-5 text-sm font-semibold">{t("bio", "item")}</th>
-                    <th className="text-right py-3 px-5 text-sm font-semibold">{t("bio", "startingFrom")}</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {pricingItems.map((p, i) => (
-                    <tr key={p.key} className={i % 2 === 1 ? "bg-muted/30" : ""}>
-                      <td className="py-3 px-5 text-sm text-foreground">{t("bio", p.key)}</td>
-                      <td className="py-3 px-5 text-sm text-right font-semibold text-primary">{p.price}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            <PricingTable items={bioPricingItems} section="bio" heading={t("bio", "pricingTitle")} />
+            <PricingTable items={steamPricingItems} section="steamPricing" heading={t("steamPricing", "heading")} />
           </div>
         </div>
       </div>
