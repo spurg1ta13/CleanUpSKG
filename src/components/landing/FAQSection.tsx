@@ -99,7 +99,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section id="faq" className="py-20 bg-background">
+    <section id="faq" className="py-12 bg-background">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
