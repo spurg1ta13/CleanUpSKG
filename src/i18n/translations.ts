@@ -63,7 +63,7 @@ export const translations = {
   // Specialized
   specialized: {
     heading: { el: "Εξειδικευμένες Υπηρεσίες", en: "Specialized Services", ru: "Специализированные Услуги" },
-    subtitle: { el: "Προηγμένες τεχνικές καθαρισμού για συγκεκριμένες ανάγκες.", en: "Advanced cleaning techniques for specific needs.", ru: "Передовые методы уборки для конкретных задач." },
+    subtitle: { el: "Στοχευμένες λύσεις καθαρισμού με σύγχρονη τεχνογνωσία.", en: "Targeted cleaning solutions with modern expertise.", ru: "Целенаправленные решения по уборке с современным опытом." },
     steam: { el: "Απολύμανση με Ατμό", en: "Steam Disinfection", ru: "Паровая Дезинфекция" },
     steamDesc: {
       el: "Καθαρισμός με ατμό υψηλής θερμοκρασίας που εξαλείφει το 99,9% των βακτηρίων και αλλεργιογόνων χωρίς σκληρά χημικά. Ιδανικό για κουζίνες, μπάνια και υγειονομικές εγκαταστάσεις.",
