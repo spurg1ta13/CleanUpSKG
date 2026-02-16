@@ -82,7 +82,7 @@ const BioCleaningSection = () => {
               ))}
             </div>
             <div className="mt-6 rounded-xl overflow-hidden shadow-sm">
-              <img src={bioCleaningImg} alt="Professional bio-cleaning service for upholstery and sofas" className="w-full h-[300px] object-cover" />
+              <img src={bioCleaningImg} alt="Professional bio-cleaning service for upholstery and sofas" className="w-full h-[300px] object-cover" loading="lazy" decoding="async" width={600} height={300} />
             </div>
           </div>
           <div>
