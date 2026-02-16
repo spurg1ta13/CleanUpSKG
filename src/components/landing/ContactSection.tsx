@@ -199,7 +199,7 @@ const ContactSection = () => {
                    </label>
                 </div>
                 {errors.privacy && <p className="text-destructive text-xs -mt-2">{errors.privacy}</p>}
-                <Button type="submit" className="w-full rounded-full" size="lg" disabled={loading || rateLimited}>
+                <Button type="submit" className="w-full rounded-full" size="lg" disabled={loading}>
                   {loading ? t("contact", "sending") : t("contact", "send")}
                 </Button>
               </form>
