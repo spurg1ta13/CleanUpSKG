@@ -264,8 +264,8 @@ export const translations = {
 
   // FAQ
   faq: {
-    heading: { el: "Συχνές Ερωτήσεις για τον Καθαρισμό", en: "Frequently Asked Cleaning Questions", ru: "Часто Задаваемые Вопросы об Уборке" },
-    subtitle: { el: "Βρείτε απαντήσεις για τιμές, υπηρεσίες καθαρισμού και προγραμματισμό στη Θεσσαλονίκη.", en: "Find answers about pricing, cleaning services, and scheduling in Thessaloniki.", ru: "Найдите ответы о ценах, услугах уборки и расписании в Салониках." },
+    heading: { el: "Συχνές Ερωτήσεις", en: "Frequently Asked Questions", ru: "Часто Задаваемые Вопросы" },
+    subtitle: { el: "Βρείτε απαντήσεις για τιμές, υπηρεσίες καθαρισμού και προγραμματισμό.", en: "Find answers about pricing, cleaning services, and scheduling.", ru: "Найдите ответы о ценах, услугах уборки и расписании." },
   },
 
   // Cookies
