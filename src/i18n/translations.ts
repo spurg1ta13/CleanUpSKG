@@ -296,7 +296,11 @@ export const translations = {
     grout: { el: "Αρμοί", en: "Grout", ru: "Затирка" },
     estimatedTotal: { el: "Εκτιμώμενο Σύνολο", en: "Estimated Total", ru: "Ориентировочная Сумма" },
     vatNote: { el: "+ ΦΠΑ • Η τελική τιμή μπορεί να διαφέρει", en: "+ VAT • Final price may vary", ru: "+ НДС • Итоговая цена может отличаться" },
-    getQuote: { el: "Ζητήστε Ακριβή Προσφορά", en: "Get an Exact Quote", ru: "Запросить Точную Цену" },
+    getQuote: { el: "Ζητήστε Προσφορά", en: "Get a Quote", ru: "Запросить Цену" },
+    summaryTitle: { el: "Η Εκτίμησή Σας", en: "Your Estimate", ru: "Ваша Оценка" },
+    summarySubtitle: { el: "Ανασκόπηση των επιλεγμένων υπηρεσιών και τιμών.", en: "Review your selected services and prices.", ru: "Обзор выбранных услуг и цен." },
+    back: { el: "Πίσω", en: "Back", ru: "Назад" },
+    contactUs: { el: "Επικοινωνήστε Μαζί Μας", en: "Contact Us", ru: "Связаться с Нами" },
   },
 
   // Cookies
