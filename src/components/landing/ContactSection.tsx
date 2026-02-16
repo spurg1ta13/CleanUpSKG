@@ -48,9 +48,9 @@ const ContactSection = () => {
 
   useEffect(() => {
     const handler = (e: Event) => {
-      const detail = (e as CustomEvent<string>).detail;
-      if (detail) {
-        setForm((f) => ({ ...f, message: detail }));
+      const { message, sqm: sqmVal } = (e as CustomEvent<{ message: string; sqm: string }>).detail;
+      if (message) {
+        setForm((f) => ({ ...f, message, sqm: sqmVal || f.sqm }));
         setSuccess(false);
       }
     };

@@ -307,7 +307,10 @@ const PriceCalculator = ({ open, onOpenChange }: { open: boolean; onOpenChange: 
                     (l) => `• ${l.label}: ${l.qty} ${l.unitLabel} × €${l.unitPrice.toFixed(2)} = €${l.subtotal.toFixed(2)}`
                   );
                   const summaryText = lines.join("\n") + `\n\n${t("calc", "estimatedTotal")}: €${total.toFixed(2)} ${t("calc", "vatNote")}`;
-                  window.dispatchEvent(new CustomEvent("calc-summary", { detail: summaryText }));
+                  // Find sqm value from cleaning line
+                  const cleaningLine = summaryLines.find((l) => l.unitLabel === t("calc", "sqm") && cleaningServices.some((s) => t("calc", s.key) === l.label));
+                  const sqmValue = cleaningLine ? String(cleaningLine.qty) : "";
+                  window.dispatchEvent(new CustomEvent("calc-summary", { detail: { message: summaryText, sqm: sqmValue } }));
 
                   onOpenChange(false);
                   setShowSummary(false);

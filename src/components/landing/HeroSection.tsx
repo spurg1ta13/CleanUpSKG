@@ -32,8 +32,7 @@ const HeroSection = () => {
               </Button>
               <Button
                 size="lg"
-                variant="outline"
-                className="rounded-full px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-shadow"
+                className="rounded-full px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-shadow bg-primary/80 text-primary-foreground hover:bg-primary/70"
                 onClick={() => setCalcOpen(true)}
               >
                 <Calculator className="mr-2 h-5 w-5" />
