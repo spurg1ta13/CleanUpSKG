@@ -80,12 +80,6 @@ const FloatingContact = () => {
 
     addSendTimestamp();
 
-    const whatsappNumber = "306974776058";
-    const whatsappText = encodeURIComponent(
-      `📋 New Contact Request\n\n👤 Name: ${form.name.trim()}\n📞 Phone: ${form.phone.trim()}\n💬 Message: ${form.message.trim()}`
-    );
-    window.open(`https://wa.me/${whatsappNumber}?text=${whatsappText}`, "_blank");
-
     toast({
       title: t("floatingContact", "successTitle"),
       description: t("floatingContact", "successDesc"),
