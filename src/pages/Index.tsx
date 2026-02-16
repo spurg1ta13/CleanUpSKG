@@ -102,8 +102,8 @@ const Index = () => {
       <SpecializedSection />
       <CommercialSection />
       <PostConstructionSection />
-      <BioCleaningSection />
       <PricingSection />
+      <BioCleaningSection />
       <FAQSection />
       <ContactSection />
     </main>
