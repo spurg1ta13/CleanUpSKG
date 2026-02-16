@@ -13,9 +13,9 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-12 bg-muted/50">
+    <section id="services" className="py-8 md:py-12 bg-muted/50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-14">
+        <div className="text-center mb-8 md:mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{t("services", "heading")}</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">{t("services", "subtitle")}</p>
         </div>
