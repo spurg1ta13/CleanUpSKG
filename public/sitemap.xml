@@ -2,43 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cleanupskg.com/</loc>
-    <xhtml:link rel="alternate" hreflang="el" href="https://cleanupskg.com/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://cleanupskg.com/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://cleanupskg.com/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleanupskg.com/" />
+    <loc>https://cleanupskg.gr/</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://cleanupskg.gr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleanupskg.gr/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cleanupskg.gr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleanupskg.gr/" />
     <lastmod>2026-02-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://cleanupskg.com/blog</loc>
-    <xhtml:link rel="alternate" hreflang="el" href="https://cleanupskg.com/blog" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://cleanupskg.com/blog" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://cleanupskg.com/blog" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleanupskg.com/blog" />
+    <loc>https://cleanupskg.gr/blog</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://cleanupskg.gr/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleanupskg.gr/blog" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cleanupskg.gr/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleanupskg.gr/blog" />
     <lastmod>2026-02-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cleanupskg.com/blog/why-deep-cleaning-is-important</loc>
+    <loc>https://cleanupskg.gr/blog/why-deep-cleaning-is-important</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://cleanupskg.com/blog/cleaning-during-and-after-construction</loc>
+    <loc>https://cleanupskg.gr/blog/cleaning-during-and-after-construction</loc>
     <lastmod>2026-02-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://cleanupskg.com/privacy-policy</loc>
-    <xhtml:link rel="alternate" hreflang="el" href="https://cleanupskg.com/privacy-policy" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://cleanupskg.com/privacy-policy" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://cleanupskg.com/privacy-policy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleanupskg.com/privacy-policy" />
+    <loc>https://cleanupskg.gr/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://cleanupskg.gr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleanupskg.gr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cleanupskg.gr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleanupskg.gr/privacy-policy" />
     <lastmod>2026-02-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

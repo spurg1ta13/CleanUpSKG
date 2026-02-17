@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-const SITE_URL = "https://cleanupskg.com";
+const SITE_URL = "https://cleanupskg.gr";
 const SUPPORTED_LANGS = ["el", "en", "ru"] as const;
 
 interface SEOHeadProps {

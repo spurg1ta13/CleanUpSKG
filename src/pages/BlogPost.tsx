@@ -79,7 +79,7 @@ const BlogPost = () => {
     publisher: { "@type": "Organization", name: "CleanUp Cleaning Services" },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://cleanupskg.com/blog/${article.slug}`,
+      "@id": `https://cleanupskg.gr/blog/${article.slug}`,
     },
   };
 
@@ -87,9 +87,9 @@ const BlogPost = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: lang === "el" ? "Αρχική" : lang === "ru" ? "Главная" : "Home", item: "https://cleanupskg.com/" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://cleanupskg.com/blog" },
-      { "@type": "ListItem", position: 3, name: article.title[lang], item: `https://cleanupskg.com/blog/${article.slug}` },
+      { "@type": "ListItem", position: 1, name: lang === "el" ? "Αρχική" : lang === "ru" ? "Главная" : "Home", item: "https://cleanupskg.gr/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://cleanupskg.gr/blog" },
+      { "@type": "ListItem", position: 3, name: article.title[lang], item: `https://cleanupskg.gr/blog/${article.slug}` },
     ],
   };
 
