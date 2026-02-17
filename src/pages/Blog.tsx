@@ -22,9 +22,26 @@ const seoDescriptions = {
 const Blog = () => {
   const { lang, t } = useLanguage();
 
+  const blogListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: seoTitles[lang],
+    description: seoDescriptions[lang],
+    url: "https://cleanupskg.com/blog",
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: blogArticles.map((article, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `https://cleanupskg.com/blog/${article.slug}`,
+        name: article.title[lang],
+      })),
+    },
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
-      <SEOHead title={seoTitles[lang]} description={seoDescriptions[lang]} path="/blog" />
+      <SEOHead title={seoTitles[lang]} description={seoDescriptions[lang]} path="/blog" jsonLd={blogListJsonLd} />
       <TopBar />
       <Navbar />
       <main className="flex-1">
