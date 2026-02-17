@@ -23,7 +23,7 @@ const localBusinessJsonLd = {
   "@id": "https://cleanupskg.com",
   url: "https://cleanupskg.com",
   telephone: "+30-697-477-60587",
-  email: "info@cleanupskg.com",
+  email: "info@cleanupskg.gr",
   description: "Επαγγελματικές υπηρεσίες καθαρισμού σπιτιών, γραφείων, μετακατασκευαστικός καθαρισμός, βιο-καθαρισμός και απολύμανση στη Θεσσαλονίκη.",
   address: {
     "@type": "PostalAddress",

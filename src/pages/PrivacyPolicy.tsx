@@ -34,7 +34,7 @@ const PrivacyPolicy = () => {
         },
         {
           heading: "6. Δικαιώματά σας",
-          text: "Σύμφωνα με τον ΓΚΠΔ, έχετε δικαίωμα:\n• Πρόσβασης στα δεδομένα σας\n• Διόρθωσης ανακριβών δεδομένων\n• Διαγραφής των δεδομένων σας\n• Ανάκλησης της συγκατάθεσής σας\n• Υποβολής καταγγελίας στην Αρχή Προστασίας Δεδομένων\n\nΓια να ασκήσετε τα δικαιώματά σας, επικοινωνήστε μαζί μας στο info@cleanupskg.com.",
+          text: "Σύμφωνα με τον ΓΚΠΔ, έχετε δικαίωμα:\n• Πρόσβασης στα δεδομένα σας\n• Διόρθωσης ανακριβών δεδομένων\n• Διαγραφής των δεδομένων σας\n• Ανάκλησης της συγκατάθεσής σας\n• Υποβολής καταγγελίας στην Αρχή Προστασίας Δεδομένων\n\nΓια να ασκήσετε τα δικαιώματά σας, επικοινωνήστε μαζί μας στο info@cleanupskg.gr.",
         },
         {
           heading: "7. Cookies",
@@ -46,7 +46,7 @@ const PrivacyPolicy = () => {
         },
         {
           heading: "9. Επικοινωνία",
-          text: "Για οποιαδήποτε ερώτηση σχετικά με την πολιτική απορρήτου:\n\nCleanUp SKG\nΑριστείδου 19-21, Καλαμαριά 551 33\nEmail: info@cleanupskg.com\nΤηλ: +30 697 477 6058",
+          text: "Για οποιαδήποτε ερώτηση σχετικά με την πολιτική απορρήτου:\n\nCleanUp SKG\nΑριστείδου 19-21, Καλαμαριά 551 33\nEmail: info@cleanupskg.gr\nΤηλ: +30 697 477 6058",
         },
       ],
     },
@@ -76,7 +76,7 @@ const PrivacyPolicy = () => {
         },
         {
           heading: "6. Your Rights",
-          text: "Under the GDPR, you have the right to:\n• Access your data\n• Rectify inaccurate data\n• Erase your data\n• Withdraw your consent\n• Lodge a complaint with the Data Protection Authority\n\nTo exercise your rights, contact us at info@cleanupskg.com.",
+          text: "Under the GDPR, you have the right to:\n• Access your data\n• Rectify inaccurate data\n• Erase your data\n• Withdraw your consent\n• Lodge a complaint with the Data Protection Authority\n\nTo exercise your rights, contact us at info@cleanupskg.gr.",
         },
         {
           heading: "7. Cookies",
@@ -88,7 +88,7 @@ const PrivacyPolicy = () => {
         },
         {
           heading: "9. Contact",
-          text: "For any questions about our privacy policy:\n\nCleanUp SKG\nAristidou 19-21, Kalamaria 551 33\nEmail: info@cleanupskg.com\nPhone: +30 697 477 6058",
+          text: "For any questions about our privacy policy:\n\nCleanUp SKG\nAristidou 19-21, Kalamaria 551 33\nEmail: info@cleanupskg.gr\nPhone: +30 697 477 6058",
         },
       ],
     },
@@ -118,7 +118,7 @@ const PrivacyPolicy = () => {
         },
         {
           heading: "6. Ваши права",
-          text: "В соответствии с GDPR, вы имеете право:\n• Получить доступ к своим данным\n• Исправить неточные данные\n• Удалить свои данные\n• Отозвать своё согласие\n• Подать жалобу в орган защиты данных\n\nДля реализации ваших прав свяжитесь с нами: info@cleanupskg.com.",
+          text: "В соответствии с GDPR, вы имеете право:\n• Получить доступ к своим данным\n• Исправить неточные данные\n• Удалить свои данные\n• Отозвать своё согласие\n• Подать жалобу в орган защиты данных\n\nДля реализации ваших прав свяжитесь с нами: info@cleanupskg.gr.",
         },
         {
           heading: "7. Файлы Cookie",
@@ -130,7 +130,7 @@ const PrivacyPolicy = () => {
         },
         {
           heading: "9. Контакты",
-          text: "По любым вопросам о политике конфиденциальности:\n\nCleanUp SKG\nАристиду 19-21, Каламарья 551 33\nEmail: info@cleanupskg.com\nТел: +30 697 477 6058",
+          text: "По любым вопросам о политике конфиденциальности:\n\nCleanUp SKG\nАристиду 19-21, Каламарья 551 33\nEmail: info@cleanupskg.gr\nТел: +30 697 477 6058",
         },
       ],
     },
