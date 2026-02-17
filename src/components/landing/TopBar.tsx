@@ -11,18 +11,18 @@ const TopBar = () => {
             <Phone className="h-3.5 w-3.5" />
             <span>+30 697 477 60587</span>
           </a>
-          <a href="mailto:info@cleanupskg.com" className="hidden sm:flex items-center gap-1.5 hover:opacity-80 transition-opacity">
+          <a href="mailto:info@cleanupskg.gr" className="hidden sm:flex items-center gap-1.5 hover:opacity-80 transition-opacity">
             <Mail className="h-3.5 w-3.5" />
-            <span>info@cleanupskg.com</span>
+            <span>info@cleanupskg.gr</span>
           </a>
         </div>
         <div className="hidden sm:flex items-center gap-1.5">
           <Clock className="h-3.5 w-3.5" />
           <span>{t("topbar", "hours")}</span>
         </div>
-        <a href="mailto:info@cleanupskg.com" className="flex sm:hidden items-center gap-1.5 hover:opacity-80 transition-opacity">
+        <a href="mailto:info@cleanupskg.gr" className="flex sm:hidden items-center gap-1.5 hover:opacity-80 transition-opacity">
           <Mail className="h-3.5 w-3.5" />
-          <span>info@cleanupskg.com</span>
+          <span>info@cleanupskg.gr</span>
         </a>
       </div>
     </div>
