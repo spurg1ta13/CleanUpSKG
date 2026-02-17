@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import TikTokIcon from "@/components/icons/TikTokIcon";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Lang } from "@/i18n/translations";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.jpg";
 
 const FACEBOOK_URL = "https://www.facebook.com/share/1GBFUHR5yS/?mibextid=wwXIfr";
 const TIKTOK_URL = "https://www.tiktok.com/@cleanup.skg?_r=1&_t=ZN-93sbKkZERwU";
@@ -76,7 +76,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b">
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="CleanUp Cleaning Services - Professional cleaning company in Thessaloniki" className="h-12 w-auto" />
+          <img src={logo} alt="CleanUp Cleaning Services - Professional cleaning company in Thessaloniki" className="h-12 w-auto" width={48} height={48} />
         </Link>
 
         {/* Desktop */}
