@@ -2,7 +2,7 @@ import { Facebook, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 import TikTokIcon from "@/components/icons/TikTokIcon";
 import { useLanguage } from "@/i18n/LanguageContext";
-import logo from "@/assets/logo.jpg";
+const logo = "/images/logo.jpg";
 
 const FACEBOOK_URL = "https://www.facebook.com/share/1GBFUHR5yS/?mibextid=wwXIfr";
 const TIKTOK_URL = "https://www.tiktok.com/@cleanup.skg?_r=1&_t=ZN-93sbKkZERwU";

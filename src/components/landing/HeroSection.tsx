@@ -12,7 +12,7 @@ const HeroSection = () => {
     <>
       <section id="home" className="relative overflow-hidden min-h-[70vh] flex items-center">
         <div className="absolute inset-0">
-          <img src="/images/hero-cleaning.jpg" alt="Professional cleaning team providing residential and commercial cleaning services in Thessaloniki" className="w-full h-full object-cover" width={1200} height={800} fetchPriority="high" decoding="async" />
+          <img src="/images/hero-cleaning.webp" alt="Professional cleaning team providing residential and commercial cleaning services in Thessaloniki" className="w-full h-full object-cover" width={1200} height={800} fetchPriority="high" decoding="async" />
           <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/40" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
