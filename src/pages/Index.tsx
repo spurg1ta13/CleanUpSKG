@@ -44,6 +44,9 @@ const localBusinessJsonLd = {
     { "@type": "City", name: "Thermi" },
     { "@type": "City", name: "Pylaia" },
     { "@type": "City", name: "Panorama" },
+    { "@type": "City", name: "Evosmos" },
+    { "@type": "City", name: "Stavroupoli" },
+    { "@type": "City", name: "Neapoli" },
   ],
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
@@ -54,18 +57,20 @@ const localBusinessJsonLd = {
   sameAs: [
     "https://www.instagram.com/cleanup.skg",
     "https://www.tiktok.com/@cleanup.skg",
+    "https://www.facebook.com/share/1GBFUHR5yS/",
   ],
   priceRange: "€€",
+  aggregateRating: undefined,
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Υπηρεσίες Καθαρισμού",
     itemListElement: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Οικιακός Καθαρισμός / Residential Cleaning" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Εμπορικός Καθαρισμός / Commercial Cleaning" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Μετακατασκευαστικός Καθαρισμός / Post-Construction Cleaning" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Βιο-Καθαρισμός / Bio-Cleaning" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Απολύμανση με Ατμό / Steam Disinfection" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Πλύσιμο υπό Πίεση / Pressure Washing" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Οικιακός Καθαρισμός / Residential Cleaning", description: "Professional home cleaning services including deep cleaning, regular maintenance, and move-in/move-out cleaning." } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Εμπορικός Καθαρισμός / Commercial Cleaning", description: "Office and commercial space cleaning with flexible scheduling and eco-friendly products." } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Μετακατασκευαστικός Καθαρισμός / Post-Construction Cleaning", description: "Thorough post-renovation and construction cleanup using HEPA-filtered equipment." } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Βιο-Καθαρισμός / Bio-Cleaning", description: "Professional bio-cleaning for mattresses, sofas, carpets, and upholstery." } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Απολύμανση με Ατμό / Steam Disinfection", description: "Chemical-free steam sanitization for deep disinfection of all surfaces." } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Πλύσιμο υπό Πίεση / Pressure Washing", description: "High-pressure washing for exterior surfaces, driveways, and patios." } },
     ],
   },
 };
