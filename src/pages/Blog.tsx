@@ -27,13 +27,13 @@ const Blog = () => {
     "@type": "CollectionPage",
     name: seoTitles[lang],
     description: seoDescriptions[lang],
-    url: "https://cleanupskg.com/blog",
+    url: "https://cleanupskg.gr/blog",
     mainEntity: {
       "@type": "ItemList",
       itemListElement: blogArticles.map((article, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        url: `https://cleanupskg.com/blog/${article.slug}`,
+        url: `https://cleanupskg.gr/blog/${article.slug}`,
         name: article.title[lang],
       })),
     },
