@@ -138,9 +138,19 @@ const PrivacyPolicy = () => {
 
   const c = content[lang];
 
+  const seoDescriptions = {
+    el: "Πολιτική απορρήτου της CleanUp SKG — Μάθετε πώς προστατεύουμε τα προσωπικά σας δεδομένα σύμφωνα με τον ΓΚΠΔ.",
+    en: "CleanUp SKG Privacy Policy — Learn how we protect your personal data in compliance with GDPR.",
+    ru: "Политика конфиденциальности CleanUp SKG — Узнайте, как мы защищаем ваши персональные данные в соответствии с GDPR.",
+  };
+
   return (
     <>
-      <SEOHead title={`${c.title} | CleanUp SKG`} description={c.title} />
+      <SEOHead
+        title={`${c.title} | CleanUp SKG`}
+        description={seoDescriptions[lang]}
+        path="/privacy-policy"
+      />
       <TopBar />
       <Navbar />
       <main className="min-h-screen pt-32 pb-20 bg-background">

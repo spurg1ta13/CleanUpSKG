@@ -6,13 +6,18 @@
     <xhtml:link rel="alternate" hreflang="el" href="https://cleanupskg.com/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://cleanupskg.com/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://cleanupskg.com/" />
-    <lastmod>2026-02-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleanupskg.com/" />
+    <lastmod>2026-02-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://cleanupskg.com/blog</loc>
-    <lastmod>2026-02-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="el" href="https://cleanupskg.com/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleanupskg.com/blog" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cleanupskg.com/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleanupskg.com/blog" />
+    <lastmod>2026-02-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -27,5 +32,15 @@
     <lastmod>2026-02-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cleanupskg.com/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://cleanupskg.com/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleanupskg.com/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cleanupskg.com/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleanupskg.com/privacy-policy" />
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
