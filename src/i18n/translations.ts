@@ -126,7 +126,7 @@ export const translations = {
     mattresses: { el: "Στρώματα", en: "Mattresses", ru: "Матрасы" },
     carpets: { el: "Χαλιά & Μοκέτες", en: "Carpets & Rugs", ru: "Ковры и Ковролин" },
     vehicle: { el: "Εσωτερικά Οχημάτων", en: "Vehicle Interiors", ru: "Салоны Автомобилей" },
-    pricingTitle: { el: "Τιμοκατάλογος Βιο-Καθαρισμού", en: "Bio-Cleaning Pricing", ru: "Цены на Био-Уборку" },
+    pricingTitle: { el: "Βιο-Καθαρισμός", en: "Bio-Cleaning", ru: "Био-Уборка" },
     item: { el: "Αντικείμενο", en: "Item", ru: "Предмет" },
     startingFrom: { el: "Από (+ ΦΠΑ)", en: "Starting From (+ VAT)", ru: "От (+ НДС)" },
     seat: { el: "Θέση", en: "Seat", ru: "Место" },
@@ -140,7 +140,7 @@ export const translations = {
 
   // Steam Cleaning Pricing
   steamPricing: {
-    heading: { el: "Τιμοκατάλογος Ατμοκαθαρισμού", en: "Steam Cleaning Pricing", ru: "Цены на Паровую Очистку" },
+    heading: { el: "Ατμοκαθαρισμός", en: "Steam Cleaning", ru: "Паровая Очистка" },
     item: { el: "Αντικείμενο", en: "Item", ru: "Предмет" },
     startingFrom: { el: "Από (+ ΦΠΑ)", en: "Starting From (+ VAT)", ru: "От (+ НДС)" },
     shutter: { el: "Πατζούρι", en: "Shutter", ru: "Ставни" },
