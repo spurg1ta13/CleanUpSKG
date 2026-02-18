@@ -4,12 +4,10 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/i18n/LanguageContext";
 import bioImg from "@/assets/bio-cleaning.jpg";
 
-const SESSION_KEY = "cleanup_spring_banner_seen";
-
 const texts = {
   el: {
-    badge: "🌸 Ανοιξιάτικη Προσφορά",
-    title: "Εαρινός Καθαρισμός",
+    badge: "🌸 Ειδική Ανοιξιάτικη Προσφορά Καθαρισμού",
+    title: "Ειδική Προσφορά",
     highlight: "-20%",
     subtitle: "στον Βιο-Καθαρισμό",
     description: "Φρεσκάρετε καναπέδες, στρώματα & χαλιά με επαγγελματικό βιο-καθαρισμό. Περιορισμένη προσφορά!",
@@ -17,8 +15,8 @@ const texts = {
     call: "Καλέστε μας",
   },
   en: {
-    badge: "🌸 Spring Special",
-    title: "Spring Cleaning",
+    badge: "🌸 Special Spring Cleaning Offer",
+    title: "Special Offer",
     highlight: "-20%",
     subtitle: "on Bio-Cleaning",
     description: "Freshen up sofas, mattresses & carpets with professional bio-cleaning. Limited time offer!",
@@ -26,8 +24,8 @@ const texts = {
     call: "Call Us",
   },
   ru: {
-    badge: "🌸 Весеннее Предложение",
-    title: "Весенняя Уборка",
+    badge: "🌸 Специальное Весеннее Предложение",
+    title: "Специальное Предложение",
     highlight: "-20%",
     subtitle: "на Био-Уборку",
     description: "Освежите диваны, матрасы и ковры профессиональной био-уборкой. Предложение ограничено!",
@@ -42,16 +40,12 @@ const SpringBanner = () => {
   const t = texts[lang];
 
   useEffect(() => {
-    const seen = sessionStorage.getItem(SESSION_KEY);
-    if (!seen) {
-      const timer = setTimeout(() => setVisible(true), 600);
-      return () => clearTimeout(timer);
-    }
+    const timer = setTimeout(() => setVisible(true), 600);
+    return () => clearTimeout(timer);
   }, []);
 
   const dismiss = () => {
     setVisible(false);
-    sessionStorage.setItem(SESSION_KEY, "true");
   };
 
   const handleBook = () => {
@@ -96,7 +90,7 @@ const SpringBanner = () => {
           </span>
 
           {/* Discount badge */}
-          <div className="absolute top-4 right-14 bg-destructive text-destructive-foreground font-black text-2xl md:text-3xl px-4 py-2 rounded-2xl shadow-lg -rotate-6">
+          <div className="absolute top-3 right-14 md:top-4 md:right-16 bg-destructive text-destructive-foreground font-black text-4xl md:text-5xl px-5 py-3 md:px-6 md:py-4 rounded-2xl shadow-2xl -rotate-6 animate-pulse border-2 border-destructive-foreground/20">
             {t.highlight}
           </div>
 
