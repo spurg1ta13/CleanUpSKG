@@ -19,10 +19,10 @@ const navKeys = [
   { key: "contact", href: "/#contact" },
 ];
 
-const langOptions: { value: Lang; label: string }[] = [
-  { value: "el", label: "GR" },
-  { value: "en", label: "EN" },
-  { value: "ru", label: "RU" },
+const langOptions: { value: Lang; label: string; flag: string }[] = [
+  { value: "el", label: "GR", flag: "🇬🇷" },
+  { value: "en", label: "EN", flag: "🇬🇧" },
+  { value: "ru", label: "RU", flag: "🇷🇺" },
 ];
 
 const LangDropdown = () => {
@@ -46,7 +46,7 @@ const LangDropdown = () => {
         onClick={() => setOpen(!open)}
         className="px-2.5 py-1 rounded-md text-xs font-bold border border-border bg-muted hover:bg-accent transition-colors flex items-center gap-1"
       >
-        {current.label}
+        <span className="text-base leading-none">{current.flag}</span>
         <svg className="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
           <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
         </svg>
@@ -57,9 +57,9 @@ const LangDropdown = () => {
             <button
               key={o.value}
               onClick={() => { setLang(o.value); setOpen(false); }}
-              className={`block w-full text-left px-3 py-1.5 text-xs font-medium hover:bg-muted transition-colors ${o.value === lang ? "text-primary font-bold" : "text-foreground"}`}
+              className={`flex items-center gap-2 w-full text-left px-3 py-1.5 text-xs font-medium hover:bg-muted transition-colors ${o.value === lang ? "text-primary font-bold" : "text-foreground"}`}
             >
-              {o.label}
+              <span className="text-base leading-none">{o.flag}</span> {o.label}
             </button>
           ))}
         </div>
