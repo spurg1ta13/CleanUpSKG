@@ -13,7 +13,7 @@ const INSTAGRAM_URL = "https://www.instagram.com/cleanup.skg?igsh=MWw4d2U0ZDB4bX
 const navKeys = [
   { key: "home", href: "/#home" },
   { key: "about", href: "/#about" },
-  { key: "services", href: "/#services" },
+  { key: "services", href: "/#specialized" },
   { key: "pricing", href: "/#pricing" },
   { key: "blog", href: "/blog" },
   { key: "contact", href: "/#contact" },
