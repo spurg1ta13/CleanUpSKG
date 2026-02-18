@@ -1,6 +1,6 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { Menu, X, Facebook, Instagram } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import TikTokIcon from "@/components/icons/TikTokIcon";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Lang } from "@/i18n/translations";
@@ -71,6 +71,30 @@ const LangDropdown = () => {
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const { t } = useLanguage();
+  const navigate = useNavigate();
+
+  const handleNavClick = useCallback((e: React.MouseEvent, href: string) => {
+    const hashIndex = href.indexOf("#");
+    if (hashIndex === -1) return; // let Link handle non-hash routes like /blog
+    e.preventDefault();
+    const hash = href.slice(hashIndex);
+    const path = href.slice(0, hashIndex) || "/";
+    
+    if (window.location.pathname === path) {
+      // Already on the right page — just scroll
+      const el = document.querySelector(hash);
+      if (el) {
+        const navbarHeight = 64;
+        const top = el.getBoundingClientRect().top + window.scrollY - navbarHeight;
+        window.scrollTo({ top, behavior: "smooth" });
+      }
+      // Update URL hash without navigation
+      window.history.replaceState(null, "", href);
+    } else {
+      navigate(href);
+    }
+    setOpen(false);
+  }, [navigate]);
 
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b">
@@ -82,7 +106,7 @@ const Navbar = () => {
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
           {navKeys.map((l) => (
-            <Link key={l.href} to={l.href} className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
+            <Link key={l.href} to={l.href} onClick={(e) => handleNavClick(e, l.href)} className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
               {t("nav", l.key)}
             </Link>
           ))}
@@ -108,7 +132,7 @@ const Navbar = () => {
       {open && (
         <div className="md:hidden border-t bg-background pb-4">
           {navKeys.map((l) => (
-            <Link key={l.href} to={l.href} onClick={() => setOpen(false)} className="block px-6 py-3 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-muted transition-colors">
+            <Link key={l.href} to={l.href} onClick={(e) => handleNavClick(e, l.href)} className="block px-6 py-3 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-muted transition-colors">
               {t("nav", l.key)}
             </Link>
           ))}
