@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/i18n/LanguageContext";
 import ScrollToHash from "@/components/ScrollToHash";
 import FloatingContact from "@/components/FloatingContact";
+import FloatingPhone from "@/components/FloatingPhone";
 import Index from "./pages/Index";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
@@ -23,6 +24,7 @@ const App = () => (
         <Sonner />
         <CookieBanner />
         <FloatingContact />
+        <FloatingPhone />
         <BrowserRouter>
           <ScrollToHash />
           <Routes>
