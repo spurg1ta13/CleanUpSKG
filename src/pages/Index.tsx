@@ -71,6 +71,7 @@ const localBusinessJsonLd = {
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Βιο-Καθαρισμός / Bio-Cleaning", description: "Professional bio-cleaning for mattresses, sofas, carpets, and upholstery." } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Απολύμανση με Ατμό / Steam Disinfection", description: "Chemical-free steam sanitization for deep disinfection of all surfaces." } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Πλύσιμο υπό Πίεση / Pressure Washing", description: "High-pressure washing for exterior surfaces, driveways, and patios." } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Καθαρισμός Παραθύρων / Window Cleaning", description: "Streak-free interior and exterior window cleaning for buildings of any height." } },
     ],
   },
 };
