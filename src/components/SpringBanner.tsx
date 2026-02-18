@@ -1,28 +1,38 @@
 import { useState, useEffect } from "react";
-import { X, Sparkles, Leaf } from "lucide-react";
+import { X, Phone, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/i18n/LanguageContext";
+import bioImg from "@/assets/bio-cleaning.jpg";
 
 const SESSION_KEY = "cleanup_spring_banner_seen";
 
 const texts = {
   el: {
     badge: "🌸 Ανοιξιάτικη Προσφορά",
-    title: "20% Έκπτωση στον Βιο-Καθαρισμό!",
-    subtitle: "Φρεσκάρετε το σπίτι σας αυτή την άνοιξη με επαγγελματικό βιο-καθαρισμό σε καναπέδες, στρώματα & χαλιά.",
+    title: "Εαρινός Καθαρισμός",
+    highlight: "-20%",
+    subtitle: "στον Βιο-Καθαρισμό",
+    description: "Φρεσκάρετε καναπέδες, στρώματα & χαλιά με επαγγελματικό βιο-καθαρισμό. Περιορισμένη προσφορά!",
     cta: "Κλείστε Τώρα",
+    call: "Καλέστε μας",
   },
   en: {
     badge: "🌸 Spring Special",
-    title: "20% Off Bio-Cleaning!",
-    subtitle: "Freshen up your home this spring with professional bio-cleaning for sofas, mattresses & carpets.",
+    title: "Spring Cleaning",
+    highlight: "-20%",
+    subtitle: "on Bio-Cleaning",
+    description: "Freshen up sofas, mattresses & carpets with professional bio-cleaning. Limited time offer!",
     cta: "Book Now",
+    call: "Call Us",
   },
   ru: {
     badge: "🌸 Весеннее Предложение",
-    title: "Скидка 20% на Био-Уборку!",
-    subtitle: "Освежите свой дом этой весной — профессиональная био-уборка диванов, матрасов и ковров.",
+    title: "Весенняя Уборка",
+    highlight: "-20%",
+    subtitle: "на Био-Уборку",
+    description: "Освежите диваны, матрасы и ковры профессиональной био-уборкой. Предложение ограничено!",
     cta: "Забронировать",
+    call: "Позвоните нам",
   },
 };
 
@@ -34,8 +44,7 @@ const SpringBanner = () => {
   useEffect(() => {
     const seen = sessionStorage.getItem(SESSION_KEY);
     if (!seen) {
-      // Small delay for smoother entrance
-      const timer = setTimeout(() => setVisible(true), 800);
+      const timer = setTimeout(() => setVisible(true), 600);
       return () => clearTimeout(timer);
     }
   }, []);
@@ -45,56 +54,84 @@ const SpringBanner = () => {
     sessionStorage.setItem(SESSION_KEY, "true");
   };
 
+  const handleBook = () => {
+    dismiss();
+    setTimeout(() => {
+      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  };
+
   if (!visible) return null;
 
   return (
-    <div className="fixed inset-0 z-[110] flex items-center justify-center p-4 animate-in fade-in duration-500">
+    <div className="fixed inset-0 z-[110] flex items-center justify-center p-3 md:p-6 animate-in fade-in duration-400">
       {/* Backdrop */}
-      <div className="absolute inset-0 bg-foreground/50 backdrop-blur-sm" onClick={dismiss} />
+      <div className="absolute inset-0 bg-foreground/60 backdrop-blur-sm" onClick={dismiss} />
 
-      {/* Banner card */}
-      <div className="relative w-full max-w-lg bg-background rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-500">
-        {/* Decorative gradient header */}
-        <div className="relative bg-gradient-to-br from-primary via-accent to-primary px-6 pt-8 pb-10 text-center overflow-hidden">
-          {/* Floating leaves decoration */}
-          <Leaf className="absolute top-4 left-6 h-8 w-8 text-primary-foreground/20 rotate-[-30deg]" />
-          <Leaf className="absolute bottom-3 right-8 h-6 w-6 text-primary-foreground/15 rotate-[45deg]" />
-          <Leaf className="absolute top-10 right-14 h-5 w-5 text-primary-foreground/10 rotate-[15deg]" />
+      {/* Banner */}
+      <div className="relative w-full max-w-2xl bg-background rounded-3xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-500">
+        {/* Close */}
+        <button
+          onClick={dismiss}
+          className="absolute top-3 right-3 z-20 p-2 rounded-full bg-foreground/60 hover:bg-foreground/80 transition-colors text-background"
+          aria-label="Close"
+        >
+          <X className="h-4 w-4" />
+        </button>
 
-          {/* Close button */}
-          <button
-            onClick={dismiss}
-            className="absolute top-3 right-3 p-1.5 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors text-primary-foreground"
-            aria-label="Close"
-          >
-            <X className="h-4 w-4" />
-          </button>
+        {/* Image section */}
+        <div className="relative h-48 md:h-64 w-full overflow-hidden">
+          <img
+            src={bioImg}
+            alt="Professional bio-cleaning service"
+            className="w-full h-full object-cover"
+          />
+          {/* Gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent" />
 
-          {/* Badge */}
-          <span className="inline-flex items-center gap-1.5 bg-primary-foreground/15 backdrop-blur-sm text-primary-foreground text-xs font-bold px-3 py-1 rounded-full mb-4">
-            <Sparkles className="h-3 w-3" />
+          {/* Badge on image */}
+          <span className="absolute top-4 left-4 inline-flex items-center gap-1.5 bg-background/90 backdrop-blur-sm text-foreground text-xs font-bold px-3 py-1.5 rounded-full shadow-md">
+            <Sparkles className="h-3.5 w-3.5 text-primary" />
             {t.badge}
           </span>
 
-          {/* Title */}
-          <h2 className="text-2xl md:text-3xl font-extrabold text-primary-foreground leading-tight">
-            {t.title}
-          </h2>
+          {/* Discount badge */}
+          <div className="absolute top-4 right-14 bg-destructive text-destructive-foreground font-black text-2xl md:text-3xl px-4 py-2 rounded-2xl shadow-lg -rotate-6">
+            {t.highlight}
+          </div>
+
+          {/* Title overlay on image */}
+          <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+            <h2 className="text-2xl md:text-4xl font-extrabold text-background leading-tight">
+              {t.title}{" "}
+              <span className="block text-primary-foreground/90 md:inline">{t.subtitle}</span>
+            </h2>
+          </div>
         </div>
 
-        {/* Body */}
-        <div className="px-6 py-6 text-center">
-          <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-6">
-            {t.subtitle}
+        {/* Content */}
+        <div className="px-5 md:px-8 py-5 md:py-6">
+          <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-5">
+            {t.description}
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+
+          <div className="flex flex-col sm:flex-row gap-3">
+            <Button
+              size="lg"
+              className="flex-1 rounded-full font-bold text-base shadow-lg hover:shadow-xl transition-shadow"
+              onClick={handleBook}
+            >
+              {t.cta}
+            </Button>
             <Button
               asChild
               size="lg"
-              className="rounded-full px-8 font-semibold shadow-lg"
+              variant="outline"
+              className="flex-1 rounded-full font-bold text-base border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
             >
-              <a href="#bio-cleaning" onClick={dismiss}>
-                {t.cta}
+              <a href="tel:+3069747760587" onClick={dismiss}>
+                <Phone className="mr-2 h-5 w-5" />
+                {t.call}
               </a>
             </Button>
           </div>
