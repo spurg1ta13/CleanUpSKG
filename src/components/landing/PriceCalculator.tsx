@@ -31,6 +31,7 @@ const bioItems: ItemService[] = [
   { key: "mattressSingle", price: 35, unit: "item" },
   { key: "mattressDouble", price: 50, unit: "item" },
   { key: "mattressKing", price: 60, unit: "item" },
+  { key: "bed", price: 5, unit: "item" },
 ];
 
 const steamItems: ItemService[] = [
@@ -39,6 +40,7 @@ const steamItems: ItemService[] = [
   { key: "windowFrame", price: 10, unit: "item" },
   { key: "wc", price: 3, unit: "sqm" },
   { key: "grout", price: 3, unit: "sqm" },
+  { key: "windows", price: 5, unit: "item" },
 ];
 
 interface SummaryLine {
