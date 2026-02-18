@@ -38,7 +38,7 @@ export const translations = {
       en: "CleanUp SKG is a modern and reliable cleaning team based in Kalamaria. Our goal is to maintain high standards of cleanliness in every space we undertake.\n\nWe provide specialized cleaning solutions for offices, professional spaces, construction sites, and residences across the greater Thessaloniki area.",
       ru: "CleanUp SKG — это современная и надёжная клининговая команда с базой в Каламарье. Наша цель — поддержание высоких стандартов чистоты в каждом пространстве, которое мы берём на себя.\n\nМы предоставляем специализированные решения по уборке офисов, профессиональных помещений, строительных объектов и жилых домов в большом районе Салоник.",
     },
-    trusted: { el: "Αξιόπιστοι", en: "Trusted", ru: "Надёжность" },
+    trusted: { el: "Αξιοπιστία", en: "Reliability", ru: "Надёжность" },
     trustedDesc: { el: "Εμπιστευτείτε τον χώρο σας σε αξιόπιστες ομάδες καθαρισμού όπου με ασφάλεια παραδίδουν άριστα αποτελέσματα.", en: "Trust your space to reliable cleaning teams that safely deliver excellent results.", ru: "Доверьте своё пространство надёжным клининговым бригадам, которые безопасно обеспечивают отличные результаты." },
     quality: { el: "Ποιότητα", en: "Quality", ru: "Качество" },
     qualityDesc: { el: "Χρησιμοποιούμε επαγγελματικά προϊόντα καθαρισμού και δοκιμασμένες τεχνικές για κάθε τύπο χώρου.", en: "We use professional-grade cleaning products and proven techniques for every type of space.", ru: "Мы используем профессиональные средства для уборки и проверенные методы для любого типа помещения." },
