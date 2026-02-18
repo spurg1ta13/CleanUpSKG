@@ -57,36 +57,35 @@ const Blog = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {blogArticles.map((article) => (
-                <Card key={article.slug} className="border-0 shadow-md hover:shadow-lg transition-shadow overflow-hidden">
-                  <CardContent className="p-0">
-                    <article>
-                      <div className="p-6 md:p-8">
-                        <div className="flex items-center gap-2 text-muted-foreground text-sm mb-3">
-                          <Calendar className="h-4 w-4" />
-                          <time dateTime={article.date}>
-                            {new Date(article.date).toLocaleDateString(
-                              lang === "el" ? "el-GR" : lang === "ru" ? "ru-RU" : "en-US",
-                              { year: "numeric", month: "long", day: "numeric" }
-                            )}
-                          </time>
+              {[...blogArticles].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).map((article) => (
+                <Link key={article.slug} to={`/blog/${article.slug}`} className="block group">
+                  <Card className="border-0 shadow-md group-hover:shadow-lg transition-shadow overflow-hidden h-full">
+                    <CardContent className="p-0">
+                      <article>
+                        <div className="p-6 md:p-8">
+                          <div className="flex items-center gap-2 text-muted-foreground text-sm mb-3">
+                            <Calendar className="h-4 w-4" />
+                            <time dateTime={article.date}>
+                              {new Date(article.date).toLocaleDateString(
+                                lang === "el" ? "el-GR" : lang === "ru" ? "ru-RU" : "en-US",
+                                { year: "numeric", month: "long", day: "numeric" }
+                              )}
+                            </time>
+                          </div>
+                          <h2 className="text-xl font-bold text-foreground mb-3 leading-tight group-hover:text-primary transition-colors">
+                            {article.title[lang]}
+                          </h2>
+                          <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                            {article.excerpt[lang]}
+                          </p>
+                          <span className="inline-flex items-center gap-1.5 text-primary font-semibold text-sm">
+                            {t("blog", "readMore")} <ArrowRight className="h-4 w-4" />
+                          </span>
                         </div>
-                        <h2 className="text-xl font-bold text-foreground mb-3 leading-tight">
-                          {article.title[lang]}
-                        </h2>
-                        <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                          {article.excerpt[lang]}
-                        </p>
-                        <Link
-                          to={`/blog/${article.slug}`}
-                          className="inline-flex items-center gap-1.5 text-primary font-semibold text-sm hover:underline"
-                        >
-                          {t("blog", "readMore")} <ArrowRight className="h-4 w-4" />
-                        </Link>
-                      </div>
-                    </article>
-                  </CardContent>
-                </Card>
+                      </article>
+                    </CardContent>
+                  </Card>
+                </Link>
               ))}
             </div>
           </div>
