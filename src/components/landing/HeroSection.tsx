@@ -4,6 +4,7 @@ import { Calculator } from "lucide-react";
 import heroImg from "@/assets/hero-cleaning.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
 import PriceCalculator from "./PriceCalculator";
+import { SHOW_PRICING } from "@/config/featureFlags";
 
 const HeroSection = () => {
   const { t } = useLanguage();
@@ -30,19 +31,20 @@ const HeroSection = () => {
                   {t("hero", "cta")} 
                 </a>
               </Button>
-              <Button
-                size="lg"
-                className="rounded-full px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-shadow bg-primary/80 text-primary-foreground hover:bg-primary/70"
-                onClick={() => setCalcOpen(true)}>
-
-                <Calculator className="mr-2 h-5 w-5" />
-                {t("calc", "cta")}
-              </Button>
+              {SHOW_PRICING && (
+                <Button
+                  size="lg"
+                  className="rounded-full px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-shadow bg-primary/80 text-primary-foreground hover:bg-primary/70"
+                  onClick={() => setCalcOpen(true)}>
+                  <Calculator className="mr-2 h-5 w-5" />
+                  {t("calc", "cta")}
+                </Button>
+              )}
             </div>
           </div>
         </div>
       </section>
-      <PriceCalculator open={calcOpen} onOpenChange={setCalcOpen} />
+      {SHOW_PRICING && <PriceCalculator open={calcOpen} onOpenChange={setCalcOpen} />}
     </>);
 
 };

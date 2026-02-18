@@ -8,6 +8,7 @@ import CommercialSection from "@/components/landing/CommercialSection";
 import PostConstructionSection from "@/components/landing/PostConstructionSection";
 import BioCleaningSection from "@/components/landing/BioCleaningSection";
 import PricingSection from "@/components/landing/PricingSection";
+import { SHOW_PRICING } from "@/config/featureFlags";
 import FAQSection from "@/components/landing/FAQSection";
 import ContactSection from "@/components/landing/ContactSection";
 import Footer from "@/components/landing/Footer";
@@ -105,7 +106,7 @@ const Index = () => {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
-      <PricingSection />
+      {SHOW_PRICING && <PricingSection />}
       <SpecializedSection />
       <CommercialSection />
       <PostConstructionSection />

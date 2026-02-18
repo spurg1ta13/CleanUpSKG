@@ -1,6 +1,7 @@
 import { Sofa, BedDouble, Layers, Car } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import bioCleaningImg from "@/assets/bio-cleaning.jpg";
+import { SHOW_PRICING } from "@/config/featureFlags";
 
 const BioCleaningSection = () => {
   const { t } = useLanguage();
@@ -49,14 +50,14 @@ const BioCleaningSection = () => {
           <thead>
             <tr className="bg-primary text-primary-foreground">
               <th className="text-left py-3 px-5 text-sm font-semibold">{t(section, "item")}</th>
-              <th className="text-right py-3 px-5 text-sm font-semibold">{t(section, "startingFrom")}</th>
+              {SHOW_PRICING && <th className="text-right py-3 px-5 text-sm font-semibold">{t(section, "startingFrom")}</th>}
             </tr>
           </thead>
           <tbody>
             {items.map((p, i) => (
               <tr key={p.key} className={i % 2 === 1 ? "bg-muted/30" : ""}>
                 <td className="py-3 px-5 text-sm text-foreground">{t(section, p.key)}</td>
-                <td className="py-3 px-5 text-sm text-right font-semibold text-primary">{getPrice(p)}</td>
+                {SHOW_PRICING && <td className="py-3 px-5 text-sm text-right font-semibold text-primary">{getPrice(p)}</td>}
               </tr>
             ))}
           </tbody>

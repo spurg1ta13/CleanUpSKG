@@ -5,12 +5,13 @@ import TikTokIcon from "@/components/icons/TikTokIcon";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Lang } from "@/i18n/translations";
 import logo from "@/assets/logo-white-bg.png";
+import { SHOW_PRICING } from "@/config/featureFlags";
 
 const FACEBOOK_URL = "https://www.facebook.com/share/1GBFUHR5yS/?mibextid=wwXIfr";
 const TIKTOK_URL = "https://www.tiktok.com/@cleanup.skg?_r=1&_t=ZN-93sbKkZERwU";
 const INSTAGRAM_URL = "https://www.instagram.com/cleanup.skg?igsh=MWw4d2U0ZDB4bXJvOQ==";
 
-const navKeys = [
+const allNavKeys = [
   { key: "home", href: "/#home" },
   { key: "about", href: "/#about" },
   { key: "services", href: "/#specialized" },
@@ -18,6 +19,8 @@ const navKeys = [
   { key: "blog", href: "/blog" },
   { key: "contact", href: "/#contact" },
 ];
+
+const navKeys = allNavKeys.filter((n) => SHOW_PRICING || n.key !== "pricing");
 
 const langOptions: { value: Lang; label: string; flag: string }[] = [
   { value: "el", label: "GR", flag: "🇬🇷" },
