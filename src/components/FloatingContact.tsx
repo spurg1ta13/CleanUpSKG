@@ -49,12 +49,6 @@ const FloatingContact = () => {
       body: { name: form.name.trim(), phone: form.phone.trim(), message: form.message.trim() },
     }).catch(console.error);
 
-    const whatsappNumber = "306974776058";
-    const whatsappText = encodeURIComponent(
-      `Γεια σας, είμαι ο/η ${form.name.trim()}.\nΤηλέφωνο: ${form.phone.trim()}\n\n${form.message.trim()}`
-    );
-    window.open(`https://wa.me/${whatsappNumber}?text=${whatsappText}`, "_blank");
-
     toast({
       title: t("floatingContact", "successTitle"),
       description: t("floatingContact", "successDesc"),
