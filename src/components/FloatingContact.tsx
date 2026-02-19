@@ -6,24 +6,17 @@ import { useToast } from "@/hooks/use-toast";
 
 const STORAGE_KEY = "floating_contact_sends";
 const MAX_SENDS = 2;
-const WINDOW_MS = 24 * 60 * 60 * 1000; // 24 hours
 
-const getSendTimestamps = (): number[] => {
+const getSendCount = (): number => {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return [];
-    const timestamps: number[] = JSON.parse(raw);
-    const now = Date.now();
-    return timestamps.filter((ts) => now - ts < WINDOW_MS);
+    return parseInt(sessionStorage.getItem(STORAGE_KEY) || "0", 10);
   } catch {
-    return [];
+    return 0;
   }
 };
 
-const addSendTimestamp = () => {
-  const timestamps = getSendTimestamps();
-  timestamps.push(Date.now());
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(timestamps));
+const incrementSendCount = () => {
+  sessionStorage.setItem(STORAGE_KEY, String(getSendCount() + 1));
 };
 
 const FloatingContact = () => {
@@ -38,7 +31,7 @@ const FloatingContact = () => {
   const [privacyChecked, setPrivacyChecked] = useState(false);
 
   useEffect(() => {
-    setDisabled(getSendTimestamps().length >= MAX_SENDS);
+    setDisabled(getSendCount() >= MAX_SENDS);
   }, [open]);
 
   const validate = () => {
@@ -78,7 +71,7 @@ const FloatingContact = () => {
       body: { name: form.name.trim(), phone: form.phone.trim(), message: form.message.trim() },
     }).catch(console.error);
 
-    addSendTimestamp();
+    incrementSendCount();
 
     toast({
       title: t("floatingContact", "successTitle"),
@@ -88,7 +81,7 @@ const FloatingContact = () => {
     setErrors({});
     setOpen(false);
     setPrivacyChecked(false);
-    setDisabled(getSendTimestamps().length >= MAX_SENDS);
+    setDisabled(getSendCount() >= MAX_SENDS);
   };
 
   return (
