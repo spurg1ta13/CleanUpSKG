@@ -116,7 +116,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <a href="tel:+3069747760587" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary text-primary-foreground text-xs font-bold hover:bg-primary/90 transition-colors shadow-sm">
+          <a href="tel:+3069747760587" className="hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary text-primary-foreground text-xs font-bold hover:bg-primary/90 transition-colors shadow-sm">
             <Phone className="h-3.5 w-3.5" />
             <span>697 477 60587</span>
           </a>
