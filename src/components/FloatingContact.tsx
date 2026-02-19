@@ -88,21 +88,14 @@ const FloatingContact = () => {
     <>
       {/* Floating button */}
       <div className="fixed bottom-6 right-6 z-50 group">
-        {!open && (
+        {!open && !disabled && (
           <>
-            {!disabled && (
-              <div className="absolute bottom-full right-0 mb-2 px-3 py-1.5 bg-foreground text-background text-xs font-medium rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                {t("floatingContact", "tooltip")}
-              </div>
-            )}
+            <div className="absolute bottom-full right-0 mb-2 px-3 py-1.5 bg-foreground text-background text-xs font-medium rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+              {t("floatingContact", "tooltip")}
+            </div>
             <button
-              onClick={() => !disabled && setOpen(true)}
-              disabled={disabled}
-              className={`w-14 h-14 rounded-full shadow-lg flex items-center justify-center transition-all ${
-                disabled
-                  ? "bg-muted text-muted-foreground cursor-not-allowed opacity-50"
-                  : "bg-primary text-primary-foreground hover:shadow-xl hover:scale-105"
-              }`}
+              onClick={() => setOpen(true)}
+              className="w-14 h-14 rounded-full shadow-lg flex items-center justify-center transition-all bg-primary text-primary-foreground hover:shadow-xl hover:scale-105"
               aria-label={t("floatingContact", "tooltip")}
             >
               <MessageCircle className="h-6 w-6" />
