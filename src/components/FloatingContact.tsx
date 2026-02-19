@@ -1,23 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { MessageCircle, X, Send } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
-
-const STORAGE_KEY = "floating_contact_sends";
-const MAX_SENDS = 2;
-
-const getSendCount = (): number => {
-  try {
-    return parseInt(sessionStorage.getItem(STORAGE_KEY) || "0", 10);
-  } catch {
-    return 0;
-  }
-};
-
-const incrementSendCount = () => {
-  sessionStorage.setItem(STORAGE_KEY, String(getSendCount() + 1));
-};
 
 const FloatingContact = () => {
   const { t } = useLanguage();
@@ -27,12 +12,7 @@ const FloatingContact = () => {
   const [form, setForm] = useState({ name: "", phone: "", message: "" });
   const [honeypot, setHoneypot] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [disabled, setDisabled] = useState(false);
   const [privacyChecked, setPrivacyChecked] = useState(false);
-
-  useEffect(() => {
-    setDisabled(getSendCount() >= MAX_SENDS);
-  }, [open]);
 
   const validate = () => {
     const errs: Record<string, string> = {};
@@ -46,9 +26,8 @@ const FloatingContact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (disabled) return;
     if (!validate()) return;
-    if (honeypot) return; // bot detected
+    if (honeypot) return;
 
     setSending(true);
 
@@ -66,19 +45,15 @@ const FloatingContact = () => {
       return;
     }
 
-    // Send email notification (fire-and-forget)
     supabase.functions.invoke("send-contact-email", {
       body: { name: form.name.trim(), phone: form.phone.trim(), message: form.message.trim() },
     }).catch(console.error);
 
-    // Open WhatsApp with pre-filled message
     const whatsappNumber = "306974776058";
     const whatsappText = encodeURIComponent(
       `Γεια σας, είμαι ο/η ${form.name.trim()}.\nΤηλέφωνο: ${form.phone.trim()}\n\n${form.message.trim()}`
     );
     window.open(`https://wa.me/${whatsappNumber}?text=${whatsappText}`, "_blank");
-
-    incrementSendCount();
 
     toast({
       title: t("floatingContact", "successTitle"),
@@ -88,14 +63,13 @@ const FloatingContact = () => {
     setErrors({});
     setOpen(false);
     setPrivacyChecked(false);
-    setDisabled(getSendCount() >= MAX_SENDS);
   };
 
   return (
     <>
       {/* Floating button */}
       <div className="fixed bottom-6 right-6 z-50 group">
-        {!open && !disabled && (
+        {!open && (
           <>
             <div className="absolute bottom-full right-0 mb-2 px-3 py-1.5 bg-foreground text-background text-xs font-medium rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
               {t("floatingContact", "tooltip")}
@@ -112,7 +86,7 @@ const FloatingContact = () => {
       </div>
 
       {/* Form panel */}
-      {open && !disabled && (
+      {open && (
         <div className="fixed bottom-6 right-6 z-50 w-[340px] max-w-[calc(100vw-2rem)] bg-background border border-border rounded-2xl shadow-2xl overflow-hidden animate-in slide-in-from-bottom-4 fade-in duration-200">
           <div className="bg-primary text-primary-foreground px-5 py-4 flex items-center justify-between">
             <span className="font-semibold text-sm">{t("floatingContact", "tooltip")}</span>
