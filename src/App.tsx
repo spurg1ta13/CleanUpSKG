@@ -8,7 +8,8 @@ import { LanguageProvider } from "@/i18n/LanguageContext";
 import ScrollToHash from "@/components/ScrollToHash";
 import FloatingContact from "@/components/FloatingContact";
 import FloatingPhone from "@/components/FloatingPhone";
-import SpringBanner from "@/components/SpringBanner";
+import { lazy, Suspense } from "react";
+const SpringBanner = lazy(() => import("@/components/SpringBanner"));
 import Index from "./pages/Index";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
@@ -26,7 +27,7 @@ const App = () => (
         <CookieBanner />
         <FloatingContact />
         <FloatingPhone />
-        <SpringBanner />
+        <Suspense fallback={null}><SpringBanner /></Suspense>
         <BrowserRouter>
           <ScrollToHash />
           <Routes>
