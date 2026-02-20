@@ -7,7 +7,7 @@ import { Lang } from "@/i18n/translations";
 import logo from "@/assets/logo-white-bg.png";
 import { SHOW_PRICING } from "@/config/featureFlags";
 
-const FACEBOOK_URL = "https://www.facebook.com/share/1GBFUHR5yS/?mibextid=wwXIfr";
+const FACEBOOK_URL = "https://www.facebook.com/cleanup.skg";
 const TIKTOK_URL = "https://www.tiktok.com/@cleanup.skg?_r=1&_t=ZN-93sbKkZERwU";
 const INSTAGRAM_URL = "https://www.instagram.com/cleanup.skg?igsh=MWw4d2U0ZDB4bXJvOQ==";
 
