@@ -90,7 +90,7 @@ const SpringBanner = () => {
           </span>
 
           {/* Discount badge */}
-          <div className="absolute top-3 right-14 md:top-4 md:right-16 bg-destructive text-destructive-foreground font-black text-4xl md:text-5xl px-5 py-3 md:px-6 md:py-4 rounded-2xl shadow-2xl -rotate-6 animate-pulse border-2 border-destructive-foreground/20">
+          <div className="absolute top-12 right-3 md:top-4 md:right-16 bg-destructive text-destructive-foreground font-black text-4xl md:text-5xl px-5 py-3 md:px-6 md:py-4 rounded-2xl shadow-2xl -rotate-6 animate-pulse border-2 border-destructive-foreground/20">
             {t.highlight}
           </div>
 
