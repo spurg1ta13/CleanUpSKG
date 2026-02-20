@@ -84,8 +84,8 @@ const SpringBanner = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent" />
 
           {/* Badge on image */}
-          <span className="absolute top-4 left-4 inline-flex items-center gap-1.5 bg-background/90 backdrop-blur-sm text-foreground text-xs font-bold px-3 py-1.5 rounded-full shadow-md">
-            <Sparkles className="h-3.5 w-3.5 text-primary" />
+          <span className="absolute top-4 left-4 right-12 inline-flex items-center gap-1.5 bg-background/90 backdrop-blur-sm text-foreground text-xs font-bold px-3 py-1.5 rounded-full shadow-md truncate">
+            <Sparkles className="h-3.5 w-3.5 text-primary shrink-0" />
             {t.badge}
           </span>
 
