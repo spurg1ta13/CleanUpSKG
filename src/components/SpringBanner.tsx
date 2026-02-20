@@ -112,7 +112,7 @@ const SpringBanner = () => {
           <div className="flex flex-col sm:flex-row gap-3">
             <Button
               size="lg"
-              className="flex-1 rounded-full font-bold text-base shadow-lg hover:shadow-xl transition-shadow"
+              className="w-full sm:flex-1 rounded-full font-bold text-base shadow-lg hover:shadow-xl transition-shadow"
               onClick={handleBook}
             >
               {t.cta}
@@ -121,7 +121,7 @@ const SpringBanner = () => {
               asChild
               size="lg"
               variant="outline"
-              className="flex-1 rounded-full font-bold text-base border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+              className="w-full sm:flex-1 rounded-full font-bold text-base border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
             >
               <a href="tel:+3069747760587" onClick={dismiss}>
                 <Phone className="mr-2 h-5 w-5" />
