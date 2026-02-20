@@ -59,7 +59,7 @@ const localBusinessJsonLd = {
   sameAs: [
     "https://www.instagram.com/cleanup.skg",
     "https://www.tiktok.com/@cleanup.skg",
-    "https://www.facebook.com/share/1GBFUHR5yS/",
+    "https://www.facebook.com/cleanup.skg",
   ],
   priceRange: "€€",
   aggregateRating: undefined,
