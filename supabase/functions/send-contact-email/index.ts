@@ -65,7 +65,7 @@ serve(async (req) => {
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "CleanUp SKG <onboarding@resend.dev>",
+        from: "CleanUp SKG <noreply@cleanupskg.gr>",
         to: ["info@cleanupskg.gr"],
         cc: ["grespurga@gmail.com"],
         subject: `New Contact: ${name}`,
