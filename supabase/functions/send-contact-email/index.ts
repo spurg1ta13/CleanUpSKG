@@ -66,7 +66,7 @@ serve(async (req) => {
       },
       body: JSON.stringify({
         from: "CleanUp SKG <onboarding@resend.dev>",
-        to: ["info@cleanupskg.gr"],
+        to: ["info@cleanuppskg.com"],
         subject: `New Contact: ${name}`,
         html: htmlBody,
       }),
