@@ -153,7 +153,7 @@ const PrivacyPolicy = () => {
       />
       <TopBar />
       <Navbar />
-      <main className="min-h-screen pt-32 pb-20 bg-background">
+      <main className="min-h-screen pt-8 pb-20 bg-background">
         <div className="container mx-auto px-4 max-w-3xl">
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">{c.title}</h1>
           <p className="text-sm text-muted-foreground mb-10">{c.lastUpdated}</p>
