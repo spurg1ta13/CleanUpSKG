@@ -8,7 +8,7 @@ import { Phone, Mail, Clock, MapPin } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { useLanguage } from "@/i18n/LanguageContext";
-import phoneQr from "@/assets/phone-qr.png";
+
 
 const STORAGE_KEY = "contact_form_sends";
 const MAX_SENDS = 2;
@@ -231,13 +231,6 @@ const ContactSection = () => {
                   <Clock className="h-5 w-5" />
                 </div>
                 <span className="text-foreground text-sm pt-2">{t("topbar", "hours")}</span>
-            </div>
-            <div className="hidden lg:flex flex-col items-center gap-2 p-4 bg-background rounded-xl border border-border shadow-sm">
-              <span className="text-xs font-semibold text-muted-foreground">{t("contact", "scanToCall") || "Scan to call"}</span>
-              <a href="tel:+306974776057">
-                <img src={phoneQr} alt="QR code to call +30 697 477 6057" className="w-28 h-28" width={112} height={112} />
-              </a>
-              <span className="text-xs text-muted-foreground font-medium">+30 697 477 6057</span>
             </div>
             </div>
             <div className="rounded-2xl overflow-hidden aspect-video">
