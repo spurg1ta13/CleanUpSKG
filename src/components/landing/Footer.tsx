@@ -2,7 +2,7 @@ import { Facebook, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 import TikTokIcon from "@/components/icons/TikTokIcon";
 import { useLanguage } from "@/i18n/LanguageContext";
-import logo from "@/assets/logo-transparent.png";
+import logo from "@/assets/logo-optimized.jpeg";
 
 const FACEBOOK_URL = "https://www.facebook.com/cleanup.skg";
 const TIKTOK_URL = "https://www.tiktok.com/@cleanup.skg?_r=1&_t=ZN-93sbKkZERwU";
@@ -36,7 +36,7 @@ const Footer = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
           <div>
             <Link to="/">
-              <img src={logo} alt="CleanUp Cleaning Services" className="h-24 w-auto mb-4 mix-blend-screen" width={96} height={96} loading="lazy" decoding="async" />
+              <img src={logo} alt="CleanUp Cleaning Services" className="h-24 w-auto mb-4 rounded-full" width={96} height={96} loading="lazy" decoding="async" />
             </Link>
             <p className="text-sm opacity-70 leading-relaxed">{t("footer", "description")}</p>
           </div>
