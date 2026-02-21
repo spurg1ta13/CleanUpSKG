@@ -2,8 +2,8 @@ import { lazy, Suspense } from "react";
 import TopBar from "@/components/landing/TopBar";
 import Navbar from "@/components/landing/Navbar";
 import HeroSection from "@/components/landing/HeroSection";
-import AboutSection from "@/components/landing/AboutSection";
-import ServicesSection from "@/components/landing/ServicesSection";
+const AboutSection = lazy(() => import("@/components/landing/AboutSection"));
+const ServicesSection = lazy(() => import("@/components/landing/ServicesSection"));
 const SpecializedSection = lazy(() => import("@/components/landing/SpecializedSection"));
 const CommercialSection = lazy(() => import("@/components/landing/CommercialSection"));
 const PostConstructionSection = lazy(() => import("@/components/landing/PostConstructionSection"));
@@ -105,10 +105,10 @@ const Index = () => {
       <Navbar />
     <main>
       <HeroSection />
-      <AboutSection />
-      <ServicesSection />
-      {SHOW_PRICING && <PricingSection />}
       <Suspense fallback={null}>
+        <AboutSection />
+        <ServicesSection />
+        {SHOW_PRICING && <PricingSection />}
         <SpecializedSection />
         <CommercialSection />
         <PostConstructionSection />
