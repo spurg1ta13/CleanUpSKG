@@ -207,11 +207,11 @@ const ContactSection = () => {
 
           <div className="space-y-8">
             <div className="space-y-5">
-              <a href="tel:+3069747760587" className="flex items-start gap-4 group">
+              <a href="tel:+306974776057" className="flex items-start gap-4 group">
                 <div className="shrink-0 w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
                   <Phone className="h-5 w-5" />
                 </div>
-                <span className="text-foreground text-sm pt-2 group-hover:text-primary transition-colors">+30 697 477 60587</span>
+                <span className="text-foreground text-sm pt-2 group-hover:text-primary transition-colors">+30 697 477 6057</span>
               </a>
               <a href="mailto:info@cleanupskg.gr" className="flex items-start gap-4 group">
                 <div className="shrink-0 w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
