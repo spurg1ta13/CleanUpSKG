@@ -60,7 +60,7 @@ const LangDropdown = () => {
             <button
               key={o.value}
               onClick={() => { setLang(o.value); setOpen(false); }}
-              className={`flex items-center gap-2 w-full text-left px-3 py-1.5 text-xs font-medium hover:bg-muted transition-colors ${o.value === lang ? "text-primary font-bold" : "text-foreground"}`}
+              className={`flex items-center gap-2 w-full text-left px-3 py-1.5 text-xs font-medium hover:bg-primary/10 hover:text-primary transition-colors ${o.value === lang ? "text-primary font-bold" : "text-foreground"}`}
             >
               <span className="text-base leading-none">{o.flag}</span> {o.label}
             </button>
