@@ -26,15 +26,15 @@ const SpecializedSection = () => {
           <Carousel opts={{ loop: true, startIndex: 0 }}>
             <CarouselContent>
               {items.map((item) => (
-                <CarouselItem key={item.titleKey} className="basis-full">
+                <CarouselItem key={item.titleKey} className="basis-full md:basis-1/2">
                   <Card className="border-0 shadow-md overflow-hidden">
                     <CardContent className="p-0">
-                      <div className="grid md:grid-cols-2">
-                        <div className="h-[250px] md:h-[300px] overflow-hidden">
+                      <div className="flex flex-col">
+                        <div className="h-[200px] md:h-[220px] overflow-hidden">
                           <img src={item.img} alt={t("alt", item.altKey)} className="w-full h-full object-cover" loading="lazy" decoding="async" width={600} height={300} />
                         </div>
-                        <div className="p-8 flex flex-col justify-center">
-                          <h3 className="text-xl font-bold text-foreground mb-3">{t("specialized", item.titleKey)}</h3>
+                        <div className="p-6 flex flex-col justify-center">
+                          <h3 className="text-xl font-bold text-foreground mb-2">{t("specialized", item.titleKey)}</h3>
                           <p className="text-muted-foreground text-sm leading-relaxed">{t("specialized", item.descKey)}</p>
                         </div>
                       </div>
