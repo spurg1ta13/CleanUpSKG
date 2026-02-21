@@ -47,12 +47,7 @@ const SpecializedSection = () => {
                     key={item.titleKey}
                     className="pl-4 basis-[85%] md:basis-1/3"
                   >
-                    <div
-                      className="transition-all duration-300"
-                      style={{
-                        opacity: isActive ? 1 : 0.5,
-                      }}
-                    >
+                    <div className="transition-all duration-300">
                       <Card className="border-0 shadow-md overflow-hidden">
                         <CardContent className="p-0">
                           <div className="flex flex-col">
@@ -83,8 +78,6 @@ const SpecializedSection = () => {
                 );
               })}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
           </Carousel>
         </div>
       </div>
