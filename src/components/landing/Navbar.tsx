@@ -47,7 +47,7 @@ const LangDropdown = () => {
     <div className="relative" ref={ref}>
         <button
         onClick={() => setOpen(!open)}
-        className="px-3 py-1.5 rounded-md text-sm font-bold bg-primary text-primary-foreground hover:bg-primary/90 transition-colors flex items-center gap-1.5"
+        className="px-3 py-1.5 rounded-md text-sm font-bold border border-border bg-muted text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors flex items-center gap-1.5"
       >
         <span className="text-lg leading-none">{current.flag}</span>
         <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
