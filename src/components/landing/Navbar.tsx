@@ -45,12 +45,12 @@ const LangDropdown = () => {
 
   return (
     <div className="relative" ref={ref}>
-      <button
+        <button
         onClick={() => setOpen(!open)}
-        className="px-2.5 py-1 rounded-md text-xs font-bold border border-border bg-muted hover:bg-accent transition-colors flex items-center gap-1"
+        className="px-3 py-1.5 rounded-md text-sm font-bold border border-border bg-muted hover:bg-accent transition-colors flex items-center gap-1.5"
       >
-        <span className="text-base leading-none">{current.flag}</span>
-        <svg className="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <span className="text-lg leading-none">{current.flag}</span>
+        <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
           <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
         </svg>
       </button>
@@ -87,7 +87,7 @@ const Navbar = () => {
       // Already on the right page — just scroll
       const el = document.querySelector(hash);
       if (el) {
-        const navbarHeight = 64;
+        const navbarHeight = 80;
         const top = el.getBoundingClientRect().top + window.scrollY - navbarHeight;
         window.scrollTo({ top, behavior: "smooth" });
       }
@@ -101,9 +101,9 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b">
-      <div className="container mx-auto px-4 flex items-center justify-between h-16">
+      <div className="container mx-auto px-4 flex items-center justify-between h-20">
         <Link to="/" onClick={(e) => { if (window.location.pathname === "/") { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); window.history.replaceState(null, "", "/"); } }} className="flex items-center">
-          <img src={logo} alt="CleanUp Cleaning Services - Professional cleaning company in Thessaloniki" className="h-12 w-auto bg-white rounded-sm" width={48} height={48} />
+          <img src={logo} alt="CleanUp Cleaning Services - Professional cleaning company in Thessaloniki" className="h-16 w-auto bg-white rounded-sm" width={64} height={64} />
         </Link>
 
         {/* Desktop */}
@@ -130,7 +130,7 @@ const Navbar = () => {
         <div className="md:hidden flex items-center gap-2">
           <LangDropdown />
           <button className="p-2" onClick={() => setOpen(!open)} aria-label="Toggle menu">
-            {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {open ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
           </button>
         </div>
       </div>
