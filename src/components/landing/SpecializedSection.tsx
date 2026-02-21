@@ -27,13 +27,13 @@ const SpecializedSection = () => {
             <CarouselContent>
               {items.map((item) => (
                 <CarouselItem key={item.titleKey} className="md:basis-1/2 lg:basis-1/1">
-                  <Card className="border-0 shadow-md overflow-hidden">
-                    <CardContent className="p-0">
-                      <div className="grid md:grid-cols-2">
-                        <div className="overflow-hidden h-[250px] md:h-[300px]">
+                  <Card className="border-0 shadow-md overflow-hidden h-[300px]">
+                    <CardContent className="p-0 h-full">
+                      <div className="grid md:grid-cols-2 h-full">
+                        <div className="overflow-hidden">
                           <img src={item.img} alt={t("alt", item.altKey)} className="w-full h-full object-cover" loading="lazy" decoding="async" width={600} height={300} />
                         </div>
-                        <div className="p-8 flex flex-col justify-center">
+                        <div className="p-8 flex flex-col justify-center overflow-hidden">
                           <h3 className="text-xl font-bold text-foreground mb-3">{t("specialized", item.titleKey)}</h3>
                           <p className="text-muted-foreground text-sm leading-relaxed">{t("specialized", item.descKey)}</p>
                         </div>
