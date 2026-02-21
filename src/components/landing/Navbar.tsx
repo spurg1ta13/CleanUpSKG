@@ -103,7 +103,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b">
       <div className="container mx-auto px-4 flex items-center justify-between h-20">
         <Link to="/" onClick={(e) => { if (window.location.pathname === "/") { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); window.history.replaceState(null, "", "/"); } }} className="flex items-center">
-          <img src={logo} alt="CleanUp Cleaning Services - Professional cleaning company in Thessaloniki" className="h-16 w-auto bg-white rounded-sm" width={64} height={64} />
+          <img src={logo} alt="CleanUp Cleaning Services - Professional cleaning company in Thessaloniki" className="h-20 w-auto bg-white rounded-sm" width={80} height={80} />
         </Link>
 
         {/* Desktop */}
