@@ -1,10 +1,5 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { ChevronDown } from "lucide-react";
 
 const faqData = [
   {
@@ -84,7 +79,6 @@ const faqData = [
 const FAQSection = () => {
   const { lang, t } = useLanguage();
 
-  // JSON-LD for Google FAQ rich results
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -113,23 +107,22 @@ const FAQSection = () => {
             {t("faq", "subtitle")}
           </p>
         </div>
-        <div className="max-w-3xl mx-auto">
-          <Accordion type="multiple" defaultValue={faqData.map((_, i) => `faq-${i}`)} className="space-y-3">
-            {faqData.map((item, i) => (
-              <AccordionItem
-                key={i}
-                value={`faq-${i}`}
-                className="bg-muted/50 rounded-xl border-0 px-6"
-              >
-                <AccordionTrigger className="text-left text-foreground font-semibold text-sm md:text-base hover:no-underline py-5">
-                  {item.q[lang]}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-sm leading-relaxed pb-5">
-                  {item.a[lang]}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+        <div className="max-w-3xl mx-auto space-y-3">
+          {faqData.map((item, i) => (
+            <details
+              key={i}
+              className="group bg-muted/50 rounded-xl px-6 [&[open]>summary>svg]:rotate-180"
+              open
+            >
+              <summary className="flex items-center justify-between cursor-pointer list-none py-5 text-left text-foreground font-semibold text-sm md:text-base select-none [&::-webkit-details-marker]:hidden">
+                {item.q[lang]}
+                <ChevronDown className="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" />
+              </summary>
+              <div className="pb-5 text-muted-foreground text-sm leading-relaxed">
+                {item.a[lang]}
+              </div>
+            </details>
+          ))}
         </div>
       </div>
     </section>
