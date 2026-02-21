@@ -23,10 +23,10 @@ const SpecializedSection = () => {
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">{t("specialized", "subtitle")}</p>
         </div>
         <div className="max-w-5xl mx-auto px-12">
-          <Carousel opts={{ loop: true }}>
+          <Carousel opts={{ loop: true, startIndex: 0 }}>
             <CarouselContent>
               {items.map((item) => (
-                <CarouselItem key={item.titleKey} className="md:basis-1/2 lg:basis-1/1">
+                <CarouselItem key={item.titleKey} className="basis-full">
                   <Card className="border-0 shadow-md overflow-hidden">
                     <CardContent className="p-0">
                       <div className="grid md:grid-cols-2">
