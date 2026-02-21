@@ -315,4 +315,16 @@ export const translations = {
     accept: { el: "Αποδοχή", en: "Accept", ru: "Принять" },
     decline: { el: "Απόρριψη", en: "Decline", ru: "Отклонить" },
   },
+
+  // Image Alt Texts
+  alt: {
+    logo: { el: "CleanUp Υπηρεσίες Καθαρισμού", en: "CleanUp Cleaning Services", ru: "CleanUp Клининговые Услуги" },
+    logoNav: { el: "CleanUp - Επαγγελματική εταιρεία καθαρισμού στη Θεσσαλονίκη", en: "CleanUp - Professional cleaning company in Thessaloniki", ru: "CleanUp - Профессиональная клининговая компания в Салониках" },
+    hero: { el: "Επαγγελματική ομάδα καθαρισμού που παρέχει υπηρεσίες καθαρισμού κατοικιών και επιχειρήσεων στη Θεσσαλονίκη", en: "Professional cleaning team providing residential and commercial cleaning services in Thessaloniki", ru: "Профессиональная команда уборки, предоставляющая услуги уборки жилых и коммерческих помещений в Салониках" },
+    commercial: { el: "Επαγγελματική υπηρεσία καθαρισμού γραφείων, εστιατορίων και κουζινών στη Θεσσαλονίκη", en: "Professional commercial cleaning service for offices, restaurants and kitchens in Thessaloniki", ru: "Профессиональная коммерческая уборка офисов, ресторанов и кухонь в Салониках" },
+    bioCleaning: { el: "Επαγγελματική υπηρεσία βιο-καθαρισμού για σαλόνια και καναπέδες", en: "Professional bio-cleaning service for upholstery and sofas", ru: "Профессиональная услуга био-уборки мягкой мебели и диванов" },
+    steam: { el: "Επαγγελματική υπηρεσία απολύμανσης με ατμό για βαθύ καθαρισμό και εξάλειψη βακτηρίων", en: "Professional steam disinfection and deep cleaning service eliminating bacteria", ru: "Профессиональная услуга паровой дезинфекции и глубокой очистки для уничтожения бактерий" },
+    pressure: { el: "Υπηρεσία πλυσίματος υπό πίεση για δρόμους, βεράντες και εξωτερικές επιφάνειες κτιρίων", en: "High-pressure washing service for driveways, patios and building exteriors", ru: "Услуга мойки под давлением для подъездных путей, террас и фасадов зданий" },
+    window: { el: "Επαγγελματικός καθαρισμός παραθύρων για κατοικίες και εμπορικά κτίρια", en: "Professional window cleaning service for residential and commercial buildings", ru: "Профессиональная услуга мытья окон для жилых и коммерческих зданий" },
+  },
 } as const;

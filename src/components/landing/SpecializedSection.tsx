@@ -10,9 +10,9 @@ const SpecializedSection = () => {
   const { t } = useLanguage();
 
   const items = [
-    { icon: Droplets, titleKey: "steam", descKey: "steamDesc", img: steamImg, alt: "Professional steam disinfection and deep cleaning service eliminating bacteria" },
-    { icon: Wind, titleKey: "pressure", descKey: "pressureDesc", img: pressureImg, alt: "High-pressure washing service for driveways, patios and building exteriors" },
-    { icon: GlassWater, titleKey: "window", descKey: "windowDesc", img: windowImg, alt: "Professional window cleaning service for residential and commercial buildings" },
+    { icon: Droplets, titleKey: "steam", descKey: "steamDesc", img: steamImg, altKey: "steam" as const },
+    { icon: Wind, titleKey: "pressure", descKey: "pressureDesc", img: pressureImg, altKey: "pressure" as const },
+    { icon: GlassWater, titleKey: "window", descKey: "windowDesc", img: windowImg, altKey: "window" as const },
   ];
 
   return (
@@ -31,7 +31,7 @@ const SpecializedSection = () => {
                     <CardContent className="p-0">
                       <div className="grid md:grid-cols-2">
                         <div className="overflow-hidden h-[300px]">
-                          <img src={item.img} alt={item.alt} className="w-full h-full object-cover" loading="lazy" decoding="async" width={600} height={300} />
+                          <img src={item.img} alt={t("alt", item.altKey)} className="w-full h-full object-cover" loading="lazy" decoding="async" width={600} height={300} />
                         </div>
                         <div className="p-8 flex flex-col justify-center">
                           <h3 className="text-xl font-bold text-foreground mb-3">{t("specialized", item.titleKey)}</h3>
