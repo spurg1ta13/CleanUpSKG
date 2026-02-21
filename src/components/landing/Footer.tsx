@@ -36,7 +36,7 @@ const Footer = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
           <div>
             <Link to="/">
-              <img src={logo} alt="CleanUp Cleaning Services" className="h-12 w-auto mb-4 rounded-full bg-background p-1" width={48} height={48} loading="lazy" decoding="async" />
+              <img src={logo} alt="CleanUp Cleaning Services" className="h-20 w-auto mb-4 rounded-sm bg-white p-1" width={80} height={80} loading="lazy" decoding="async" />
             </Link>
             <p className="text-sm opacity-70 leading-relaxed">{t("footer", "description")}</p>
           </div>
