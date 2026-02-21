@@ -15,7 +15,7 @@ const FloatingPhone = () => {
 
   return (
     <a
-      href="tel:+3069747760587"
+      href="tel:+306974776057"
       className="fixed bottom-6 left-6 z-50 md:hidden w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-lg flex items-center justify-center hover:scale-105 transition-transform animate-in slide-in-from-bottom-4 fade-in duration-300"
       aria-label="Call us"
     >

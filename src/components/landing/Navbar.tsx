@@ -116,9 +116,9 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <a href="tel:+3069747760587" className="hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary text-primary-foreground text-xs font-bold hover:bg-primary/90 transition-colors shadow-sm">
+          <a href="tel:+306974776057" className="hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary text-primary-foreground text-xs font-bold hover:bg-primary/90 transition-colors shadow-sm">
             <Phone className="h-3.5 w-3.5" />
-            <span>697 477 60587</span>
+            <span>697 477 6057</span>
           </a>
           <a href={FACEBOOK_URL} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Facebook className="h-4 w-4" /></a>
           <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Instagram className="h-4 w-4" /></a>
@@ -143,9 +143,9 @@ const Navbar = () => {
               {t("nav", l.key)}
             </Link>
           ))}
-          <a href="tel:+3069747760587" className="mx-6 mt-2 flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-primary text-primary-foreground text-sm font-bold hover:bg-primary/90 transition-colors">
+          <a href="tel:+306974776057" className="mx-6 mt-2 flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-primary text-primary-foreground text-sm font-bold hover:bg-primary/90 transition-colors">
             <Phone className="h-4 w-4" />
-            <span>+30 697 477 60587</span>
+            <span>+30 697 477 6057</span>
           </a>
           <div className="flex gap-4 px-6 pt-3">
             <a href={FACEBOOK_URL} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary"><Facebook className="h-5 w-5" /></a>
