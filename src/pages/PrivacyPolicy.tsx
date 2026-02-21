@@ -161,7 +161,17 @@ const PrivacyPolicy = () => {
             {c.sections.map((s, i) => (
               <section key={i}>
                 <h2 className="text-lg font-semibold text-foreground mb-2">{s.heading}</h2>
-                <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">{s.text}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                  {s.text.split(/(info@cleanupskg\.gr|\+30 697 477 6058\d*)/).map((part, j) => {
+                    if (part.match(/^info@cleanupskg\.gr$/)) {
+                      return <a key={j} href="mailto:info@cleanupskg.gr" className="text-primary underline hover:text-primary/80">{part}</a>;
+                    }
+                    if (part.match(/^\+30 697 477 6058\d*$/)) {
+                      return <a key={j} href="tel:+306974776058" className="text-primary underline hover:text-primary/80">{part}</a>;
+                    }
+                    return part;
+                  })}
+                </p>
               </section>
             ))}
           </div>
