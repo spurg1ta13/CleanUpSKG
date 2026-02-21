@@ -112,7 +112,7 @@ const FAQSection = () => {
             <details
               key={i}
               className="group bg-muted/50 rounded-xl px-6 [&[open]>summary>svg]:rotate-180"
-              open
+            
             >
               <summary className="flex items-center justify-between cursor-pointer list-none py-5 text-left text-foreground font-semibold text-sm md:text-base select-none [&::-webkit-details-marker]:hidden">
                 {item.q[lang]}
