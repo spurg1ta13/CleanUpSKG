@@ -48,7 +48,7 @@ const SpecializedSection = () => {
                     className="pl-4 basis-[85%] md:basis-1/3"
                   >
                     <div className="transition-all duration-300">
-                      <Card className="border-0 shadow-md overflow-hidden">
+                      <Card className="border-0 shadow-none overflow-hidden">
                         <CardContent className="p-0">
                           <div className="flex flex-col">
                             <div className="h-[220px] md:h-[280px] overflow-hidden">
