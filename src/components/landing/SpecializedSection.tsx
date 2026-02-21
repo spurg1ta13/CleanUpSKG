@@ -45,13 +45,12 @@ const SpecializedSection = () => {
                 return (
                   <CarouselItem
                     key={item.titleKey}
-                    className="pl-4 basis-[85%] md:basis-[38%]"
+                    className="pl-4 basis-[85%] md:basis-1/3"
                   >
                     <div
                       className="transition-all duration-300"
                       style={{
-                        opacity: isActive ? 1 : 0.45,
-                        transform: isActive ? "scale(1)" : "scale(0.95)",
+                        opacity: isActive ? 1 : 0.5,
                       }}
                     >
                       <Card className="border-0 shadow-md overflow-hidden">
