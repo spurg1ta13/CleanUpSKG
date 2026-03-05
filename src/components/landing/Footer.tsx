@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import TikTokIcon from "@/components/icons/TikTokIcon";
 import { useLanguage } from "@/i18n/LanguageContext";
 import logo from "@/assets/logo-optimized.jpeg";
+import { SHOW_PRICING } from "@/config/featureFlags";
 
 const FACEBOOK_URL = "https://www.facebook.com/cleanup.skg";
 const TIKTOK_URL = "https://www.tiktok.com/@cleanup.skg?_r=1&_t=ZN-93sbKkZERwU";
@@ -11,7 +12,7 @@ const INSTAGRAM_URL = "https://www.instagram.com/cleanup.skg?igsh=MWw4d2U0ZDB4bX
 const Footer = () => {
   const { t } = useLanguage();
 
-  const navLinks = [
+  const allNavLinks = [
     { key: "home", href: "/#home" },
     { key: "about", href: "/#about" },
     { key: "services", href: "/#services" },
@@ -21,6 +22,8 @@ const Footer = () => {
     { key: "contact", href: "/#contact" },
     { key: "privacy", href: "/privacy-policy" },
   ];
+
+  const navLinks = allNavLinks.filter((l) => SHOW_PRICING || l.key !== "pricing");
 
   const serviceLinks = [
     { key: "residentialCleaning", href: "/#services" },
