@@ -21,7 +21,7 @@ const localBusinessJsonLd = {
   "@type": "CleaningService",
   name: "CleanUp SKG - Υπηρεσίες Καθαρισμού Θεσσαλονίκη",
   alternateName: "CleanUp SKG",
-  image: "https://cleanupskg.gr/favicon.png",
+  image: "https://cleanupskg.gr/favicon-192.png",
   "@id": "https://cleanupskg.gr",
   url: "https://cleanupskg.gr",
   telephone: "+30-697-477-60587",
