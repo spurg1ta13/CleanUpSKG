@@ -1,38 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
   <url>
     <loc>https://cleanupskg.gr/</loc>
     <xhtml:link rel="alternate" hreflang="el" href="https://cleanupskg.gr/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://cleanupskg.gr/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://cleanupskg.gr/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cleanupskg.gr/" />
-    <lastmod>2026-02-17</lastmod>
+    <lastmod>2026-03-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Blog listing -->
   <url>
     <loc>https://cleanupskg.gr/blog</loc>
     <xhtml:link rel="alternate" hreflang="el" href="https://cleanupskg.gr/blog" />
     <xhtml:link rel="alternate" hreflang="en" href="https://cleanupskg.gr/blog" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://cleanupskg.gr/blog" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cleanupskg.gr/blog" />
-    <lastmod>2026-02-17</lastmod>
+    <lastmod>2026-03-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Blog: Steam Disinfection -->
+  <url>
+    <loc>https://cleanupskg.gr/blog/pros-of-steam-disinfection</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://cleanupskg.gr/blog/pros-of-steam-disinfection" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleanupskg.gr/blog/pros-of-steam-disinfection" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cleanupskg.gr/blog/pros-of-steam-disinfection" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleanupskg.gr/blog/pros-of-steam-disinfection" />
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog: Why Deep Cleaning Is Important -->
   <url>
     <loc>https://cleanupskg.gr/blog/why-deep-cleaning-is-important</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://cleanupskg.gr/blog/why-deep-cleaning-is-important" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleanupskg.gr/blog/why-deep-cleaning-is-important" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cleanupskg.gr/blog/why-deep-cleaning-is-important" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleanupskg.gr/blog/why-deep-cleaning-is-important" />
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Blog: Cleaning During and After Construction -->
   <url>
     <loc>https://cleanupskg.gr/blog/cleaning-during-and-after-construction</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://cleanupskg.gr/blog/cleaning-during-and-after-construction" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleanupskg.gr/blog/cleaning-during-and-after-construction" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cleanupskg.gr/blog/cleaning-during-and-after-construction" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleanupskg.gr/blog/cleaning-during-and-after-construction" />
     <lastmod>2026-02-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Privacy Policy -->
   <url>
     <loc>https://cleanupskg.gr/privacy-policy</loc>
     <xhtml:link rel="alternate" hreflang="el" href="https://cleanupskg.gr/privacy-policy" />
@@ -43,4 +73,5 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+
 </urlset>
