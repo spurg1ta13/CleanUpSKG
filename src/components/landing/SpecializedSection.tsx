@@ -2,9 +2,9 @@ import { useState, useCallback, useEffect } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext, type CarouselApi } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import { Droplets, Wind, GlassWater } from "lucide-react";
-import steamImg from "@/assets/steam-cleaning.jpg";
-import pressureImg from "@/assets/pressure-washing.jpg";
-import windowImg from "@/assets/window-cleaning.jpg";
+import steamImg from "@/assets/steam-cleaning.webp";
+import pressureImg from "@/assets/pressure-washing.webp";
+import windowImg from "@/assets/window-cleaning.webp";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const SpecializedSection = () => {
