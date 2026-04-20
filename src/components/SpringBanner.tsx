@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { X, Phone, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/i18n/LanguageContext";
-import bioImg from "@/assets/bio-cleaning.jpg";
+import bioImg from "@/assets/bio-cleaning.webp";
 
 const texts = {
   el: {

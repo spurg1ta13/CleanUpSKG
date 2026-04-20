@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import TikTokIcon from "@/components/icons/TikTokIcon";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Lang } from "@/i18n/translations";
-import logo from "@/assets/logo-white-bg.png";
+import logo from "@/assets/logo-white-bg-optimized.webp";
 import { SHOW_PRICING } from "@/config/featureFlags";
 
 const FACEBOOK_URL = "https://www.facebook.com/cleanup.skg";

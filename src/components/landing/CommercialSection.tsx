@@ -1,6 +1,6 @@
 import { Building, UtensilsCrossed, CookingPot } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import commercialImg from "@/assets/commercial-cleaning.jpg";
+import commercialImg from "@/assets/commercial-cleaning.webp";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const CommercialSection = () => {

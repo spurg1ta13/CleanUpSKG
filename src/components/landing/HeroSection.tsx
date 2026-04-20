@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Calculator } from "lucide-react";
-const heroImg = "/images/hero-cleaning.jpg";
+const heroImg = "/images/hero-cleaning.webp";
 import { useLanguage } from "@/i18n/LanguageContext";
 import PriceCalculator from "./PriceCalculator";
 import { SHOW_PRICING } from "@/config/featureFlags";
