@@ -51,9 +51,6 @@ const Blog = () => {
               <h1 className="text-3xl md:text-5xl font-extrabold text-foreground mb-4">
                 {t("blog", "heading")}
               </h1>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                {t("blog", "subtitle")}
-              </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
