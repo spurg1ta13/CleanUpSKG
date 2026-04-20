@@ -66,4 +66,37 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+
+  <url>
+    <loc>https://cleanupskg.gr/blog/health-benefits-of-a-clean-home</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://cleanupskg.gr/blog/health-benefits-of-a-clean-home" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleanupskg.gr/blog/health-benefits-of-a-clean-home" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cleanupskg.gr/blog/health-benefits-of-a-clean-home" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleanupskg.gr/blog/health-benefits-of-a-clean-home" />
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://cleanupskg.gr/blog/clean-home-mental-health</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://cleanupskg.gr/blog/clean-home-mental-health" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleanupskg.gr/blog/clean-home-mental-health" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cleanupskg.gr/blog/clean-home-mental-health" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleanupskg.gr/blog/clean-home-mental-health" />
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://cleanupskg.gr/blog/clean-home-allergies-respiratory</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://cleanupskg.gr/blog/clean-home-allergies-respiratory" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleanupskg.gr/blog/clean-home-allergies-respiratory" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cleanupskg.gr/blog/clean-home-allergies-respiratory" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleanupskg.gr/blog/clean-home-allergies-respiratory" />
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
