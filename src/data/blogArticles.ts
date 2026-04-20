@@ -554,4 +554,334 @@ At CleanUp, we use industrial-grade steam equipment that reaches temperatures up
 **Готовы к безхимической глубокой уборке?** [Свяжитесь с нами](/#contact) для записи на паровую дезинфекцию в Салониках.`,
     },
   },
+  {
+    slug: "health-benefits-of-a-clean-home",
+    date: "2026-04-15",
+    image: "/placeholder.svg",
+    title: {
+      el: "Τα Οφέλη για την Υγεία από ένα Καθαρό Σπίτι",
+      en: "The Health Benefits of a Clean Home",
+      ru: "Польза для Здоровья от Чистого Дома",
+    },
+    excerpt: {
+      el: "Ένα καθαρό σπίτι δεν είναι μόνο όμορφο — είναι θεμέλιο για σωματική και ψυχική υγεία. Ανακαλύψτε τα επιστημονικά οφέλη.",
+      en: "A clean home isn't just pretty — it's a foundation for physical and mental health. Discover the science-backed benefits.",
+      ru: "Чистый дом — это не только красиво, это основа физического и психического здоровья. Откройте научно обоснованную пользу.",
+    },
+    content: {
+      en: `## The Health Benefits of a Clean Home
+
+Your home is more than just a place to live — it directly affects your physical and mental wellbeing. Research consistently shows that a clean, well-maintained living space contributes to better health outcomes for the entire family.
+
+### 1. Stronger Immune System
+
+Dust, mold, and bacteria weaken your body's natural defenses. Regular cleaning removes these threats, lowering the risk of infections, colds, and flu — especially during winter months in Thessaloniki.
+
+### 2. Fewer Allergies and Asthma Triggers
+
+Pet dander, pollen, and dust mites are top triggers for allergies and asthma. A consistently clean home with vacuumed carpets, washed bedding, and dusted surfaces dramatically reduces these irritants.
+
+### 3. Better Sleep Quality
+
+Studies from the National Sleep Foundation show people sleep better in clean, fresh-smelling bedrooms. Clean sheets, dust-free surfaces, and an organized space help your brain wind down properly.
+
+### 4. Reduced Stress and Anxiety
+
+Clutter and dirt elevate cortisol — the body's stress hormone. A tidy environment promotes calm, improves focus, and supports better mental health.
+
+### 5. Lower Risk of Foodborne Illness
+
+A spotless kitchen prevents cross-contamination. Disinfecting countertops, cutting boards, and the refrigerator significantly reduces the risk of food poisoning.
+
+### 6. Increased Physical Activity
+
+A clean, organized home invites movement — from yoga in the living room to cooking healthy meals in a tidy kitchen.
+
+---
+
+**Want a healthier home?** [Contact us](/#contact) to book a professional cleaning in Thessaloniki today.`,
+      el: `## Τα Οφέλη για την Υγεία από ένα Καθαρό Σπίτι
+
+Το σπίτι σας είναι κάτι παραπάνω από έναν χώρο διαμονής — επηρεάζει άμεσα τη σωματική και ψυχική σας ευεξία. Η έρευνα δείχνει σταθερά ότι ένας καθαρός, καλά συντηρημένος χώρος συμβάλλει σε καλύτερη υγεία για όλη την οικογένεια.
+
+### 1. Ισχυρότερο Ανοσοποιητικό Σύστημα
+
+Η σκόνη, η μούχλα και τα βακτήρια αποδυναμώνουν τις φυσικές άμυνες του σώματος. Ο τακτικός καθαρισμός απομακρύνει αυτές τις απειλές, μειώνοντας τον κίνδυνο λοιμώξεων, κρυολογημάτων και γρίπης — ιδιαίτερα τους χειμερινούς μήνες στη Θεσσαλονίκη.
+
+### 2. Λιγότερες Αλλεργίες και Ερεθίσματα Άσθματος
+
+Τα τριχώματα κατοικίδιων, η γύρη και τα ακάρεα είναι κορυφαία ερεθίσματα. Ένα σταθερά καθαρό σπίτι με σκουπισμένα χαλιά, πλυμένα κλινοσκεπάσματα και ξεσκονισμένες επιφάνειες μειώνει δραματικά αυτά τα ερεθίσματα.
+
+### 3. Καλύτερη Ποιότητα Ύπνου
+
+Μελέτες δείχνουν ότι οι άνθρωποι κοιμούνται καλύτερα σε καθαρά υπνοδωμάτια. Καθαρά σεντόνια και τακτοποιημένος χώρος βοηθούν τον εγκέφαλο να χαλαρώσει.
+
+### 4. Μειωμένο Στρες και Άγχος
+
+Η ακαταστασία και η βρωμιά αυξάνουν την κορτιζόλη — την ορμόνη του στρες. Ένας τακτοποιημένος χώρος προάγει την ηρεμία και υποστηρίζει την ψυχική υγεία.
+
+### 5. Μικρότερος Κίνδυνος Τροφικών Ασθενειών
+
+Μια καθαρή κουζίνα αποτρέπει τη διασταυρούμενη μόλυνση. Η απολύμανση πάγκων, σανίδων κοπής και ψυγείου μειώνει σημαντικά τον κίνδυνο τροφικής δηλητηρίασης.
+
+### 6. Αυξημένη Σωματική Δραστηριότητα
+
+Ένα καθαρό σπίτι προσκαλεί σε κίνηση — από γιόγκα στο σαλόνι μέχρι μαγείρεμα υγιεινών γευμάτων.
+
+---
+
+**Θέλετε ένα πιο υγιεινό σπίτι;** [Επικοινωνήστε μαζί μας](/#contact) για επαγγελματικό καθαρισμό στη Θεσσαλονίκη.`,
+      ru: `## Польза для Здоровья от Чистого Дома
+
+Ваш дом — это больше, чем просто место для жизни. Он напрямую влияет на ваше физическое и психическое благополучие. Исследования показывают, что чистое, ухоженное жилое пространство способствует улучшению здоровья всей семьи.
+
+### 1. Более Сильный Иммунитет
+
+Пыль, плесень и бактерии ослабляют естественную защиту организма. Регулярная уборка устраняет эти угрозы, снижая риск инфекций, простуды и гриппа — особенно зимой в Салониках.
+
+### 2. Меньше Аллергий и Триггеров Астмы
+
+Шерсть домашних животных, пыльца и пылевые клещи — главные триггеры аллергии. Постоянно чистый дом значительно снижает раздражители.
+
+### 3. Лучшее Качество Сна
+
+Исследования показывают, что люди лучше спят в чистых спальнях. Чистое бельё и упорядоченное пространство помогают мозгу расслабиться.
+
+### 4. Снижение Стресса и Тревожности
+
+Беспорядок и грязь повышают кортизол — гормон стресса. Опрятная среда способствует спокойствию и поддерживает психическое здоровье.
+
+### 5. Меньший Риск Пищевых Заболеваний
+
+Безупречно чистая кухня предотвращает перекрёстное заражение. Дезинфекция столешниц, разделочных досок и холодильника значительно снижает риск отравлений.
+
+### 6. Повышенная Физическая Активность
+
+Чистый, организованный дом приглашает к движению — от йоги в гостиной до приготовления здоровой еды.
+
+---
+
+**Хотите более здоровый дом?** [Свяжитесь с нами](/#contact) для профессиональной уборки в Салониках.`,
+    },
+  },
+  {
+    slug: "clean-home-mental-health",
+    date: "2026-04-08",
+    image: "/placeholder.svg",
+    title: {
+      el: "Πώς ένα Καθαρό Σπίτι Βελτιώνει την Ψυχική σας Υγεία",
+      en: "How a Clean Home Improves Your Mental Health",
+      ru: "Как Чистый Дом Улучшает Ваше Психическое Здоровье",
+    },
+    excerpt: {
+      el: "Η σύνδεση μεταξύ ενός καθαρού σπιτιού και της ψυχικής ευεξίας είναι ισχυρή. Δείτε πώς η καθαριότητα μειώνει το άγχος.",
+      en: "The connection between a clean home and mental wellbeing is powerful. Learn how cleanliness reduces stress and anxiety.",
+      ru: "Связь между чистым домом и психическим благополучием очень сильна. Узнайте, как чистота снижает стресс.",
+    },
+    content: {
+      en: `## How a Clean Home Improves Your Mental Health
+
+We often underestimate how much our environment shapes our state of mind. A clean, organized home isn't just visually pleasing — it actively supports mental health and emotional balance.
+
+### 1. Lower Cortisol Levels
+
+A study published in *Personality and Social Psychology Bulletin* found that women who described their homes as "cluttered" had higher cortisol levels throughout the day. A clean home literally reduces stress at a hormonal level.
+
+### 2. Improved Focus and Productivity
+
+Clutter competes for your brain's attention. Removing visual chaos helps you concentrate, whether you're working from home, studying, or simply relaxing.
+
+### 3. Better Mood and Less Depression
+
+Research links messy environments to feelings of helplessness and depression. Cleaning provides a sense of accomplishment and control — a powerful mood booster.
+
+### 4. Reduced Decision Fatigue
+
+A tidy space reduces the number of micro-decisions you face daily ("Where did I put that?"). This frees mental energy for more important things.
+
+### 5. Better Relationships at Home
+
+Cluttered, dirty environments create tension between family members. A clean shared space promotes harmony and reduces conflict.
+
+### 6. The Therapeutic Act of Cleaning
+
+Mindful cleaning — focusing on the physical motion of wiping, sweeping, or organizing — has meditative qualities similar to mindfulness practice.
+
+---
+
+**Reclaim peace of mind.** [Book a professional clean](/#contact) with CleanUp Thessaloniki today.`,
+      el: `## Πώς ένα Καθαρό Σπίτι Βελτιώνει την Ψυχική σας Υγεία
+
+Συχνά υποτιμούμε πόσο το περιβάλλον μας διαμορφώνει τη διάθεσή μας. Ένα καθαρό, οργανωμένο σπίτι δεν είναι απλώς ευχάριστο οπτικά — υποστηρίζει ενεργά την ψυχική υγεία και τη συναισθηματική ισορροπία.
+
+### 1. Χαμηλότερα Επίπεδα Κορτιζόλης
+
+Μελέτη του *Personality and Social Psychology Bulletin* έδειξε ότι γυναίκες που περιέγραφαν τα σπίτια τους ως «ακατάστατα» είχαν υψηλότερα επίπεδα κορτιζόλης. Ένα καθαρό σπίτι μειώνει κυριολεκτικά το στρες σε ορμονικό επίπεδο.
+
+### 2. Βελτιωμένη Συγκέντρωση και Παραγωγικότητα
+
+Η ακαταστασία ανταγωνίζεται την προσοχή του εγκεφάλου σας. Η αφαίρεση οπτικού χάους σας βοηθά να συγκεντρωθείτε.
+
+### 3. Καλύτερη Διάθεση και Λιγότερη Κατάθλιψη
+
+Η έρευνα συνδέει τα ακατάστατα περιβάλλοντα με αισθήματα ανικανότητας και κατάθλιψης. Ο καθαρισμός προσφέρει αίσθηση επίτευξης και ελέγχου.
+
+### 4. Μειωμένη Κόπωση Αποφάσεων
+
+Ένας τακτοποιημένος χώρος μειώνει τον αριθμό των μικροαποφάσεων που αντιμετωπίζετε καθημερινά. Αυτό απελευθερώνει διανοητική ενέργεια.
+
+### 5. Καλύτερες Σχέσεις στο Σπίτι
+
+Τα ακατάστατα περιβάλλοντα δημιουργούν ένταση μεταξύ των μελών της οικογένειας. Ένας καθαρός κοινόχρηστος χώρος προάγει την αρμονία.
+
+### 6. Η Θεραπευτική Πράξη του Καθαρισμού
+
+Ο συνειδητός καθαρισμός — η εστίαση στην κίνηση του σκουπίσματος ή της οργάνωσης — έχει διαλογιστικές ιδιότητες παρόμοιες με την πρακτική mindfulness.
+
+---
+
+**Ανακτήστε την ψυχική γαλήνη.** [Κλείστε επαγγελματικό καθαρισμό](/#contact) με την CleanUp Θεσσαλονίκης σήμερα.`,
+      ru: `## Как Чистый Дом Улучшает Ваше Психическое Здоровье
+
+Мы часто недооцениваем, насколько окружающая среда формирует наше состояние ума. Чистый, организованный дом не только приятен визуально — он активно поддерживает психическое здоровье и эмоциональный баланс.
+
+### 1. Более Низкий Уровень Кортизола
+
+Исследование *Personality and Social Psychology Bulletin* показало, что женщины, описывавшие свои дома как «захламлённые», имели более высокий уровень кортизола. Чистый дом буквально снижает стресс на гормональном уровне.
+
+### 2. Улучшение Концентрации и Продуктивности
+
+Беспорядок конкурирует за внимание вашего мозга. Устранение визуального хаоса помогает сосредоточиться.
+
+### 3. Лучшее Настроение и Меньше Депрессии
+
+Исследования связывают неопрятную обстановку с чувством беспомощности и депрессии. Уборка даёт ощущение достижения и контроля.
+
+### 4. Снижение Усталости от Принятия Решений
+
+Опрятное пространство уменьшает количество микрорешений, с которыми вы сталкиваетесь ежедневно. Это освобождает умственную энергию.
+
+### 5. Лучшие Отношения Дома
+
+Захламлённая среда создаёт напряжение между членами семьи. Чистое общее пространство способствует гармонии.
+
+### 6. Терапевтический Акт Уборки
+
+Осознанная уборка — сосредоточение на физическом движении — обладает медитативными свойствами, схожими с практикой mindfulness.
+
+---
+
+**Верните душевное спокойствие.** [Закажите профессиональную уборку](/#contact) с CleanUp в Салониках сегодня.`,
+    },
+  },
+  {
+    slug: "clean-home-allergies-respiratory",
+    date: "2026-04-01",
+    image: "/placeholder.svg",
+    title: {
+      el: "Καθαρό Σπίτι: Ασπίδα Κατά των Αλλεργιών και Αναπνευστικών Προβλημάτων",
+      en: "Clean Home: Your Shield Against Allergies and Respiratory Issues",
+      ru: "Чистый Дом: Ваш Щит от Аллергий и Респираторных Проблем",
+    },
+    excerpt: {
+      el: "Ανακαλύψτε πώς ο τακτικός επαγγελματικός καθαρισμός προστατεύει την οικογένειά σας από αλλεργίες, άσθμα και αναπνευστικές παθήσεις.",
+      en: "Discover how regular professional cleaning protects your family from allergies, asthma, and respiratory conditions.",
+      ru: "Узнайте, как регулярная профессиональная уборка защищает вашу семью от аллергий, астмы и заболеваний дыхательных путей.",
+    },
+    content: {
+      en: `## Clean Home: Your Shield Against Allergies and Respiratory Issues
+
+For millions of people, home should be a refuge — but for allergy and asthma sufferers, it can be a source of constant discomfort. Indoor air is often **2-5 times more polluted** than outdoor air, according to the EPA. The good news? A consistently clean home dramatically reduces these triggers.
+
+### 1. Eliminating Dust Mites
+
+Dust mites are microscopic creatures that live in bedding, carpets, and upholstery. Their waste is one of the most common allergy triggers. Washing bedding weekly in hot water and deep-cleaning mattresses can reduce dust mite populations by up to 90%.
+
+### 2. Removing Pet Dander
+
+Even if you don't have pets, dander can travel on clothing into your home. Vacuuming with HEPA filters and regularly wiping surfaces minimizes airborne allergens.
+
+### 3. Controlling Mold Growth
+
+Mold thrives in damp areas like bathrooms, kitchens, and basements. Mold spores trigger asthma attacks and chronic respiratory issues. Professional deep cleaning targets these hidden colonies before they spread.
+
+### 4. Reducing Indoor Pollutants
+
+Cooking fumes, cleaning chemical residues, and dust particles all degrade indoor air quality. Proper ventilation and using non-toxic cleaning products improves the air your family breathes.
+
+### 5. Pollen Management
+
+In spring and summer, pollen enters homes through windows and on clothing. Wiping floors and surfaces daily during allergy season makes a significant difference.
+
+### 6. Why Professional Cleaning Matters
+
+Standard household cleaning often misses the deepest allergen reservoirs — under furniture, inside vents, behind appliances. Professional teams use specialized equipment like HEPA vacuums and steam cleaners to capture and eliminate microscopic threats.
+
+---
+
+**Breathe easier in your own home.** [Schedule a deep clean](/#contact) with CleanUp Thessaloniki and protect your family's respiratory health.`,
+      el: `## Καθαρό Σπίτι: Ασπίδα Κατά των Αλλεργιών και Αναπνευστικών Προβλημάτων
+
+Για εκατομμύρια ανθρώπους, το σπίτι θα έπρεπε να είναι καταφύγιο — αλλά για όσους πάσχουν από αλλεργίες και άσθμα, μπορεί να είναι πηγή συνεχούς δυσφορίας. Ο εσωτερικός αέρας είναι συχνά **2-5 φορές πιο μολυσμένος** από τον εξωτερικό, σύμφωνα με την EPA. Τα καλά νέα; Ένα σταθερά καθαρό σπίτι μειώνει δραματικά αυτά τα ερεθίσματα.
+
+### 1. Εξάλειψη Ακάρεων της Σκόνης
+
+Τα ακάρεα είναι μικροσκοπικά πλάσματα που ζουν σε κλινοσκεπάσματα, χαλιά και ταπετσαρίες. Τα απόβλητά τους είναι ένα από τα πιο κοινά αλλεργιογόνα. Το πλύσιμο κλινοσκεπασμάτων εβδομαδιαίως σε ζεστό νερό μειώνει τον πληθυσμό τους έως και 90%.
+
+### 2. Αφαίρεση Τριχώματος Κατοικίδιων
+
+Ακόμα κι αν δεν έχετε κατοικίδιο, οι αλλεργιογόνες ουσίες μπορούν να ταξιδέψουν με ρούχα. Η σκούπα με φίλτρα HEPA και το τακτικό σκούπισμα ελαχιστοποιούν τα αλλεργιογόνα.
+
+### 3. Έλεγχος Ανάπτυξης Μούχλας
+
+Η μούχλα ευδοκιμεί σε υγρές περιοχές όπως μπάνια και κουζίνες. Τα σπόρια μούχλας προκαλούν κρίσεις άσθματος. Ο επαγγελματικός βαθύς καθαρισμός στοχεύει αυτές τις κρυφές αποικίες.
+
+### 4. Μείωση Εσωτερικών Ρύπων
+
+Οι αναθυμιάσεις μαγειρικής, τα υπολείμματα χημικών και τα σωματίδια σκόνης υποβαθμίζουν την ποιότητα του εσωτερικού αέρα. Ο σωστός αερισμός βελτιώνει τον αέρα.
+
+### 5. Διαχείριση Γύρης
+
+Την άνοιξη και το καλοκαίρι, η γύρη εισέρχεται στα σπίτια μέσω παραθύρων και ρούχων. Το καθημερινό σκούπισμα κάνει σημαντική διαφορά.
+
+### 6. Γιατί Έχει Σημασία ο Επαγγελματικός Καθαρισμός
+
+Ο τυπικός οικιακός καθαρισμός συχνά παραλείπει τα βαθύτερα σημεία αλλεργιογόνων — κάτω από έπιπλα, μέσα σε αεραγωγούς, πίσω από συσκευές. Οι επαγγελματικές ομάδες χρησιμοποιούν εξειδικευμένο εξοπλισμό όπως σκούπες HEPA και ατμοκαθαριστές.
+
+---
+
+**Αναπνεύστε ευκολότερα στο σπίτι σας.** [Κλείστε ραντεβού για βαθύ καθαρισμό](/#contact) με την CleanUp Θεσσαλονίκης και προστατέψτε την υγεία της οικογένειάς σας.`,
+      ru: `## Чистый Дом: Ваш Щит от Аллергий и Респираторных Проблем
+
+Для миллионов людей дом должен быть убежищем — но для страдающих аллергией и астмой он может быть источником постоянного дискомфорта. По данным EPA, воздух в помещениях часто **в 2-5 раз более загрязнён**, чем наружный. Хорошая новость? Постоянно чистый дом значительно снижает эти триггеры.
+
+### 1. Устранение Пылевых Клещей
+
+Пылевые клещи — это микроскопические существа, живущие в постельном белье, коврах и обивке. Их отходы — один из самых распространённых аллергенов. Еженедельная стирка постельного белья в горячей воде сокращает их популяцию до 90%.
+
+### 2. Удаление Шерсти Животных
+
+Даже если у вас нет питомцев, шерсть может попадать в дом на одежде. Уборка пылесосом с HEPA-фильтрами минимизирует аллергены в воздухе.
+
+### 3. Контроль Роста Плесени
+
+Плесень процветает во влажных местах, таких как ванные комнаты и кухни. Споры плесени вызывают приступы астмы. Профессиональная глубокая уборка устраняет эти скрытые колонии.
+
+### 4. Снижение Внутренних Загрязнителей
+
+Кухонные испарения, остатки химикатов и частицы пыли ухудшают качество воздуха. Правильная вентиляция улучшает воздух, которым дышит ваша семья.
+
+### 5. Управление Пыльцой
+
+Весной и летом пыльца попадает в дома через окна и на одежде. Ежедневная уборка полов значительно меняет ситуацию.
+
+### 6. Почему Важна Профессиональная Уборка
+
+Стандартная домашняя уборка часто упускает самые глубокие резервуары аллергенов — под мебелью, в вентиляции, за приборами. Профессиональные команды используют специализированное оборудование, такое как HEPA-пылесосы и пароочистители.
+
+---
+
+**Дышите легче в собственном доме.** [Запишитесь на глубокую уборку](/#contact) с CleanUp в Салониках и защитите здоровье своей семьи.`,
+    },
+  },
 ];
