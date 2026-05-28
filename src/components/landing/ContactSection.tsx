@@ -8,6 +8,7 @@ import { Phone, Mail, Clock, MapPin } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { executeRecaptcha } from "@/lib/recaptcha";
 
 
 const STORAGE_KEY = "contact_form_sends";
@@ -85,6 +86,16 @@ const ContactSection = () => {
     const sqmInfo = form.sqm.trim() ? `\nSq. m.: ${form.sqm.trim()}` : "";
     const fullMessage = form.message.trim() + propertyInfo + sqmInfo;
 
+    let recaptchaToken = "";
+    try {
+      recaptchaToken = await executeRecaptcha("contact_form");
+    } catch (err) {
+      console.error("recaptcha error", err);
+      setLoading(false);
+      toast.error(t("contact", "error"));
+      return;
+    }
+
     const { error } = await supabase.from("contact_submissions").insert({
       name: form.name.trim(),
       email: form.email.trim(),
@@ -102,6 +113,7 @@ const ContactSection = () => {
           email: form.email.trim(),
           phone: form.phone.trim() || null,
           message: fullMessage,
+          recaptchaToken,
         },
       }).catch(console.error);
 

@@ -3,6 +3,7 @@ import { MessageCircle, X, Send } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import { executeRecaptcha } from "@/lib/recaptcha";
 
 const FloatingContact = () => {
   const { t } = useLanguage();
@@ -31,6 +32,16 @@ const FloatingContact = () => {
 
     setSending(true);
 
+    let recaptchaToken = "";
+    try {
+      recaptchaToken = await executeRecaptcha("floating_contact");
+    } catch (err) {
+      console.error("recaptcha error", err);
+      setSending(false);
+      toast({ title: t("floatingContact", "error"), variant: "destructive" });
+      return;
+    }
+
     const { error } = await supabase.from("contact_submissions").insert({
       name: form.name.trim(),
       email: "floating-form@noemail.com",
@@ -46,7 +57,7 @@ const FloatingContact = () => {
     }
 
     supabase.functions.invoke("send-contact-email", {
-      body: { name: form.name.trim(), phone: form.phone.trim(), message: form.message.trim() },
+      body: { name: form.name.trim(), phone: form.phone.trim(), message: form.message.trim(), recaptchaToken },
     }).catch(console.error);
 
     toast({
