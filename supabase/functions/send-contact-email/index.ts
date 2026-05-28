@@ -20,7 +20,44 @@ serve(async (req) => {
   }
 
   try {
-    const { name, email, phone, message } = await req.json();
+    const { name, email, phone, message, recaptchaToken } = await req.json();
+
+    // Verify reCAPTCHA v3 token
+    const RECAPTCHA_SECRET_KEY = Deno.env.get("RECAPTCHA_SECRET_KEY");
+    if (!RECAPTCHA_SECRET_KEY) {
+      return new Response(JSON.stringify({ error: "RECAPTCHA_SECRET_KEY not configured" }), {
+        status: 500,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+    if (!recaptchaToken || typeof recaptchaToken !== "string") {
+      return new Response(JSON.stringify({ error: "Missing reCAPTCHA token" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+    try {
+      const verifyRes = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: `secret=${encodeURIComponent(RECAPTCHA_SECRET_KEY)}&response=${encodeURIComponent(recaptchaToken)}`,
+      });
+      const verifyData = await verifyRes.json();
+      if (!verifyData.success || (typeof verifyData.score === "number" && verifyData.score < 0.5)) {
+        console.warn("reCAPTCHA verification failed", verifyData);
+        return new Response(JSON.stringify({ error: "reCAPTCHA verification failed" }), {
+          status: 403,
+          headers: { ...corsHeaders, "Content-Type": "application/json" },
+        });
+      }
+    } catch (verifyErr) {
+      console.error("reCAPTCHA verify error", verifyErr);
+      return new Response(JSON.stringify({ error: "reCAPTCHA verification error" }), {
+        status: 502,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
 
     // Validate inputs
     const sanitize = (str: string | null | undefined, maxLen: number): string => {
