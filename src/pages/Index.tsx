@@ -79,16 +79,17 @@ const localBusinessJsonLd = {
 };
 
 const seoTitles = {
-  el: "Επαγγελματικός Καθαρισμός Σπιτιού & Γραφείου Θεσσαλονίκη | CleanUp SKG",
+  el: "Καθαρισμός Σπιτιού & Γραφείου Θεσσαλονίκη | CleanUp SKG",
   en: "Commercial & Office Cleaning Thessaloniki | CleanUp SKG",
   ru: "Коммерческая Уборка и Уборка Офисов Салоники | CleanUp SKG",
 };
 
 const seoDescriptions = {
-  el: "Επαγγελματικές υπηρεσίες καθαρισμού σπιτιών & γραφείων στη Θεσσαλονίκη. Η CleanUp SKG προσφέρει αξιόπιστες, οικολογικές και εξατομικευμένες λύσεις για την επιχείρησή σας. Ζητήστε δωρεάν προσφορά!",
+  el: "Επαγγελματικός καθαρισμός σπιτιών & γραφείων στη Θεσσαλονίκη. Αξιόπιστες, οικολογικές λύσεις. Ζητήστε δωρεάν προσφορά από την CleanUp SKG!",
   en: "Professional commercial & office cleaning services in Thessaloniki. CleanUp SKG offers reliable, eco-friendly, and tailored solutions for your business. Get a free quote!",
   ru: "Профессиональные услуги коммерческой уборки и уборки офисов в Салониках. CleanUp SKG предлагает надёжные, экологичные и индивидуальные решения для вашего бизнеса. Получите бесплатную оценку!",
 };
+
 
 const Index = () => {
   const { lang } = useLanguage();
