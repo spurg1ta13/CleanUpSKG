@@ -47,6 +47,9 @@ const LangDropdown = () => {
     <div className="relative" ref={ref}>
         <button
         onClick={() => setOpen(!open)}
+        aria-label={`Change language, current: ${current.label}`}
+        aria-haspopup="listbox"
+        aria-expanded={open}
         className="px-3 py-1.5 rounded-md text-sm font-bold border border-border bg-muted text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors flex items-center gap-1.5"
       >
         <span className="text-lg leading-none">{current.flag}</span>
@@ -54,6 +57,7 @@ const LangDropdown = () => {
           <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
         </svg>
       </button>
+
       {open && (
         <div className="absolute right-0 mt-1 z-50 bg-background border border-border rounded-md shadow-lg py-1 min-w-[52px]">
           {langOptions.map((o) => (
@@ -120,9 +124,10 @@ const Navbar = () => {
             <Phone className="h-3.5 w-3.5" />
             <span>697 477 6057</span>
           </a>
-          <a href={FACEBOOK_URL} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Facebook className="h-4 w-4" /></a>
-          <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Instagram className="h-4 w-4" /></a>
-          <a href={TIKTOK_URL} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><TikTokIcon className="h-4 w-4" /></a>
+          <a href={FACEBOOK_URL} target="_blank" rel="noreferrer" aria-label="CleanUp SKG on Facebook" className="text-muted-foreground hover:text-primary transition-colors"><Facebook className="h-4 w-4" /></a>
+          <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" aria-label="CleanUp SKG on Instagram" className="text-muted-foreground hover:text-primary transition-colors"><Instagram className="h-4 w-4" /></a>
+          <a href={TIKTOK_URL} target="_blank" rel="noreferrer" aria-label="CleanUp SKG on TikTok" className="text-muted-foreground hover:text-primary transition-colors"><TikTokIcon className="h-4 w-4" /></a>
+
           <LangDropdown />
         </div>
 
@@ -148,9 +153,10 @@ const Navbar = () => {
             <span>+30 697 477 6057</span>
           </a>
           <div className="flex gap-4 px-6 pt-3">
-            <a href={FACEBOOK_URL} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary"><Facebook className="h-5 w-5" /></a>
-            <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary"><Instagram className="h-5 w-5" /></a>
-            <a href={TIKTOK_URL} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary"><TikTokIcon className="h-5 w-5" /></a>
+            <a href={FACEBOOK_URL} target="_blank" rel="noreferrer" aria-label="CleanUp SKG on Facebook" className="text-muted-foreground hover:text-primary"><Facebook className="h-5 w-5" /></a>
+            <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" aria-label="CleanUp SKG on Instagram" className="text-muted-foreground hover:text-primary"><Instagram className="h-5 w-5" /></a>
+            <a href={TIKTOK_URL} target="_blank" rel="noreferrer" aria-label="CleanUp SKG on TikTok" className="text-muted-foreground hover:text-primary"><TikTokIcon className="h-5 w-5" /></a>
+
           </div>
         </div>
       )}

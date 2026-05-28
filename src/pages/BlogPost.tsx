@@ -96,7 +96,7 @@ const BlogPost = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead
-        title={`${article.title[lang]} | CleanUp`}
+        title={article.title[lang]}
         description={article.excerpt[lang]}
         path={`/blog/${article.slug}`}
         type="article"
@@ -120,6 +120,10 @@ const BlogPost = () => {
                 <span className="text-foreground font-medium truncate">{article.title[lang]}</span>
               </nav>
 
+              <h1 className="text-3xl md:text-4xl font-extrabold text-foreground mb-4 leading-tight">
+                {article.title[lang]}
+              </h1>
+
               <div className="flex items-center gap-2 text-muted-foreground text-sm mb-4">
                 <Calendar className="h-4 w-4" />
                 <time dateTime={article.date}>
@@ -131,6 +135,7 @@ const BlogPost = () => {
               </div>
 
               <div className="prose-custom">{renderMarkdown(content)}</div>
+
             </div>
           </div>
         </article>

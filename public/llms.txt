@@ -1,0 +1,20 @@
+# CleanUp SKG
+
+> Professional cleaning services in Thessaloniki, Greece — homes, offices, post-construction, bio-cleaning, steam disinfection, pressure washing, and window cleaning. Multilingual (Greek, English, Russian).
+
+CleanUp SKG (cleanupskg.gr) is a Thessaloniki-based cleaning company offering reliable, eco-friendly cleaning for residential and commercial spaces across Kalamaria, Thermi, Pylaia, Panorama, Evosmos, Stavroupoli, and Neapoli. Contact: info@cleanupskg.gr, +30 697 477 6057.
+
+## Pages
+
+- [Home](/): Services overview, about, pricing, FAQ, and contact form.
+- [Blog](/blog): Articles and tips on deep cleaning, hygiene, and home/office maintenance.
+- [Privacy Policy](/privacy-policy): GDPR privacy policy and data handling.
+
+## Blog
+
+- [Why deep cleaning is important](/blog/why-deep-cleaning-is-important): Health, hygiene, and home longevity benefits of regular deep cleaning.
+- [Cleaning during and after construction](/blog/cleaning-during-and-after-construction): Why professional post-construction cleaning is essential.
+- [Pros of steam disinfection](/blog/pros-of-steam-disinfection): Chemical-free steam sanitization that eliminates 99.9% of bacteria.
+- [Health benefits of a clean home](/blog/health-benefits-of-a-clean-home): Scientific benefits of a clean home for physical and mental health.
+- [Clean home and mental health](/blog/clean-home-mental-health): How a clean home reduces stress and improves wellbeing.
+- [Clean home, allergies and respiratory health](/blog/clean-home-allergies-respiratory): How regular cleaning protects against allergies and asthma.
