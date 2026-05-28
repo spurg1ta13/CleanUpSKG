@@ -15,7 +15,7 @@ const texts = {
     call: "Καλέστε μας",
   },
   en: {
-    badge: "🌸 Special Spring Cleaning Offer",
+    badge: "☀️ Special Summer Cleaning Offer",
     title: "Special Offer",
     highlight: "-20%",
     subtitle: "on Bio-Cleaning",
