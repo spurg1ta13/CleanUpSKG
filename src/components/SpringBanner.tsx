@@ -6,7 +6,7 @@ import bioImg from "@/assets/bio-cleaning.webp";
 
 const texts = {
   el: {
-    badge: "🌸 Ειδική Ανοιξιάτικη Προσφορά Καθαρισμού",
+    badge: "☀️ Ειδική Καλοκαιρινή Προσφορά Καθαρισμού",
     title: "Ειδική προσφορά",
     highlight: "-20%",
     subtitle: "στον βιολογικό καθαρισμό",
@@ -15,7 +15,7 @@ const texts = {
     call: "Καλέστε μας",
   },
   en: {
-    badge: "🌸 Special Spring Cleaning Offer",
+    badge: "☀️ Special Summer Cleaning Offer",
     title: "Special Offer",
     highlight: "-20%",
     subtitle: "on Bio-Cleaning",
@@ -24,7 +24,7 @@ const texts = {
     call: "Call Us",
   },
   ru: {
-    badge: "🌸 Специальное Весеннее Предложение",
+    badge: "☀️ Специальное Летнее Предложение",
     title: "Специальное Предложение",
     highlight: "-20%",
     subtitle: "на Био-Уборку",
