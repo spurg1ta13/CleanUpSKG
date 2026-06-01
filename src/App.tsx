@@ -19,6 +19,7 @@ const CookieBanner = lazy(() => import("@/components/CookieBanner"));
 const FloatingContact = lazy(() => import("@/components/FloatingContact"));
 const FloatingPhone = lazy(() => import("@/components/FloatingPhone"));
 const SpringBanner = lazy(() => import("@/components/SpringBanner"));
+const ContactDialog = lazy(() => import("@/components/ContactDialog"));
 
 const queryClient = new QueryClient();
 
@@ -43,6 +44,7 @@ const DeferredOverlays = () => {
       <FloatingContact />
       <FloatingPhone />
       <SpringBanner />
+      <ContactDialog />
     </Suspense>
   );
 };

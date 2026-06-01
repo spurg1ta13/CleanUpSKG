@@ -6,6 +6,7 @@ import Footer from "@/components/landing/Footer";
 import SEOHead from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { blogArticles } from "@/data/blogArticles";
+import { openContactDialog } from "@/components/ContactDialog";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -134,7 +135,20 @@ const BlogPost = () => {
                 </time>
               </div>
 
-              <div className="prose-custom">{renderMarkdown(content)}</div>
+              <div
+                className="prose-custom"
+                onClick={(e) => {
+                  const target = (e.target as HTMLElement).closest("a");
+                  if (!target) return;
+                  const href = target.getAttribute("href") || "";
+                  if (href === "#contact" || href === "/#contact" || href.endsWith("/#contact")) {
+                    e.preventDefault();
+                    openContactDialog();
+                  }
+                }}
+              >
+                {renderMarkdown(content)}
+              </div>
 
             </div>
           </div>
