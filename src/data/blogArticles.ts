@@ -901,7 +901,7 @@ Standard household cleaning often misses the deepest allergen reservoirs — und
     content: {
       en: `## Why Bio-Cleaning Before Summer Is Essential in Greece
 
-Summer in Greece — and especially in Thessaloniki — brings sunshine, beach days — and a surge in humidity, pollen, dust mites, and unwanted pests. Before the heat sets in across the country, **bio-cleaning** (eco-friendly cleaning using biodegradable, non-toxic, plant-based products) is the smartest way to prepare your home or office for the season ahead. Whether you live in Athens, Thessaloniki, or the islands, bio-cleaning protects your health, your family, and the Mediterranean environment we all share.`, 
+Summer in Greece — and especially in Thessaloniki — brings sunshine, beach days — and a surge in humidity, pollen, dust mites, and unwanted pests. Before the heat sets in across the country, **bio-cleaning** (eco-friendly cleaning using biodegradable, non-toxic, plant-based products) is the smartest way to prepare your home or office for the season ahead. Whether you live in Athens, Thessaloniki, or the islands, bio-cleaning protects your health, your family, and the Mediterranean environment we all share.
 
 ### What Is Bio-Cleaning?
 
@@ -1031,7 +1031,7 @@ Absolutely. Because the products are non-toxic and fragrance-free, you, your chi
 
 ---
 
-**Έτοιμοι να προετοιμάσετε το σπίτι σας για το καλοκαίρι;** [Επικοινωνήστε με την CleanUp SKG](/#contact) για δωρεάν προσφορά επαγγελματικού βιολογικού καθαρισμού σε όλη την Ελλάδα — από τη Θεσσαλονίκ μέχρι την Αθήνα και πέρα. Προστατέψτε την υγεία της οικογένειάς σας πριν φτάσει η ζέστη.`,
+**Έτοιμοι να προετοιμάσετε το σπίτι σας για το καλοκαίρι;** [Επικοινωνήστε με την CleanUp SKG](/#contact) για δωρεάν προσφορά επαγγελματικού βιολογικού καθαρισμού σε όλη την Ελλάδα — από τη Θεσσαλονίκη μέχρι την Αθήνα και πέρα. Προστατέψτε την υγεία της οικογένειάς σας πριν φτάσει η ζέστη.`,
 
       ru: `## Почему Биоуборка Перед Летом Особенно Важна в Греции
 
