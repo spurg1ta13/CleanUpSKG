@@ -889,9 +889,9 @@ Standard household cleaning often misses the deepest allergen reservoirs — und
     date: "2026-06-01",
     image: "/placeholder.svg",
     title: {
-      el: "Γιατί ο Βιολογικός Καθαρισμός Πριν το Καλοκαίρι Είναι Απαραίτητος στη Θεσσαλονίκη",
-      en: "Why Bio-Cleaning Before Summer Is Essential in Thessaloniki",
-      ru: "Почему Биоуборка Перед Летом Особенно Важна в Салониках",
+      el: "Γιατί ο Βιολογικός Καθαρισμός Πριν το Καλοκαίρι Είναι Απαραίτητος στην Ελλάδα",
+      en: "Why Bio-Cleaning Before Summer Is Essential in Greece",
+      ru: "Почему Биоуборка Перед Летом Особенно Важна в Греции",
     },
     excerpt: {
       el: "Η υγρασία, οι αλλεργίες και τα έντομα κορυφώνονται το καλοκαίρι. Δείτε γιατί ο οικολογικός βιολογικός καθαρισμός την άνοιξη προστατεύει την υγεία σας.",
@@ -899,9 +899,9 @@ Standard household cleaning often misses the deepest allergen reservoirs — und
       ru: "Влажность, аллергии и насекомые достигают пика летом. Узнайте, почему экологичная биоуборка весной защищает здоровье вашей семьи.",
     },
     content: {
-      en: `## Why Bio-Cleaning Before Summer Is Essential in Thessaloniki
+      en: `## Why Bio-Cleaning Before Summer Is Essential in Greece
 
-Summer in Thessaloniki brings sunshine, beach days — and a surge in humidity, pollen, dust mites, and unwanted pests. Before the heat sets in, **bio-cleaning** (eco-friendly cleaning using biodegradable, non-toxic, plant-based products) is the smartest way to prepare your home or office for the season ahead. Unlike conventional chemical cleaning, bio-cleaning protects your health, your family, and the Mediterranean environment we all share.
+Summer in Greece — and especially in Thessaloniki — brings sunshine, beach days — and a surge in humidity, pollen, dust mites, and unwanted pests. Before the heat sets in across the country, **bio-cleaning** (eco-friendly cleaning using biodegradable, non-toxic, plant-based products) is the smartest way to prepare your home or office for the season ahead. Whether you live in Athens, Thessaloniki, or the islands, bio-cleaning protects your health, your family, and the Mediterranean environment we all share.
 
 ### What Is Bio-Cleaning?
 
@@ -914,7 +914,7 @@ Bio-cleaning uses certified ecological products, enzymes, microfibre, and steam 
 
 ### 1. Summer Humidity Triggers Mold and Mildew
 
-Thessaloniki's coastal climate pushes indoor humidity above 60% from June onward. Combined with closed windows during heatwaves, this creates ideal conditions for **mold spores and mildew** on bathroom grout, behind furniture, under sinks, and inside HVAC vents. A pre-summer bio-clean eliminates spores at the source using natural antifungal agents — without spreading toxic chemicals through your air conditioning.
+Greece's coastal climate pushes indoor humidity above 60% from June onward — a reality in Thessaloniki, Athens, Patras, and every seaside town. Combined with closed windows during heatwaves, this creates ideal conditions for **mold spores and mildew** on bathroom grout, behind furniture, under sinks, and inside HVAC vents. A pre-summer bio-clean eliminates spores at the source using natural antifungal agents — without spreading toxic chemicals through your air conditioning.
 
 ### 2. Pollen and Dust Mite Allergies Peak in May–July
 
@@ -934,7 +934,7 @@ AC units that ran on minimal use during winter accumulate dust, bacteria, and ev
 
 ### 6. Eco-Friendly Choices for the Mediterranean
 
-Thessaloniki sits beside the Thermaic Gulf, and every chemical washed down a drain eventually reaches it. Choosing biodegradable cleaning products reduces the chemical load on our coastline, marine life, and the groundwater supplying our region.
+From the Thermaic Gulf in Thessaloniki to the Aegean islands, every chemical washed down a drain eventually reaches Greece's precious coastline. Choosing biodegradable cleaning products reduces the chemical load on our seas, marine life, and the groundwater supplying communities across the country.
 
 ### What a Professional Pre-Summer Bio-Clean Includes
 
@@ -964,11 +964,11 @@ Absolutely. Because the products are non-toxic and fragrance-free, you, your chi
 
 ---
 
-**Ready to prepare your home for summer?** [Contact CleanUp SKG](/#contact) for a free quote on professional bio-cleaning in Thessaloniki — protect your family's health before the heat arrives.`,
+**Ready to prepare your home for summer?** [Contact CleanUp SKG](/#contact) for a free quote on professional bio-cleaning anywhere in Greece — from Thessaloniki to Athens and beyond. Protect your family's health before the heat arrives.`,
 
-      el: `## Γιατί ο Βιολογικός Καθαρισμός Πριν το Καλοκαίρι Είναι Απαραίτητος στη Θεσσαλονίκη
+      el: `## Γιατί ο Βιολογικός Καθαρισμός Πριν το Καλοκαίρι Είναι Απαραίτητος στην Ελλάδα
 
-Το καλοκαίρι στη Θεσσαλονίκη φέρνει ηλιοφάνεια, μπάνια στη θάλασσα — αλλά και έντονη υγρασία, γύρη, ακάρεα και ανεπιθύμητα έντομα. Πριν την έναρξη της ζέστης, ο **βιολογικός καθαρισμός** (οικολογικός καθαρισμός με βιοδιασπώμενα, μη τοξικά, φυτικής προέλευσης προϊόντα) είναι ο πιο έξυπνος τρόπος να προετοιμάσετε το σπίτι ή το γραφείο σας. Σε αντίθεση με τον συμβατικό χημικό καθαρισμό, ο βιολογικός καθαρισμός προστατεύει την υγεία σας, την οικογένειά σας και το μεσογειακό περιβάλλον.
+Το καλοκαίρι στην Ελλάδα — και ιδιαίτερα στη Θεσσαλονίκη — φέρνει ηλιοφάνεια, μπάνια στη θάλασσα — αλλά και έντονη υγρασία, γύρη, ακάρεα και ανεπιθύμητα έντομα. Πριν την έναρξη της ζέστης σε όλη τη χώρα, ο **βιολογικός καθαρισμός** (οικολογικός καθαρισμός με βιοδιασπώμενα, μη τοξικά, φυτικής προέλευσης προϊόντα) είναι ο πιο έξυπνος τρόπος να προετοιμάσετε το σπίτι ή το γραφείο σας. Είτε ζείτε στην Αθήνα, τη Θεσσαλονίκη ή τα νησιά, ο βιολογικός καθαρισμός προστατεύει την υγεία σας, την οικογένειά σας και το μεσογειακό περιβάλλον.
 
 ### Τι Είναι ο Βιολογικός Καθαρισμός;
 
@@ -981,7 +981,7 @@ Absolutely. Because the products are non-toxic and fragrance-free, you, your chi
 
 ### 1. Η Καλοκαιρινή Υγρασία Προκαλεί Μούχλα και Μύκητες
 
-Το παραθαλάσσιο κλίμα της Θεσσαλονίκης ανεβάζει την υγρασία εσωτερικού χώρου πάνω από 60% από τον Ιούνιο. Σε συνδυασμό με κλειστά παράθυρα στους καύσωνες, δημιουργούνται ιδανικές συνθήκες για **σπόρια μούχλας και μύκητες** στους αρμούς του μπάνιου, πίσω από έπιπλα, κάτω από νεροχύτες και μέσα στα κλιματιστικά. Ένας βιολογικός καθαρισμός πριν το καλοκαίρι εξαλείφει τα σπόρια με φυσικά αντιμυκητιακά — χωρίς να διασπείρει τοξικές χημικές ουσίες.
+Το παραθαλάσσιο κλίμα της Ελλάδας ανεβάζει την υγρασία εσωτερικού χώρου πάνω από 60% από τον Ιούνιο — μια πραγματικότητα στη Θεσσαλονίκη, την Αθήνα, την Πάτρα και κάθε παραλιακή πόλη. Σε συνδυασμό με κλειστά παράθυρα στους καύσωνες, δημιουργούνται ιδανικές συνθήκες για **σπόρια μούχλας και μύκητες** στους αρμούς του μπάνιου, πίσω από έπιπλα, κάτω από νεροχύτες και μέσα στα κλιματιστικά. Ένας βιολογικός καθαρισμός πριν το καλοκαίρι εξαλείφει τα σπόρια με φυσικά αντιμυκητιακά — χωρίς να διασπείρει τοξικές χημικές ουσίες.
 
 ### 2. Οι Αλλεργίες σε Γύρη και Ακάρεα Κορυφώνονται Μάιο–Ιούλιο
 
@@ -1001,7 +1001,7 @@ Absolutely. Because the products are non-toxic and fragrance-free, you, your chi
 
 ### 6. Οικολογικές Επιλογές για τη Μεσόγειο
 
-Η Θεσσαλονίκη βρίσκεται δίπλα στον Θερμαϊκό Κόλπο, και κάθε χημική ουσία που πέφτει στην αποχέτευση φτάνει τελικά εκεί. Επιλέγοντας βιοδιασπώμενα προϊόντα μειώνετε το χημικό φορτίο στις ακτές μας και τη θαλάσσια ζωή.
+Από τον Θερμαϊκό Κόλπο στη Θεσσαλονίκη μέχρι τα νησιά του Αιγαίου, κάθε χημική ουσία που πέφτει στην αποχέτευση φτάνει τελικά στην πολύτιμη ακτογραμμή της Ελλάδας. Επιλέγοντας βιοδιασπώμενα προϊόντα μειώνετε το χημικό φορτίο στις θάλασσες, τη θαλάσσια ζωή και τα υπόγεια νερά που εφοδιάζουν κοινότητες σε όλη τη χώρα.
 
 ### Τι Περιλαμβάνει ο Επαγγελματικός Προκαλοκαιρινός Βιολογικός Καθαρισμός
 
@@ -1031,11 +1031,11 @@ Absolutely. Because the products are non-toxic and fragrance-free, you, your chi
 
 ---
 
-**Έτοιμοι να προετοιμάσετε το σπίτι σας για το καλοκαίρι;** [Επικοινωνήστε με την CleanUp SKG](/#contact) για δωρεάν προσφορά επαγγελματικού βιολογικού καθαρισμού στη Θεσσαλονίκη — προστατέψτε την υγεία της οικογένειάς σας πριν φτάσει η ζέστη.`,
+**Έτοιμοι να προετοιμάσετε το σπίτι σας για το καλοκαίρι;** [Επικοινωνήστε με την CleanUp SKG](/#contact) για δωρεάν προσφορά επαγγελματικού βιολογικού καθαρισμού σε όλη την Ελλάδα — από τη Θεσσαλονίκη μέχρι την Αθήνα και πέρα. Προστατέψτε την υγεία της οικογένειάς σας πριν φτάσει η ζέστη.`,
 
-      ru: `## Почему Биоуборка Перед Летом Особенно Важна в Салониках
+      ru: `## Почему Биоуборка Перед Летом Особенно Важна в Греции
 
-Лето в Салониках приносит солнце, морские купания — а также резкое повышение влажности, пыльцы, пылевых клещей и нежелательных насекомых. До наступления жары **биоуборка** (экологичная уборка с использованием биоразлагаемых, нетоксичных средств растительного происхождения) — самый разумный способ подготовить дом или офис к сезону. В отличие от обычной химической уборки, биоуборка защищает ваше здоровье, семью и средиземноморскую природу.
+Лето в Греции — и особенно в Салониках — приносит солнце, морские купания — а также резкое повышение влажности, пыльцы, пылевых клещей и нежелательных насекомых. До наступления жары по всей стране **биоуборка** (экологичная уборка с использованием биоразлагаемых, нетоксичных средств растительного происхождения) — самый разумный способ подготовить дом или офис к сезону. Независимо от того, живёте ли вы в Афинах, Салониках или на островах, биоуборка защищает ваше здоровье, семью и средиземноморскую природу.
 
 ### Что Такое Биоуборка?
 
@@ -1048,7 +1048,7 @@ Absolutely. Because the products are non-toxic and fragrance-free, you, your chi
 
 ### 1. Летняя Влажность Вызывает Плесень и Грибок
 
-Прибрежный климат Салоник поднимает влажность в помещениях выше 60% с июня. В сочетании с закрытыми окнами в жару создаются идеальные условия для **спор плесени и грибка** на швах ванной, за мебелью, под раковинами и внутри кондиционеров. Биоуборка перед летом устраняет споры в источнике с помощью натуральных противогрибковых средств — без распространения токсичной химии через кондиционеры.
+Прибрежный климат Греции поднимает влажность в помещениях выше 60% с июня — реальность в Салониках, Афинах, Патрах и каждом приморском городе. В сочетании с закрытыми окнами в жару создаются идеальные условия для **спор плесени и грибка** на швах ванной, за мебелью, под раковинами и внутри кондиционеров. Биоуборка перед летом устраняет споры в источнике с помощью натуральных противогрибковых средств — без распространения токсичной химии через кондиционеры.
 
 ### 2. Аллергии на Пыльцу и Клещей Достигают Пика в Мае–Июле
 
@@ -1068,7 +1068,7 @@ Absolutely. Because the products are non-toxic and fragrance-free, you, your chi
 
 ### 6. Экологичный Выбор для Средиземноморья
 
-Салоники расположены рядом с Термаическим заливом, и каждое химическое вещество, смытое в канализацию, в итоге попадает туда. Выбор биоразлагаемых средств снижает химическую нагрузку на наше побережье и морскую жизнь.
+От Термаического залива в Салониках до островов Эгейского моря — каждое химическое вещество, смытое в канализацию, в итоге попадает в драгоценное побережье Греции. Выбор биоразлагаемых средств снижает химическую нагрузку на наши моря, морскую жизнь и грунтовые воды, снабжающие общины по всей стране.
 
 ### Что Включает Профессиональная Предлетняя Биоуборка
 
@@ -1098,7 +1098,7 @@ Absolutely. Because the products are non-toxic and fragrance-free, you, your chi
 
 ---
 
-**Готовы подготовить дом к лету?** [Свяжитесь с CleanUp SKG](/#contact) для бесплатной оценки профессиональной биоуборки в Салониках — защитите здоровье семьи до прихода жары.`,
+**Готовы подготовить дом к лету?** [Свяжитесь с CleanUp SKG](/#contact) для бесплатной оценки профессиональной биоуборки в любой точке Греции — от Салоник до Афин и дальше. Защитите здоровье семьи до прихода жары.`,
     },
   },
 ];
