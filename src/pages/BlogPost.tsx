@@ -135,7 +135,20 @@ const BlogPost = () => {
                 </time>
               </div>
 
-              <div className="prose-custom">{renderMarkdown(content)}</div>
+              <div
+                className="prose-custom"
+                onClick={(e) => {
+                  const target = (e.target as HTMLElement).closest("a");
+                  if (!target) return;
+                  const href = target.getAttribute("href") || "";
+                  if (href === "#contact" || href === "/#contact" || href.endsWith("/#contact")) {
+                    e.preventDefault();
+                    openContactDialog();
+                  }
+                }}
+              >
+                {renderMarkdown(content)}
+              </div>
 
             </div>
           </div>
