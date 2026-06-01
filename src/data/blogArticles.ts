@@ -964,7 +964,7 @@ Absolutely. Because the products are non-toxic and fragrance-free, you, your chi
 
 ---
 
-**Ready to prepare your home for summer?** [Contact CleanUp SKG](/#contact) for a free quote on professional bio-cleaning anywhere in Greece — from Thessaloniki to Athens and beyond. Protect your family's health before the heat arrives.`,
+**Ready to prepare your home for summer?** [Contact CleanUp SKG](/#contact) for a free quote on professional bio-cleaning across Thessaloniki, Halkidiki, and the surrounding areas. Protect your family's health before the heat arrives.`,
 
       el: `## Γιατί ο Βιολογικός Καθαρισμός Πριν το Καλοκαίρι Είναι Απαραίτητος στην Ελλάδα
 
@@ -1031,7 +1031,7 @@ Absolutely. Because the products are non-toxic and fragrance-free, you, your chi
 
 ---
 
-**Έτοιμοι να προετοιμάσετε το σπίτι σας για το καλοκαίρι;** [Επικοινωνήστε με την CleanUp SKG](/#contact) για δωρεάν προσφορά επαγγελματικού βιολογικού καθαρισμού σε όλη την Ελλάδα — από τη Θεσσαλονίκη μέχρι την Αθήνα και πέρα. Προστατέψτε την υγεία της οικογένειάς σας πριν φτάσει η ζέστη.`,
+**Έτοιμοι να προετοιμάσετε το σπίτι σας για το καλοκαίρι;** [Επικοινωνήστε με την CleanUp SKG](/#contact) για δωρεάν προσφορά επαγγελματικού βιολογικού καθαρισμού σε Θεσσαλονίκη, Χαλκιδική και γύρω περιοχές. Προστατέψτε την υγεία της οικογένειάς σας πριν φτάσει η ζέστη.`,
 
       ru: `## Почему Биоуборка Перед Летом Особенно Важна в Греции
 
@@ -1098,7 +1098,7 @@ Absolutely. Because the products are non-toxic and fragrance-free, you, your chi
 
 ---
 
-**Готовы подготовить дом к лету?** [Свяжитесь с CleanUp SKG](/#contact) для бесплатной оценки профессиональной биоуборки в любой точке Греции — от Салоник до Афин и дальше. Защитите здоровье семьи до прихода жары.`,
+**Готовы подготовить дом к лету?** [Свяжитесь с CleanUp SKG](/#contact) для бесплатной оценки профессиональной биоуборки в Салониках, Халкидики и окрестностях. Защитите здоровье семьи до прихода жары.`,
     },
   },
 ];
