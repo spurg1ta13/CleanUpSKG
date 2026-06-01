@@ -5,6 +5,7 @@ const heroImg = "/images/hero-cleaning.webp";
 import { useLanguage } from "@/i18n/LanguageContext";
 import PriceCalculator from "./PriceCalculator";
 import { SHOW_PRICING } from "@/config/featureFlags";
+import { openContactDialog } from "@/components/ContactDialog";
 
 const HeroSection = () => {
   const { t } = useLanguage();
