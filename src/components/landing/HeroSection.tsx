@@ -15,7 +15,17 @@ const HeroSection = () => {
     <>
       <section id="home" className="relative overflow-hidden min-h-[70vh] flex items-center">
         <div className="absolute inset-0">
-          <img src={heroImg} alt={t("alt", "hero")} className="w-full h-full object-cover" width={1200} height={800} fetchPriority="high" decoding="sync" sizes="100vw" />
+          <img
+            src={heroImg}
+            srcSet="/images/hero-cleaning-800.webp 800w, /images/hero-cleaning.webp 1600w"
+            sizes="100vw"
+            alt={t("alt", "hero")}
+            className="w-full h-full object-cover"
+            width={1600}
+            height={900}
+            fetchPriority="high"
+            decoding="sync"
+          />
           <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/40" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
