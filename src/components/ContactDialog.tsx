@@ -34,6 +34,7 @@ const addSendTimestamp = () => {
 export const OPEN_CONTACT_DIALOG_EVENT = "open-contact-dialog";
 
 export const openContactDialog = () => {
+  (window as Window & { __contactDialogPending?: boolean }).__contactDialogPending = true;
   window.dispatchEvent(new CustomEvent(OPEN_CONTACT_DIALOG_EVENT));
 };
 
