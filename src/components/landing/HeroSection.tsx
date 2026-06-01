@@ -28,10 +28,8 @@ const HeroSection = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="relative inline-flex">
-                <Button asChild size="lg" className="rounded-full px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-shadow">
-                  <a href="#contact">
-                    {t("hero", "cta")} 
-                  </a>
+                <Button size="lg" className="rounded-full px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-shadow" onClick={openContactDialog}>
+                  {t("hero", "cta")}
                 </Button>
                 <span className="absolute inset-0 rounded-full animate-ping bg-primary/40 pointer-events-none" />
               </span>
