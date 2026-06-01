@@ -44,6 +44,7 @@ const DeferredOverlays = () => {
       <FloatingContact />
       <FloatingPhone />
       <SpringBanner />
+      <ContactDialog />
     </Suspense>
   );
 };
