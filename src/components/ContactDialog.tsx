@@ -59,6 +59,10 @@ const ContactDialog = () => {
     return () => window.removeEventListener(OPEN_CONTACT_DIALOG_EVENT, handler);
   }, []);
 
+  useEffect(() => {
+    window.dispatchEvent(new CustomEvent("contact-dialog-state", { detail: { open } }));
+  }, [open]);
+
   const validate = useCallback(() => {
     const e: Record<string, string> = {};
     if (!form.name.trim()) e.name = t("contact", "nameRequired");
