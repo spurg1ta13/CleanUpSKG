@@ -6,6 +6,7 @@ import Footer from "@/components/landing/Footer";
 import SEOHead from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { blogArticles } from "@/data/blogArticles";
+import { openContactDialog } from "@/components/ContactDialog";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
