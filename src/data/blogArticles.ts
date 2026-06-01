@@ -964,7 +964,7 @@ Absolutely. Because the products are non-toxic and fragrance-free, you, your chi
 
 ---
 
-**Ready to prepare your home for summer?** [Contact CleanUp SKG](/#contact) for a free quote on professional bio-cleaning anywhere in Greece — from Thessaloniki to Athens and beyond. Protect your family's health before the heat arrives.`,
+**Ready to prepare your home for summer?** [Contact CleanUp SKG](/#contact) for a free quote on professional bio-cleaning across Thessaloniki, Halkidiki, and the surrounding areas. Protect your family's health before the heat arrives.`,
 
       el: `## Γιατί ο Βιολογικός Καθαρισμός Πριν το Καλοκαίρι Είναι Απαραίτητος στην Ελλάδα
 
