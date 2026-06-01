@@ -106,7 +106,7 @@ const Index = () => {
       <Navbar />
     <main>
       <HeroSection />
-      <Suspense fallback={null}>
+      <Suspense fallback={<div style={{ minHeight: "100vh" }} aria-hidden />}>
         <AboutSection />
         <ServicesSection />
         {SHOW_PRICING && <PricingSection />}
