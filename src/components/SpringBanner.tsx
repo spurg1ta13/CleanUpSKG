@@ -67,6 +67,7 @@ const SpringBanner = () => {
     }, 100);
   };
 
+  const visible = bannerVisible && !manuallyDismissed && !dialogOpen;
   if (!visible) return null;
 
   return (
