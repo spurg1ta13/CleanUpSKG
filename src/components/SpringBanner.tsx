@@ -35,17 +35,29 @@ const texts = {
 };
 
 const SpringBanner = () => {
-  const [visible, setVisible] = useState(false);
+  const [bannerVisible, setBannerVisible] = useState(false);
+  const [manuallyDismissed, setManuallyDismissed] = useState(false);
+  const [dialogOpen, setDialogOpen] = useState(false);
   const { lang } = useLanguage();
   const t = texts[lang];
 
   useEffect(() => {
-    const timer = setTimeout(() => setVisible(true), 600);
+    const handler = (e: Event) => {
+      const detail = (e as CustomEvent<{ open: boolean }>).detail;
+      setDialogOpen(detail?.open ?? false);
+    };
+    window.addEventListener("contact-dialog-state", handler);
+    return () => window.removeEventListener("contact-dialog-state", handler);
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setBannerVisible(true), 600);
     return () => clearTimeout(timer);
   }, []);
 
   const dismiss = () => {
-    setVisible(false);
+    setBannerVisible(false);
+    setManuallyDismissed(true);
   };
 
   const handleBook = () => {
@@ -55,6 +67,7 @@ const SpringBanner = () => {
     }, 100);
   };
 
+  const visible = bannerVisible && !manuallyDismissed && !dialogOpen;
   if (!visible) return null;
 
   return (
