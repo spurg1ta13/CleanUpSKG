@@ -51,6 +51,11 @@ const ContactDialog = () => {
   useEffect(() => {
     const handler = () => setOpen(true);
     window.addEventListener(OPEN_CONTACT_DIALOG_EVENT, handler);
+    const w = window as Window & { __contactDialogPending?: boolean };
+    if (w.__contactDialogPending) {
+      w.__contactDialogPending = false;
+      setOpen(true);
+    }
     return () => window.removeEventListener(OPEN_CONTACT_DIALOG_EVENT, handler);
   }, []);
 
