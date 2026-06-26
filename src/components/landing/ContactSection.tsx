@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Phone, Mail, Clock, MapPin } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
+
 import { toast } from "sonner";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { executeRecaptcha } from "@/lib/recaptcha";
@@ -96,6 +96,7 @@ const ContactSection = () => {
       return;
     }
 
+    const { supabase } = await import("@/integrations/supabase/client");
     const { error } = await supabase.from("contact_submissions").insert({
       name: form.name.trim(),
       email: form.email.trim(),
@@ -116,6 +117,7 @@ const ContactSection = () => {
           recaptchaToken,
         },
       }).catch(console.error);
+
 
       addSendTimestamp();
       toast.success(t("contact", "successTitle"), { description: t("contact", "successDesc") });
