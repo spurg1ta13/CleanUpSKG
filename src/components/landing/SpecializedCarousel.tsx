@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 type Card = {
   titleKey: string;
   img: string;
+  imgSmall: string;
   alt: string;
   title: string;
   desc: string;
