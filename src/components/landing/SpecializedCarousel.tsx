@@ -22,6 +22,8 @@ const SpecializedCarousel = ({ cards }: { cards: Card[] }) => {
                   <div className="h-[220px] overflow-hidden rounded-lg">
                     <img
                       src={c.img}
+                      srcSet={`${c.imgSmall} 400w, ${c.img} 600w`}
+                      sizes="(max-width: 768px) 90vw, 400px"
                       alt={c.alt}
                       className="w-full h-full object-cover"
                       loading="lazy"
