@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import TikTokIcon from "@/components/icons/TikTokIcon";
 import { useLanguage } from "@/i18n/LanguageContext";
 import logo from "@/assets/logo-white-bg-optimized.webp";
+import logoSmall from "@/assets/logo-white-bg-optimized-160.webp";
 import { SHOW_PRICING } from "@/config/featureFlags";
 
 const FACEBOOK_URL = "https://www.facebook.com/cleanup.skg";
