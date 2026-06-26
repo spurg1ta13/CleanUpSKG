@@ -18,13 +18,15 @@ const items = [
   { icon: Wind, titleKey: "pressure", descKey: "pressureDesc", img: pressureImg, imgSmall: pressureImg400, altKey: "pressure" as const },
 ] as const;
 
-const Item = ({ img, alt, title, desc }: { img: string; alt: string; title: string; desc: string }) => (
+const Item = ({ img, imgSmall, alt, title, desc }: { img: string; imgSmall: string; alt: string; title: string; desc: string }) => (
   <Card className="border-0 shadow-none overflow-hidden bg-transparent">
     <CardContent className="p-0">
       <div className="flex flex-col">
         <div className="h-[220px] md:h-[280px] overflow-hidden rounded-lg">
           <img
             src={img}
+            srcSet={`${imgSmall} 400w, ${img} 600w`}
+            sizes="(max-width: 768px) 90vw, 280px"
             alt={alt}
             className="w-full h-full object-cover"
             loading="lazy"
