@@ -87,7 +87,7 @@ const SpecializedSection = () => {
           {isMobile === null && (
             <div className="grid md:grid-cols-3 gap-4">
               {cards.slice(0, 1).map((c) => (
-                <Item key={c.titleKey} img={c.img} alt={c.alt} title={c.title} desc={c.desc} />
+                <Item key={c.titleKey} img={c.img} imgSmall={c.imgSmall} alt={c.alt} title={c.title} desc={c.desc} />
               ))}
             </div>
           )}
