@@ -2,26 +2,31 @@ import { lazy, Suspense, useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Droplets, Wind, GlassWater } from "lucide-react";
 import steamImg from "@/assets/steam-cleaning.webp";
+import steamImg400 from "@/assets/steam-cleaning-400.webp";
 import pressureImg from "@/assets/pressure-washing.webp";
+import pressureImg400 from "@/assets/pressure-washing-400.webp";
 import windowImg from "@/assets/window-cleaning.webp";
+import windowImg400 from "@/assets/window-cleaning-400.webp";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 // Lazy load carousel only on mobile to avoid Embla's forced reflows on desktop
 const MobileCarousel = lazy(() => import("./SpecializedCarousel"));
 
 const items = [
-  { icon: GlassWater, titleKey: "window", descKey: "windowDesc", img: windowImg, altKey: "window" as const },
-  { icon: Droplets, titleKey: "steam", descKey: "steamDesc", img: steamImg, altKey: "steam" as const },
-  { icon: Wind, titleKey: "pressure", descKey: "pressureDesc", img: pressureImg, altKey: "pressure" as const },
+  { icon: GlassWater, titleKey: "window", descKey: "windowDesc", img: windowImg, imgSmall: windowImg400, altKey: "window" as const },
+  { icon: Droplets, titleKey: "steam", descKey: "steamDesc", img: steamImg, imgSmall: steamImg400, altKey: "steam" as const },
+  { icon: Wind, titleKey: "pressure", descKey: "pressureDesc", img: pressureImg, imgSmall: pressureImg400, altKey: "pressure" as const },
 ] as const;
 
-const Item = ({ img, alt, title, desc }: { img: string; alt: string; title: string; desc: string }) => (
+const Item = ({ img, imgSmall, alt, title, desc }: { img: string; imgSmall: string; alt: string; title: string; desc: string }) => (
   <Card className="border-0 shadow-none overflow-hidden bg-transparent">
     <CardContent className="p-0">
       <div className="flex flex-col">
         <div className="h-[220px] md:h-[280px] overflow-hidden rounded-lg">
           <img
             src={img}
+            srcSet={`${imgSmall} 400w, ${img} 600w`}
+            sizes="(max-width: 768px) 90vw, 280px"
             alt={alt}
             className="w-full h-full object-cover"
             loading="lazy"
@@ -69,7 +74,8 @@ const SpecializedSection = () => {
           {isMobile === false && (
             <div className="grid grid-cols-3 gap-4">
               {cards.map((c) => (
-                <Item key={c.titleKey} img={c.img} alt={c.alt} title={c.title} desc={c.desc} />
+                <Item key={c.titleKey} img={c.img} imgSmall={c.imgSmall} alt={c.alt} title={c.title} desc={c.desc} />
+
               ))}
             </div>
           )}
@@ -81,7 +87,7 @@ const SpecializedSection = () => {
           {isMobile === null && (
             <div className="grid md:grid-cols-3 gap-4">
               {cards.slice(0, 1).map((c) => (
-                <Item key={c.titleKey} img={c.img} alt={c.alt} title={c.title} desc={c.desc} />
+                <Item key={c.titleKey} img={c.img} imgSmall={c.imgSmall} alt={c.alt} title={c.title} desc={c.desc} />
               ))}
             </div>
           )}

@@ -1,6 +1,7 @@
 import { Building, UtensilsCrossed, CookingPot } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import commercialImg from "@/assets/commercial-cleaning.webp";
+import commercialImg400 from "@/assets/commercial-cleaning-400.webp";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const CommercialSection = () => {
@@ -18,7 +19,7 @@ const CommercialSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div>
             <div className="rounded-2xl h-[300px] overflow-hidden">
-              <img src={commercialImg} alt={t("alt", "commercial")} className="w-full h-full object-cover" loading="lazy" decoding="async" width={600} height={300} />
+              <img src={commercialImg} srcSet={`${commercialImg400} 400w, ${commercialImg} 600w`} sizes="(max-width: 1024px) 90vw, 600px" alt={t("alt", "commercial")} className="w-full h-full object-cover" loading="lazy" decoding="async" width={600} height={300} />
             </div>
           </div>
           <div>

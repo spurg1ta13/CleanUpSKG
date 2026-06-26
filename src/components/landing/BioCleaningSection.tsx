@@ -1,6 +1,7 @@
 import { Sofa, BedDouble, Layers, Car } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import bioCleaningImg from "@/assets/bio-cleaning.webp";
+import bioCleaningImg400 from "@/assets/bio-cleaning-400.webp";
 import { SHOW_PRICING } from "@/config/featureFlags";
 
 const BioCleaningSection = () => {
@@ -83,7 +84,7 @@ const BioCleaningSection = () => {
               ))}
             </div>
             <div className="mt-6 rounded-xl overflow-hidden shadow-sm">
-              <img src={bioCleaningImg} alt={t("alt", "bioCleaning")} className="w-full h-[300px] object-cover" loading="lazy" decoding="async" width={600} height={300} />
+              <img src={bioCleaningImg} srcSet={`${bioCleaningImg400} 400w, ${bioCleaningImg} 600w`} sizes="(max-width: 1024px) 90vw, 600px" alt={t("alt", "bioCleaning")} className="w-full h-[300px] object-cover" loading="lazy" decoding="async" width={600} height={300} />
             </div>
           </div>
           <div>
