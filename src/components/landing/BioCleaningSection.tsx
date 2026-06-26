@@ -1,6 +1,7 @@
 import { Sofa, BedDouble, Layers, Car } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import bioCleaningImg from "@/assets/bio-cleaning.webp";
+import bioCleaningImg400 from "@/assets/bio-cleaning-400.webp";
 import { SHOW_PRICING } from "@/config/featureFlags";
 
 const BioCleaningSection = () => {
