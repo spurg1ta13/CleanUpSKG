@@ -81,7 +81,7 @@ const Footer = () => {
         </div>
         <div className="border-t border-background/10 pt-6 text-center text-sm opacity-80">
           <p>© {new Date().getFullYear()} CleanUp. {t("footer", "rights")}</p>
-          <p className="mt-2">Powered by <a href="https://devcraft.gr" target="_blank" rel="noreferrer" className="underline hover:opacity-80 transition-opacity">devcraft.gr</a></p>
+          {/* <p className="mt-2">Powered by <a href="https://devcraft.gr" target="_blank" rel="noreferrer" className="underline hover:opacity-80 transition-opacity">devcraft.gr</a></p> */}
         </div>
       </div>
     </footer>
