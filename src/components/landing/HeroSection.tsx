@@ -13,21 +13,23 @@ const HeroSection = () => {
 
   return (
     <>
-      <section id="home" className="relative overflow-hidden min-h-[70vh] flex items-center">
-        <div className="absolute inset-0">
+      <section id="home" className="relative overflow-hidden">
+        <div className="relative w-full aspect-[16/9] md:aspect-[16/8]">
           <img
             src={heroImg}
             srcSet="/images/hero-cleaning-800.webp 800w, /images/hero-cleaning.webp 1600w"
             sizes="100vw"
             alt={t("alt", "hero")}
-            className="w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-contain md:object-cover object-center bg-background"
             width={1600}
             height={900}
             fetchPriority="high"
             decoding="sync"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-background/20 md:to-transparent" />
         </div>
+        <div className="absolute inset-0 flex items-center z-10">
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-foreground mb-6 leading-tight">
