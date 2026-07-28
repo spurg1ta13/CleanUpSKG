@@ -28,9 +28,8 @@ const HeroSection = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-background/20 md:to-transparent" />
         </div>
-        <div className="absolute inset-0 flex items-center z-10">
+        <div className="absolute inset-0 container mx-auto px-4 flex items-center z-10">
 
-        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-foreground mb-6 leading-tight">
               {t("hero", "title1")} <span className="text-primary">{t("hero", "title2")}</span>
