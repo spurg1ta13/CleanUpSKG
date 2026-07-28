@@ -40,7 +40,7 @@ const Footer = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
           <div>
             <Link to="/">
-              <img src={logoSmall} srcSet={`${logoSmall} 160w, ${logo} 200w`} sizes="80px" alt={t("alt", "logo")} className="h-20 w-auto mb-4 rounded-full" width={80} height={80} loading="lazy" decoding="async" />
+              <img src={logoSmall} srcSet={`${logoSmall} 160w, ${logo} 200w`} sizes="(max-width: 768px) 64px, 80px" alt={t("alt", "logo")} className="h-[clamp(64px,5vw,80px)] w-auto mb-4 rounded-full" width={80} height={80} loading="lazy" decoding="async" />
             </Link>
             <p className="text-sm opacity-90 leading-relaxed">{t("footer", "description")}</p>
           </div>
