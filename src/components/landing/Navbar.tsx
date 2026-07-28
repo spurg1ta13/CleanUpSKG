@@ -106,7 +106,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b">
-      <div className="container mx-auto px-4 flex items-center justify-between h-20">
+      <div className="container mx-auto px-4 flex items-center justify-between h-20 py-2">
         <Link to="/" onClick={(e) => { if (window.location.pathname === "/") { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); window.history.replaceState(null, "", "/"); } }} className="flex items-center">
           <img src={logoSmall} srcSet={`${logoSmall} 160w, ${logo} 200w`} sizes="(max-width: 768px) 48px, 64px" alt={t("alt", "logoNav")} className="h-[clamp(48px,4vw,64px)] w-auto bg-white rounded-sm" width={64} height={64} fetchPriority="high" />
         </Link>
