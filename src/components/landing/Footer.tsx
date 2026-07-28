@@ -35,12 +35,12 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-foreground text-background py-14">
+    <footer className="bg-foreground text-background py-[clamp(2.5rem,4vw,3.5rem)]">
       <div className="container mx-auto px-4">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-[clamp(1.5rem,3vw,2.5rem)] mb-[clamp(1.5rem,3vw,2.5rem)] items-start">
           <div>
             <Link to="/">
-              <img src={logoSmall} srcSet={`${logoSmall} 160w, ${logo} 200w`} sizes="(max-width: 768px) 64px, 80px" alt={t("alt", "logo")} className="h-[clamp(64px,5vw,80px)] w-auto mb-4 rounded-full" width={80} height={80} loading="lazy" decoding="async" />
+              <img src={logoSmall} srcSet={`${logoSmall} 160w, ${logo} 200w`} sizes="(max-width: 768px) 64px, 80px" alt={t("alt", "logo")} className="h-[clamp(64px,5vw,80px)] w-auto mb-[clamp(0.5rem,1.5vw,1rem)] rounded-full" width={80} height={80} loading="lazy" decoding="async" />
             </Link>
             <p className="text-sm opacity-90 leading-relaxed">{t("footer", "description")}</p>
           </div>
@@ -79,7 +79,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="border-t border-background/10 pt-6 text-center text-sm opacity-80">
+        <div className="border-t border-background/10 pt-[clamp(1rem,2vw,1.5rem)] text-center text-sm opacity-80">
           <p>© {new Date().getFullYear()} CleanUp. {t("footer", "rights")}</p>
           {/* <p className="mt-2">Powered by <a href="https://devcraft.gr" target="_blank" rel="noreferrer" className="underline hover:opacity-80 transition-opacity">devcraft.gr</a></p> */}
         </div>
