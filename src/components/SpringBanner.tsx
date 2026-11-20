@@ -17,8 +17,8 @@ const texts = {
     description:
       "Φρεσκάτε καναπέδες, στρώματα & χαλιά ή αναθέστε μας τον πλήρη γενικό καθαρισμό του σπιτιού. Επαγγελματικός εξοπλισμός, υλικά φιλικά προς την υγεία.",
     urgency: "Προσφορά περιορισμένου χρόνου — κλείστε τη θέση σας σήμερα!",
-    quote: "Δωρεάν Προσφορά",
-    trust: "Δωρεάν εκτίμηση · Θεσσαλονίκη & Χαλκιδική",
+    quote: "Κλείστε Τώρα",
+    trust: "Θεσσαλονίκη & Χαλκιδική",
   },
   en: {
     badge: "❄️ Special Winter Cleaning Offer",
@@ -29,8 +29,8 @@ const texts = {
     description:
       "Freshen up sofas, mattresses & carpets — or hand us the whole flat for a full general clean. Professional equipment, health-safe products.",
     urgency: "Limited-time offer — book your slot today!",
-    quote: "Get a Free Quote",
-    trust: "Free quote · Thessaloniki & Halkidiki",
+    quote: "Book Now",
+    trust: "Thessaloniki & Halkidiki",
   },
   ru: {
     badge: "❄️ Специальное Зимнее Предложение",
@@ -41,8 +41,8 @@ const texts = {
     description:
       "Освежите диваны, матрасы и ковры или доверьте нам полную генеральную уборку квартиры. Профессиональное оборудование, безопасные средства.",
     urgency: "Предложение ограничено — забронируйте день сегодня!",
-    quote: "Бесплатная Смета",
-    trust: "Бесплатная смета · Салоники и Халкидики",
+    quote: "Забронировать",
+    trust: "Салоники и Халкидики",
   },
 };
 
