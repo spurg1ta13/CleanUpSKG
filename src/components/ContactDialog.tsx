@@ -8,6 +8,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { executeRecaptcha } from "@/lib/recaptcha";
+import { getContactMethodError } from "@/lib/contactValidation";
 
 const STORAGE_KEY = "contact_form_sends";
 const MAX_SENDS = 2;
@@ -66,12 +67,11 @@ const ContactDialog = () => {
   const validate = useCallback(() => {
     const e: Record<string, string> = {};
     if (!form.name.trim()) e.name = t("contact", "nameRequired");
-    const hasEmail = form.email.trim().length > 0;
-    const hasPhone = form.phone.trim().length > 0;
-    if (!hasEmail && !hasPhone) {
+    const contactMethodError = getContactMethodError(form.email, form.phone);
+    if (contactMethodError === "required") {
       e.email = t("contact", "emailOrPhoneRequired");
       e.phone = t("contact", "emailOrPhoneRequired");
-    } else if (hasEmail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
+    } else if (contactMethodError === "invalidEmail") {
       e.email = t("contact", "emailInvalid");
     }
     if (!form.message.trim()) e.message = t("contact", "messageRequired");
