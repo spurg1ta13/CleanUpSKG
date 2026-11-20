@@ -114,8 +114,8 @@ const SpringBanner = () => {
             {t.badge}
           </span>
 
-          {/* Discount badge */}
-          <div className="absolute top-14 right-3 md:top-14 md:right-16 bg-destructive text-destructive-foreground font-black text-4xl md:text-5xl px-5 py-3 md:px-6 md:py-4 rounded-2xl shadow-2xl animate-badge-pop border-2 border-destructive-foreground/20">
+          {/* Discount badge — desktop only, over the image */}
+          <div className="hidden md:block absolute top-14 right-16 bg-destructive text-destructive-foreground font-black text-5xl px-6 py-4 rounded-2xl shadow-2xl animate-badge-pop border-2 border-destructive-foreground/20">
             {t.highlight}
           </div>
 
@@ -130,17 +130,24 @@ const SpringBanner = () => {
 
         {/* Content */}
         <div className="px-5 md:px-8 py-5 md:py-6">
-          {/* Service chips */}
-          <div className="flex flex-wrap gap-2 mb-4">
-            {t.services.map((service) => (
-              <span
-                key={service}
-                className="inline-flex items-center gap-1.5 rounded-full bg-secondary text-secondary-foreground text-sm font-semibold px-3 py-1.5"
-              >
-                <BadgeCheck className="h-4 w-4 text-primary shrink-0" />
-                {service}
-              </span>
-            ))}
+          {/* Service chips + mobile discount badge in the free white area */}
+          <div className="flex items-center gap-3 mb-4">
+            <div className="flex flex-wrap gap-2 flex-1 min-w-0">
+              {t.services.map((service) => (
+                <span
+                  key={service}
+                  className="inline-flex items-center gap-1.5 rounded-full bg-secondary text-secondary-foreground text-sm font-semibold px-3 py-1.5"
+                >
+                  <BadgeCheck className="h-4 w-4 text-primary shrink-0" />
+                  {service}
+                </span>
+              ))}
+            </div>
+
+            {/* Discount badge — mobile only, sits in the free white space */}
+            <div className="md:hidden shrink-0 -rotate-3 bg-destructive text-destructive-foreground font-black text-2xl px-3 py-2 rounded-xl shadow-lg animate-badge-pop border-2 border-destructive-foreground/20">
+              {t.highlight}
+            </div>
           </div>
 
           <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-4">
