@@ -64,6 +64,15 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        "ring-pulse": {
+          "0%": { boxShadow: "0 0 0 0 hsl(var(--primary) / 0.55)" },
+          "70%": { boxShadow: "0 0 0 16px hsl(var(--primary) / 0)" },
+          "100%": { boxShadow: "0 0 0 0 hsl(var(--primary) / 0)" },
+        },
+        "badge-pop": {
+          "0%, 100%": { transform: "rotate(-6deg) scale(1)" },
+          "50%": { transform: "rotate(-6deg) scale(1.07)" },
+        },
         "accordion-down": {
           from: {
             height: "0",
@@ -84,6 +93,8 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "ring-pulse": "ring-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "badge-pop": "badge-pop 1.8s ease-in-out infinite",
       },
     },
   },
