@@ -17,7 +17,6 @@ const texts = {
     description:
       "Φρεσκάτε καναπέδες, στρώματα & χαλιά ή αναθέστε μας τον πλήρη γενικό καθαρισμό του σπιτιού. Επαγγελματικός εξοπλισμός, υλικά φιλικά προς την υγεία.",
     urgency: "Προσφορά περιορισμένου χρόνου — κλείστε τη θέση σας σήμερα!",
-    call: "Καλέστε Τώρα",
     quote: "Δωρεάν Προσφορά",
     trust: "Δωρεάν εκτίμηση · Θεσσαλονίκη & Χαλκιδική",
   },
@@ -30,7 +29,6 @@ const texts = {
     description:
       "Freshen up sofas, mattresses & carpets — or hand us the whole flat for a full general clean. Professional equipment, health-safe products.",
     urgency: "Limited-time offer — book your slot today!",
-    call: "Call Now",
     quote: "Get a Free Quote",
     trust: "Free quote · Thessaloniki & Halkidiki",
   },
@@ -43,7 +41,6 @@ const texts = {
     description:
       "Освежите диваны, матрасы и ковры или доверьте нам полную генеральную уборку квартиры. Профессиональное оборудование, безопасные средства.",
     urgency: "Предложение ограничено — забронируйте день сегодня!",
-    call: "Позвонить Сейчас",
     quote: "Бесплатная Смета",
     trust: "Бесплатная смета · Салоники и Халкидики",
   },
@@ -163,10 +160,7 @@ const SpringBanner = () => {
             className="group flex w-full items-center justify-center gap-3 rounded-full bg-primary text-primary-foreground font-extrabold text-lg md:text-xl h-14 md:h-16 px-6 shadow-xl animate-ring-pulse hover:brightness-110 transition-[filter] mb-3"
           >
             <Phone className="h-5 w-5 md:h-6 md:w-6 shrink-0" />
-            <span className="flex flex-col items-start leading-none">
-              <span className="text-xs md:text-sm font-semibold opacity-90">{t.call}</span>
-              <span className="text-base md:text-xl tracking-wide">{PHONE_DISPLAY}</span>
-            </span>
+            <span className="text-lg md:text-2xl font-extrabold tracking-wide">{PHONE_DISPLAY}</span>
           </a>
 
           {/* Secondary: free quote */}
